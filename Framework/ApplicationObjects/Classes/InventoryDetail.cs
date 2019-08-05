@@ -51,6 +51,21 @@ namespace NSites.ApplicationObjects.Classes
             get;
             set;
         }
+        public string Brand
+        {
+            get;
+            set;
+        }
+        public string Supplier
+        {
+            get;
+            set;
+        }
+        public string Picture
+        {
+            get;
+            set;
+        }
         public string LocationId
         {
             get;

@@ -24,6 +24,7 @@ namespace NSites.ApplicationObjects.UserInterfaces
         UserGroup loUserGroup;
         DataView ldvUserGroup;
         DataTable ldtUserGroup;
+        Common lCommon;
         #endregion "END OF VARIABLES"
 
         #region "CONSTRUCTORS"
@@ -32,6 +33,7 @@ namespace NSites.ApplicationObjects.UserInterfaces
             InitializeComponent();
             loUserGroup = new UserGroup();
             ldtUserGroup = new DataTable();
+            lCommon = new Common();
         }
         #endregion "END OF CONSTRUCTORS"
 
@@ -173,6 +175,9 @@ namespace NSites.ApplicationObjects.UserInterfaces
                 disabledMenuStrip();
                 enabledMenuStrip();
             }
+
+            // Initiate Idle Countdown
+            lCommon.startIdleCountdown();
         }
 
         private void tsmSystemConfiguration_Click(object sender, EventArgs e)
@@ -295,6 +300,15 @@ namespace NSites.ApplicationObjects.UserInterfaces
             displayControlOnTab(_ReorderLevel, _ReorderLevelTab);
         }
 
+        private void tsmReinventoryReport_Click(object sender, EventArgs e)
+        {
+            ReinventoryUI _Reinventory = new ReinventoryUI();
+            TabPage _ReinventoryTab = new TabPage();
+            _ReinventoryTab.ImageIndex = 28;
+            _Reinventory.ParentList = this;
+            displayControlOnTab(_Reinventory, _ReinventoryTab);
+        }
+
         private void tsmStockCard_Click(object sender, EventArgs e)
         {
             StockCardUI _StockCard = new StockCardUI();
@@ -311,6 +325,19 @@ namespace NSites.ApplicationObjects.UserInterfaces
             Type _TypeUI = typeof(FormUI);
             Type _Type = typeof(Customer);
             ListFormUI _ListForm = new ListFormUI((object)_Customer, (object)_Form, _TypeUI, _Type);
+            TabPage _ListFormTab = new TabPage();
+            _ListFormTab.ImageIndex = 15;
+            _ListForm.ParentList = this;
+            displayControlOnTab(_ListForm, _ListFormTab);
+        }
+
+        private void tsmSalesIncharge_Click(object sender, EventArgs e)
+        {
+            SalesIncharge _SalesIncharge = new SalesIncharge();
+            FormUI _Form = new FormUI();
+            Type _TypeUI = typeof(FormUI);
+            Type _Type = typeof(SalesIncharge);
+            ListFormUI _ListForm = new ListFormUI((object)_SalesIncharge, (object)_Form, _TypeUI, _Type);
             TabPage _ListFormTab = new TabPage();
             _ListFormTab.ImageIndex = 15;
             _ListForm.ParentList = this;
@@ -425,6 +452,19 @@ namespace NSites.ApplicationObjects.UserInterfaces
             _CustomerTransactionsTab.ImageIndex = 27;
             _CustomerTransactions.ParentList = this;
             displayControlOnTab(_CustomerTransactions, _CustomerTransactionsTab);
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Brand _Brand = new Brand();
+            FormUI _Form = new FormUI();
+            Type _TypeUI = typeof(FormUI);
+            Type _Type = typeof(Brand);
+            ListFormUI _ListForm = new ListFormUI((object)_Brand, (object)_Form, _TypeUI, _Type);
+            TabPage _ListFormTab = new TabPage();
+            _ListFormTab.ImageIndex = 11;
+            _ListForm.ParentList = this;
+            displayControlOnTab(_ListForm, _ListFormTab);
         }
     }
 }

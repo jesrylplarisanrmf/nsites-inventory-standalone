@@ -49,7 +49,7 @@
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.Location = new System.Drawing.Point(423, 17);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(156, 25);
+            this.txtSearch.Size = new System.Drawing.Size(156, 29);
             this.txtSearch.TabIndex = 19;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -58,9 +58,9 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Location = new System.Drawing.Point(370, 21);
+            this.label1.Location = new System.Drawing.Point(360, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 17);
+            this.label1.Size = new System.Drawing.Size(61, 23);
             this.label1.TabIndex = 18;
             this.label1.Text = "Search";
             // 
@@ -71,8 +71,9 @@
             this.lblTableName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(117)))));
             this.lblTableName.Location = new System.Drawing.Point(12, 8);
             this.lblTableName.Name = "lblTableName";
-            this.lblTableName.Size = new System.Drawing.Size(0, 30);
+            this.lblTableName.Size = new System.Drawing.Size(79, 37);
             this.lblTableName.TabIndex = 17;
+            this.lblTableName.Text = "?Text";
             // 
             // dgvLookUp
             // 
@@ -103,23 +104,24 @@
             // 
             // cmsFunctions
             // 
+            this.cmsFunctions.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsFunctions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewHiddenRecordsToolStripMenuItem,
             this.viewAllRecordsToolStripMenuItem});
             this.cmsFunctions.Name = "cmsFunctions";
-            this.cmsFunctions.Size = new System.Drawing.Size(187, 48);
+            this.cmsFunctions.Size = new System.Drawing.Size(221, 52);
             // 
             // viewHiddenRecordsToolStripMenuItem
             // 
             this.viewHiddenRecordsToolStripMenuItem.Name = "viewHiddenRecordsToolStripMenuItem";
-            this.viewHiddenRecordsToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.viewHiddenRecordsToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
             this.viewHiddenRecordsToolStripMenuItem.Text = "View Hidden Records";
             this.viewHiddenRecordsToolStripMenuItem.Click += new System.EventHandler(this.viewHiddenRecordsToolStripMenuItem_Click);
             // 
             // viewAllRecordsToolStripMenuItem
             // 
             this.viewAllRecordsToolStripMenuItem.Name = "viewAllRecordsToolStripMenuItem";
-            this.viewAllRecordsToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.viewAllRecordsToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
             this.viewAllRecordsToolStripMenuItem.Text = "View All Records";
             this.viewAllRecordsToolStripMenuItem.Click += new System.EventHandler(this.viewAllRecordsToolStripMenuItem_Click);
             // 
@@ -127,7 +129,7 @@
             // 
             this.btnAdd.BackColor = System.Drawing.SystemColors.Control;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnAdd.Location = new System.Drawing.Point(238, 16);
+            this.btnAdd.Location = new System.Drawing.Point(235, 16);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(57, 28);
             this.btnAdd.TabIndex = 20;
@@ -139,7 +141,7 @@
             // 
             this.btnNull.BackColor = System.Drawing.SystemColors.Control;
             this.btnNull.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnNull.Location = new System.Drawing.Point(301, 16);
+            this.btnNull.Location = new System.Drawing.Point(298, 16);
             this.btnNull.Name = "btnNull";
             this.btnNull.Size = new System.Drawing.Size(54, 28);
             this.btnNull.TabIndex = 21;
@@ -149,7 +151,7 @@
             // 
             // LookUpValueUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(591, 395);

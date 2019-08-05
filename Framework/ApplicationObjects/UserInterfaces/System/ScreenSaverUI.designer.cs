@@ -49,9 +49,9 @@
             this.btnFind.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFind.Image = ((System.Drawing.Image)(resources.GetObject("btnFind.Image")));
             this.btnFind.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFind.Location = new System.Drawing.Point(300, 340);
+            this.btnFind.Location = new System.Drawing.Point(286, 340);
             this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(101, 40);
+            this.btnFind.Size = new System.Drawing.Size(113, 40);
             this.btnFind.TabIndex = 17;
             this.btnFind.Text = "Find";
             this.btnFind.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -68,7 +68,7 @@
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnCancel.Location = new System.Drawing.Point(695, 340);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(101, 40);
+            this.btnCancel.Size = new System.Drawing.Size(113, 40);
             this.btnCancel.TabIndex = 16;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -82,9 +82,9 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(590, 340);
+            this.btnSave.Location = new System.Drawing.Point(576, 340);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(101, 40);
+            this.btnSave.Size = new System.Drawing.Size(113, 40);
             this.btnSave.TabIndex = 15;
             this.btnSave.Text = "Save";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -99,7 +99,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 17);
+            this.label2.Size = new System.Drawing.Size(132, 23);
             this.label2.TabIndex = 12;
             this.label2.Text = "Current Picture";
             // 
@@ -110,7 +110,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(407, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 17);
+            this.label1.Size = new System.Drawing.Size(132, 23);
             this.label1.TabIndex = 11;
             this.label1.Text = "Previous Image";
             // 
@@ -146,9 +146,9 @@
             this.btnNoPicture.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNoPicture.Image = ((System.Drawing.Image)(resources.GetObject("btnNoPicture.Image")));
             this.btnNoPicture.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNoPicture.Location = new System.Drawing.Point(174, 340);
+            this.btnNoPicture.Location = new System.Drawing.Point(141, 340);
             this.btnNoPicture.Name = "btnNoPicture";
-            this.btnNoPicture.Size = new System.Drawing.Size(120, 40);
+            this.btnNoPicture.Size = new System.Drawing.Size(139, 40);
             this.btnNoPicture.TabIndex = 18;
             this.btnNoPicture.Text = "No Picture";
             this.btnNoPicture.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -157,7 +157,7 @@
             // 
             // ScreenSaverUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(808, 392);

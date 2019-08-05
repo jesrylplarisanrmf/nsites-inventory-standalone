@@ -178,7 +178,7 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnFind.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnFindScreenSaver.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
         MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAAI28AACNvATX8B/sAAAGhSURBVDhPddLfK0NhGAfwJ2pK
@@ -191,7 +191,7 @@
         RuDOMIAlrIMaDFj2YQAuDc2sHfhkDvMXVVoHNeYBzAtnUJGWiX4BBJIp5DcqR9AAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnFindScreenSaver.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnFind.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
         MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAAI28AACNvATX8B/sAAAGhSURBVDhPddLfK0NhGAfwJ2pK

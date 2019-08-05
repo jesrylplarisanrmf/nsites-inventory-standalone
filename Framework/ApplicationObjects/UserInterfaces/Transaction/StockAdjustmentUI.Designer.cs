@@ -180,9 +180,9 @@
             this.btnFinalize.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinalize.Image = ((System.Drawing.Image)(resources.GetObject("btnFinalize.Image")));
             this.btnFinalize.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFinalize.Location = new System.Drawing.Point(527, 5);
+            this.btnFinalize.Location = new System.Drawing.Point(490, 5);
             this.btnFinalize.Name = "btnFinalize";
-            this.btnFinalize.Size = new System.Drawing.Size(101, 40);
+            this.btnFinalize.Size = new System.Drawing.Size(113, 40);
             this.btnFinalize.TabIndex = 71;
             this.btnFinalize.Text = " Finalize";
             this.btnFinalize.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -197,9 +197,9 @@
             this.btnRemove.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.Image = ((System.Drawing.Image)(resources.GetObject("btnRemove.Image")));
             this.btnRemove.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRemove.Location = new System.Drawing.Point(423, 5);
+            this.btnRemove.Location = new System.Drawing.Point(373, 5);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(101, 40);
+            this.btnRemove.Size = new System.Drawing.Size(113, 40);
             this.btnRemove.TabIndex = 70;
             this.btnRemove.Text = "Remove";
             this.btnRemove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -214,9 +214,9 @@
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUpdate.Location = new System.Drawing.Point(319, 5);
+            this.btnUpdate.Location = new System.Drawing.Point(257, 5);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(101, 40);
+            this.btnUpdate.Size = new System.Drawing.Size(113, 40);
             this.btnUpdate.TabIndex = 69;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -241,9 +241,9 @@
             this.btnCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.Image = ((System.Drawing.Image)(resources.GetObject("btnCreate.Image")));
             this.btnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCreate.Location = new System.Drawing.Point(215, 5);
+            this.btnCreate.Location = new System.Drawing.Point(141, 5);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(101, 40);
+            this.btnCreate.Size = new System.Drawing.Size(113, 40);
             this.btnCreate.TabIndex = 54;
             this.btnCreate.Text = "Create";
             this.btnCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -258,9 +258,9 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSearch.Location = new System.Drawing.Point(631, 5);
+            this.btnSearch.Location = new System.Drawing.Point(606, 5);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(101, 40);
+            this.btnSearch.Size = new System.Drawing.Size(113, 40);
             this.btnSearch.TabIndex = 50;
             this.btnSearch.Text = "Search";
             this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -275,9 +275,9 @@
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefresh.Location = new System.Drawing.Point(111, 5);
+            this.btnRefresh.Location = new System.Drawing.Point(23, 5);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(101, 40);
+            this.btnRefresh.Size = new System.Drawing.Size(113, 40);
             this.btnRefresh.TabIndex = 49;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -307,9 +307,9 @@
             this.btnPreview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPreview.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreview.Image = ((System.Drawing.Image)(resources.GetObject("btnPreview.Image")));
-            this.btnPreview.Location = new System.Drawing.Point(735, 5);
+            this.btnPreview.Location = new System.Drawing.Point(723, 5);
             this.btnPreview.Name = "btnPreview";
-            this.btnPreview.Size = new System.Drawing.Size(101, 40);
+            this.btnPreview.Size = new System.Drawing.Size(113, 40);
             this.btnPreview.TabIndex = 42;
             this.btnPreview.Text = "Preview";
             this.btnPreview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -322,14 +322,15 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(117)))));
-            this.label3.Location = new System.Drawing.Point(47, 6);
+            this.label3.Location = new System.Drawing.Point(47, 1);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(234, 37);
+            this.label3.Size = new System.Drawing.Size(292, 46);
             this.label3.TabIndex = 62;
             this.label3.Text = "Stock Adjustment";
             // 
             // cmsFunctions
             // 
+            this.cmsFunctions.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsFunctions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmViewHiddenRecords,
             this.tsmRefresh,
@@ -344,13 +345,13 @@
             this.tsmPreview,
             this.tsmPreviewDetails});
             this.cmsFunctions.Name = "cmsFunctions";
-            this.cmsFunctions.Size = new System.Drawing.Size(187, 236);
+            this.cmsFunctions.Size = new System.Drawing.Size(225, 276);
             // 
             // tsmViewHiddenRecords
             // 
             this.tsmViewHiddenRecords.Image = ((System.Drawing.Image)(resources.GetObject("tsmViewHiddenRecords.Image")));
             this.tsmViewHiddenRecords.Name = "tsmViewHiddenRecords";
-            this.tsmViewHiddenRecords.Size = new System.Drawing.Size(186, 22);
+            this.tsmViewHiddenRecords.Size = new System.Drawing.Size(224, 26);
             this.tsmViewHiddenRecords.Text = "View Hidden Records";
             this.tsmViewHiddenRecords.Click += new System.EventHandler(this.tsmViewHiddenRecords_Click);
             // 
@@ -358,20 +359,20 @@
             // 
             this.tsmRefresh.Image = ((System.Drawing.Image)(resources.GetObject("tsmRefresh.Image")));
             this.tsmRefresh.Name = "tsmRefresh";
-            this.tsmRefresh.Size = new System.Drawing.Size(186, 22);
+            this.tsmRefresh.Size = new System.Drawing.Size(224, 26);
             this.tsmRefresh.Text = "Refresh";
             this.tsmRefresh.Click += new System.EventHandler(this.tsmRefresh_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(183, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // tsmCreate
             // 
             this.tsmCreate.Image = ((System.Drawing.Image)(resources.GetObject("tsmCreate.Image")));
             this.tsmCreate.Name = "tsmCreate";
-            this.tsmCreate.Size = new System.Drawing.Size(186, 22);
+            this.tsmCreate.Size = new System.Drawing.Size(224, 26);
             this.tsmCreate.Text = "Create";
             this.tsmCreate.Click += new System.EventHandler(this.tsmCreate_Click);
             // 
@@ -379,7 +380,7 @@
             // 
             this.tsmUpdate.Image = ((System.Drawing.Image)(resources.GetObject("tsmUpdate.Image")));
             this.tsmUpdate.Name = "tsmUpdate";
-            this.tsmUpdate.Size = new System.Drawing.Size(186, 22);
+            this.tsmUpdate.Size = new System.Drawing.Size(224, 26);
             this.tsmUpdate.Text = "Update";
             this.tsmUpdate.Click += new System.EventHandler(this.tsmUpdate_Click);
             // 
@@ -387,7 +388,7 @@
             // 
             this.tsmRemove.Image = ((System.Drawing.Image)(resources.GetObject("tsmRemove.Image")));
             this.tsmRemove.Name = "tsmRemove";
-            this.tsmRemove.Size = new System.Drawing.Size(186, 22);
+            this.tsmRemove.Size = new System.Drawing.Size(224, 26);
             this.tsmRemove.Text = "Remove";
             this.tsmRemove.Click += new System.EventHandler(this.tsmRemove_Click);
             // 
@@ -395,7 +396,7 @@
             // 
             this.tsmFinalize.Image = ((System.Drawing.Image)(resources.GetObject("tsmFinalize.Image")));
             this.tsmFinalize.Name = "tsmFinalize";
-            this.tsmFinalize.Size = new System.Drawing.Size(186, 22);
+            this.tsmFinalize.Size = new System.Drawing.Size(224, 26);
             this.tsmFinalize.Text = "Finalize";
             this.tsmFinalize.Click += new System.EventHandler(this.tsmFinalize_Click);
             // 
@@ -403,20 +404,20 @@
             // 
             this.tsmiForcedRemove.Image = ((System.Drawing.Image)(resources.GetObject("tsmiForcedRemove.Image")));
             this.tsmiForcedRemove.Name = "tsmiForcedRemove";
-            this.tsmiForcedRemove.Size = new System.Drawing.Size(186, 22);
+            this.tsmiForcedRemove.Size = new System.Drawing.Size(224, 26);
             this.tsmiForcedRemove.Text = "Forced Remove";
             this.tsmiForcedRemove.Click += new System.EventHandler(this.tsmiForcedRemove_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(183, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
             // 
             // tsmSearch
             // 
             this.tsmSearch.Image = ((System.Drawing.Image)(resources.GetObject("tsmSearch.Image")));
             this.tsmSearch.Name = "tsmSearch";
-            this.tsmSearch.Size = new System.Drawing.Size(186, 22);
+            this.tsmSearch.Size = new System.Drawing.Size(224, 26);
             this.tsmSearch.Text = "Search";
             this.tsmSearch.Click += new System.EventHandler(this.tsmSearch_Click);
             // 
@@ -424,7 +425,7 @@
             // 
             this.tsmPreview.Image = ((System.Drawing.Image)(resources.GetObject("tsmPreview.Image")));
             this.tsmPreview.Name = "tsmPreview";
-            this.tsmPreview.Size = new System.Drawing.Size(186, 22);
+            this.tsmPreview.Size = new System.Drawing.Size(224, 26);
             this.tsmPreview.Text = "Preview";
             this.tsmPreview.Click += new System.EventHandler(this.tsmPreview_Click);
             // 
@@ -432,13 +433,13 @@
             // 
             this.tsmPreviewDetails.Image = ((System.Drawing.Image)(resources.GetObject("tsmPreviewDetails.Image")));
             this.tsmPreviewDetails.Name = "tsmPreviewDetails";
-            this.tsmPreviewDetails.Size = new System.Drawing.Size(186, 22);
+            this.tsmPreviewDetails.Size = new System.Drawing.Size(224, 26);
             this.tsmPreviewDetails.Text = "Preview Details";
             this.tsmPreviewDetails.Click += new System.EventHandler(this.tsmPreviewDetails_Click);
             // 
             // StockAdjustmentUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(905, 526);
             this.Controls.Add(this.splitContainer1);

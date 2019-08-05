@@ -1,0 +1,2 @@
+Id	Stock Id	Stock Description	Unit	Brand	Supplier	Location	Qty-IN	Balance	Unit Price	Total Price	Remarks
+1	1	test	test	test	test	test	1	1	1	1	

@@ -56,7 +56,7 @@
             this.pnlBody.Controls.Add(this.label2);
             this.pnlBody.Location = new System.Drawing.Point(12, 12);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(437, 255);
+            this.pnlBody.Size = new System.Drawing.Size(447, 255);
             this.pnlBody.TabIndex = 5;
             // 
             // btnSave
@@ -67,7 +67,7 @@
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.Location = new System.Drawing.Point(169, 192);
+            this.btnSave.Location = new System.Drawing.Point(179, 192);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(101, 40);
             this.btnSave.TabIndex = 50;
@@ -81,7 +81,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(25, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 17);
+            this.label1.Size = new System.Drawing.Size(135, 23);
             this.label1.TabIndex = 15;
             this.label1.Text = "Inventory Group";
             // 
@@ -90,14 +90,14 @@
             this.cboInventoryGroup.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboInventoryGroup.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboInventoryGroup.FormattingEnabled = true;
-            this.cboInventoryGroup.Location = new System.Drawing.Point(134, 82);
+            this.cboInventoryGroup.Location = new System.Drawing.Point(161, 82);
             this.cboInventoryGroup.Name = "cboInventoryGroup";
-            this.cboInventoryGroup.Size = new System.Drawing.Size(268, 25);
+            this.cboInventoryGroup.Size = new System.Drawing.Size(268, 29);
             this.cboInventoryGroup.TabIndex = 14;
             // 
             // txtRemarks
             // 
-            this.txtRemarks.Location = new System.Drawing.Point(134, 113);
+            this.txtRemarks.Location = new System.Drawing.Point(161, 113);
             this.txtRemarks.Multiline = true;
             this.txtRemarks.Name = "txtRemarks";
             this.txtRemarks.Size = new System.Drawing.Size(268, 51);
@@ -108,13 +108,13 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(25, 116);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 17);
+            this.label6.Size = new System.Drawing.Size(74, 23);
             this.label6.TabIndex = 13;
             this.label6.Text = "Remarks";
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(134, 26);
+            this.txtDescription.Location = new System.Drawing.Point(161, 26);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(268, 50);
@@ -125,16 +125,16 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(25, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 17);
+            this.label2.Size = new System.Drawing.Size(96, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Description";
             // 
             // CategoryDetailUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(140)))));
-            this.ClientSize = new System.Drawing.Size(461, 279);
+            this.ClientSize = new System.Drawing.Size(471, 279);
             this.Controls.Add(this.pnlBody);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

@@ -125,7 +125,9 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction
                     loReportViewer.ShowDialog();
                 }
             }
-            catch { }
+            catch (Exception e){
+
+            }
         }
 
         #endregion "END OF METHODS"
@@ -218,6 +220,11 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction
             StockAdjustmentDetailUI loStockAdjustmentDetailUI = new StockAdjustmentDetailUI();
             loStockAdjustmentDetailUI.ParentList = this;
             loStockAdjustmentDetailUI.ShowDialog();
+        }
+
+        public void triggerCreateClickFromOutside()
+        {
+            btnCreate_Click(null, new EventArgs());
         }
 
         private void dgvList_MouseClick(object sender, MouseEventArgs e)

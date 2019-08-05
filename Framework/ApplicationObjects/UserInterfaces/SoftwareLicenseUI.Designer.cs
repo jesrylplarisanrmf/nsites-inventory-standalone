@@ -51,7 +51,7 @@
             // lblKey4
             // 
             this.lblKey4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKey4.Location = new System.Drawing.Point(17, 267);
+            this.lblKey4.Location = new System.Drawing.Point(17, 280);
             this.lblKey4.Name = "lblKey4";
             this.lblKey4.Size = new System.Drawing.Size(375, 18);
             this.lblKey4.TabIndex = 132;
@@ -59,7 +59,7 @@
             // lblKey3
             // 
             this.lblKey3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKey3.Location = new System.Drawing.Point(17, 247);
+            this.lblKey3.Location = new System.Drawing.Point(17, 260);
             this.lblKey3.Name = "lblKey3";
             this.lblKey3.Size = new System.Drawing.Size(375, 18);
             this.lblKey3.TabIndex = 131;
@@ -67,7 +67,7 @@
             // lblKey2
             // 
             this.lblKey2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKey2.Location = new System.Drawing.Point(17, 227);
+            this.lblKey2.Location = new System.Drawing.Point(17, 240);
             this.lblKey2.Name = "lblKey2";
             this.lblKey2.Size = new System.Drawing.Size(375, 18);
             this.lblKey2.TabIndex = 130;
@@ -75,7 +75,7 @@
             // lblKey1
             // 
             this.lblKey1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKey1.Location = new System.Drawing.Point(17, 205);
+            this.lblKey1.Location = new System.Drawing.Point(17, 218);
             this.lblKey1.Name = "lblKey1";
             this.lblKey1.Size = new System.Drawing.Size(375, 18);
             this.lblKey1.TabIndex = 129;
@@ -89,7 +89,7 @@
             this.txtCode4.ForeColor = System.Drawing.SystemColors.Window;
             this.txtCode4.Location = new System.Drawing.Point(305, 99);
             this.txtCode4.Name = "txtCode4";
-            this.txtCode4.Size = new System.Drawing.Size(90, 33);
+            this.txtCode4.Size = new System.Drawing.Size(90, 39);
             this.txtCode4.TabIndex = 128;
             this.txtCode4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -102,7 +102,7 @@
             this.txtCode3.ForeColor = System.Drawing.SystemColors.Window;
             this.txtCode3.Location = new System.Drawing.Point(209, 99);
             this.txtCode3.Name = "txtCode3";
-            this.txtCode3.Size = new System.Drawing.Size(90, 33);
+            this.txtCode3.Size = new System.Drawing.Size(90, 39);
             this.txtCode3.TabIndex = 127;
             this.txtCode3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -115,7 +115,7 @@
             this.txtCode2.ForeColor = System.Drawing.SystemColors.Window;
             this.txtCode2.Location = new System.Drawing.Point(113, 99);
             this.txtCode2.Name = "txtCode2";
-            this.txtCode2.Size = new System.Drawing.Size(90, 33);
+            this.txtCode2.Size = new System.Drawing.Size(90, 39);
             this.txtCode2.TabIndex = 126;
             this.txtCode2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -128,7 +128,7 @@
             this.txtCode1.ForeColor = System.Drawing.SystemColors.Window;
             this.txtCode1.Location = new System.Drawing.Point(17, 99);
             this.txtCode1.Name = "txtCode1";
-            this.txtCode1.Size = new System.Drawing.Size(90, 33);
+            this.txtCode1.Size = new System.Drawing.Size(90, 39);
             this.txtCode1.TabIndex = 125;
             this.txtCode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -137,7 +137,7 @@
             this.lblCompanyName.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblCompanyName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompanyName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCompanyName.Location = new System.Drawing.Point(14, 32);
+            this.lblCompanyName.Location = new System.Drawing.Point(14, 37);
             this.lblCompanyName.Name = "lblCompanyName";
             this.lblCompanyName.Size = new System.Drawing.Size(378, 19);
             this.lblCompanyName.TabIndex = 124;
@@ -153,7 +153,7 @@
             this.label3.Location = new System.Drawing.Point(-1, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(417, 51);
+            this.label3.Size = new System.Drawing.Size(417, 59);
             this.label3.TabIndex = 123;
             this.label3.Text = "INVENTORY SYSTEM";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -163,9 +163,9 @@
             this.txtKey4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKey4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtKey4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKey4.Location = new System.Drawing.Point(305, 163);
+            this.txtKey4.Location = new System.Drawing.Point(305, 167);
             this.txtKey4.Name = "txtKey4";
-            this.txtKey4.Size = new System.Drawing.Size(90, 33);
+            this.txtKey4.Size = new System.Drawing.Size(90, 39);
             this.txtKey4.TabIndex = 119;
             this.txtKey4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtKey4.TextChanged += new System.EventHandler(this.txtKey4_TextChanged);
@@ -175,9 +175,9 @@
             this.txtKey3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKey3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtKey3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKey3.Location = new System.Drawing.Point(209, 163);
+            this.txtKey3.Location = new System.Drawing.Point(209, 167);
             this.txtKey3.Name = "txtKey3";
-            this.txtKey3.Size = new System.Drawing.Size(90, 33);
+            this.txtKey3.Size = new System.Drawing.Size(90, 39);
             this.txtKey3.TabIndex = 118;
             this.txtKey3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtKey3.TextChanged += new System.EventHandler(this.txtKey3_TextChanged);
@@ -187,9 +187,9 @@
             this.txtKey2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKey2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtKey2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKey2.Location = new System.Drawing.Point(113, 163);
+            this.txtKey2.Location = new System.Drawing.Point(113, 167);
             this.txtKey2.Name = "txtKey2";
-            this.txtKey2.Size = new System.Drawing.Size(90, 33);
+            this.txtKey2.Size = new System.Drawing.Size(90, 39);
             this.txtKey2.TabIndex = 117;
             this.txtKey2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtKey2.TextChanged += new System.EventHandler(this.txtKey2_TextChanged);
@@ -200,7 +200,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(17, 146);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.Size = new System.Drawing.Size(79, 19);
             this.label2.TabIndex = 122;
             this.label2.Text = "License Key";
             // 
@@ -210,7 +210,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(17, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.Size = new System.Drawing.Size(89, 19);
             this.label1.TabIndex = 121;
             this.label1.Text = "License Code";
             // 
@@ -219,9 +219,9 @@
             this.txtKey1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKey1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtKey1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKey1.Location = new System.Drawing.Point(17, 163);
+            this.txtKey1.Location = new System.Drawing.Point(17, 167);
             this.txtKey1.Name = "txtKey1";
-            this.txtKey1.Size = new System.Drawing.Size(90, 33);
+            this.txtKey1.Size = new System.Drawing.Size(90, 39);
             this.txtKey1.TabIndex = 116;
             this.txtKey1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtKey1.TextChanged += new System.EventHandler(this.txtKey1_TextChanged);
@@ -234,7 +234,7 @@
             this.btnAuthenticate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAuthenticate.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAuthenticate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAuthenticate.Location = new System.Drawing.Point(117, 292);
+            this.btnAuthenticate.Location = new System.Drawing.Point(117, 312);
             this.btnAuthenticate.Name = "btnAuthenticate";
             this.btnAuthenticate.Size = new System.Drawing.Size(179, 40);
             this.btnAuthenticate.TabIndex = 120;
@@ -244,10 +244,10 @@
             // 
             // SoftwareLicenseUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(415, 349);
+            this.ClientSize = new System.Drawing.Size(415, 360);
             this.Controls.Add(this.lblKey4);
             this.Controls.Add(this.lblKey3);
             this.Controls.Add(this.lblKey2);

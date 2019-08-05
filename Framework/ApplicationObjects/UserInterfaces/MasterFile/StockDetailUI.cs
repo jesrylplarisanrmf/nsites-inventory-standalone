@@ -12,17 +12,21 @@ using MySql.Data.MySqlClient;
 
 using NSites.Global;
 using NSites.ApplicationObjects.Classes;
+using System.IO;
 
 namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
 {
     public partial class StockDetailUI : Form
     {
         #region "VARIABLES"
-        string[] lRecords = new string[8];
+        string[] lRecords = new string[11];
         GlobalVariables.Operation lOperation;
+        string lPicture;
         Stock loStock;
         Category loCategory;
         Unit loUnit;
+        Brand loBrand;
+        Supplier loSupplier;
         string lId;
         #endregion "END OF VARIABLES"
 
@@ -32,8 +36,11 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
             InitializeComponent();
             lOperation = GlobalVariables.Operation.Add;
             loStock = new Stock();
+            lPicture = "";
             loCategory = new Category();
             loUnit = new Unit();
+            loBrand = new Brand();
+            loSupplier = new Supplier();
         }
 
         public StockDetailUI(string[] pRecords)
@@ -41,8 +48,11 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
             InitializeComponent();
             lOperation = GlobalVariables.Operation.Edit;
             loStock = new Stock();
+            lPicture = "";
             loCategory = new Category();
             loUnit = new Unit();
+            loBrand = new Brand();
+            loSupplier = new Supplier();
             lRecords = pRecords;
         }
         #endregion "END OF VARIABLES"
@@ -81,6 +91,16 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
             cboUnit.ValueMember = "Id";
             cboUnit.DisplayMember = "Description";
             cboUnit.SelectedIndex = -1;
+
+            cboBrand.DataSource = loBrand.getAllData("ViewAll", "");
+            cboBrand.ValueMember = "Id";
+            cboBrand.DisplayMember = "Description";
+            cboBrand.SelectedIndex = -1;
+
+            cboSupplier.DataSource = loSupplier.getAllData("ViewAll", "");
+            cboSupplier.ValueMember = "Id";
+            cboSupplier.DisplayMember = "Name";
+            cboSupplier.SelectedIndex = -1;
             
             if (lOperation == GlobalVariables.Operation.Edit)
             {
@@ -88,10 +108,23 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
                 txtDescription.Text = lRecords[1];
                 cboCategory.Text = lRecords[2];
                 cboUnit.Text = lRecords[3];
-                txtUnitCost.Text = lRecords[4];
-                txtUnitPrice.Text = lRecords[5];
-                txtReorderLevel.Text = string.Format("{0:n}", decimal.Parse(lRecords[6]));
-                txtRemarks.Text = lRecords[7];
+                cboBrand.Text = lRecords[4];
+                cboSupplier.Text = lRecords[5];
+                try
+                {
+                    byte[] hextobyte = GlobalFunctions.HexToBytes(lRecords[6]);
+                    pbPicture.BackgroundImage = GlobalFunctions.ConvertByteArrayToImage(hextobyte);
+                    pbPicture.BackgroundImageLayout = ImageLayout.Stretch;
+                }
+                catch
+                {
+                    pbPicture.BackgroundImage = null;
+                }
+
+                txtUnitCost.Text = lRecords[7];
+                txtUnitPrice.Text = lRecords[8];
+                txtReorderLevel.Text = string.Format("{0:n}", decimal.Parse(lRecords[9]));
+                txtRemarks.Text = lRecords[10];
             }
         }
 
@@ -132,6 +165,23 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
                 return;
                 */
             }
+            try
+            {
+                loStock.BrandId = cboBrand.SelectedValue.ToString();
+            }
+            catch
+            {
+                loStock.BrandId = "";
+            }
+            try
+            {
+                loStock.SupplierId = cboSupplier.SelectedValue.ToString();
+            }
+            catch
+            {
+                loStock.SupplierId = "";
+            }
+            loStock.Picture = lPicture;
             loStock.UnitCost = decimal.Parse(txtUnitCost.Text);
             loStock.UnitPrice = decimal.Parse(txtUnitPrice.Text);
             loStock.ReorderLevel = decimal.Parse(txtReorderLevel.Text);
@@ -150,10 +200,13 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
                     lRecords[1] = txtDescription.Text;
                     lRecords[2] = cboCategory.Text;
                     lRecords[3] = cboUnit.Text;
-                    lRecords[4] = decimal.Parse(txtUnitCost.Text).ToString();
-                    lRecords[5] = decimal.Parse(txtUnitPrice.Text).ToString();
-                    lRecords[6] = decimal.Parse(txtReorderLevel.Text).ToString();
-                    lRecords[7] = txtRemarks.Text;
+                    lRecords[4] = cboBrand.Text;
+                    lRecords[5] = cboSupplier.Text;
+                    lRecords[6] = lPicture;
+                    lRecords[7] = decimal.Parse(txtUnitCost.Text).ToString();
+                    lRecords[8] = decimal.Parse(txtUnitPrice.Text).ToString();
+                    lRecords[9] = decimal.Parse(txtReorderLevel.Text).ToString();
+                    lRecords[10] = txtRemarks.Text;
 
                     object[] _params = { lRecords };
                     if (lOperation == GlobalVariables.Operation.Edit)
@@ -218,6 +271,38 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
             catch
             {
                 txtUnitPrice.Text = "0.00";
+            }
+        }
+
+        private void pbPicture_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFD = new OpenFileDialog();
+            openFD.InitialDirectory = ".../Main/ScreenSaverImages/";
+            openFD.Title = "Insert an Image";
+            openFD.Filter = "JPEG Images|*.jpg|GIF Images|*.gif|PNG Images|*.png";
+            if (openFD.ShowDialog() == DialogResult.Cancel)
+            {
+                MessageBoxUI mb = new MessageBoxUI("Operation Cancelled", GlobalVariables.Icons.Information, GlobalVariables.Buttons.OK);
+                mb.ShowDialog();
+            }
+            else
+            {
+                string lChosenFile = openFD.FileName;
+                string _FileName = openFD.SafeFileName;
+                byte[] m_Bitmap = null;
+
+                FileStream fs = new FileStream(lChosenFile, FileMode.Open);
+                BinaryReader br = new BinaryReader(fs);
+                int length = (int)br.BaseStream.Length;
+                m_Bitmap = new byte[length];
+                m_Bitmap = br.ReadBytes(length);
+                br.Close();
+                fs.Close();
+
+                lPicture = GlobalFunctions.ToHex(m_Bitmap);
+
+                pbPicture.BackgroundImage = GlobalFunctions.ConvertByteArrayToImage(m_Bitmap);
+                pbPicture.BackgroundImageLayout = ImageLayout.Stretch;
             }
         }
     }

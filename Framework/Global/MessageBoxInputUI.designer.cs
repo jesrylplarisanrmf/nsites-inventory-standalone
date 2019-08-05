@@ -41,17 +41,17 @@
             this.lblTitleString.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleString.Location = new System.Drawing.Point(12, 9);
             this.lblTitleString.Name = "lblTitleString";
-            this.lblTitleString.Size = new System.Drawing.Size(75, 17);
+            this.lblTitleString.Size = new System.Drawing.Size(100, 23);
             this.lblTitleString.TabIndex = 34;
             this.lblTitleString.Text = "Input String";
             // 
             // txtInputString
             // 
             this.txtInputString.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInputString.Location = new System.Drawing.Point(15, 29);
+            this.txtInputString.Location = new System.Drawing.Point(15, 39);
             this.txtInputString.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtInputString.Name = "txtInputString";
-            this.txtInputString.Size = new System.Drawing.Size(251, 25);
+            this.txtInputString.Size = new System.Drawing.Size(282, 29);
             this.txtInputString.TabIndex = 31;
             // 
             // btnCancel
@@ -59,10 +59,10 @@
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.Location = new System.Drawing.Point(189, 69);
+            this.btnCancel.Location = new System.Drawing.Point(196, 84);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(82, 38);
+            this.btnCancel.Size = new System.Drawing.Size(101, 38);
             this.btnCancel.TabIndex = 33;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -75,10 +75,10 @@
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.Image = ((System.Drawing.Image)(resources.GetObject("btnOK.Image")));
-            this.btnOK.Location = new System.Drawing.Point(101, 69);
+            this.btnOK.Location = new System.Drawing.Point(93, 84);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(82, 38);
+            this.btnOK.Size = new System.Drawing.Size(101, 38);
             this.btnOK.TabIndex = 32;
             this.btnOK.Text = "OK";
             this.btnOK.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -88,9 +88,9 @@
             // 
             // MessageBoxInputUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(283, 120);
+            this.ClientSize = new System.Drawing.Size(309, 135);
             this.Controls.Add(this.lblTitleString);
             this.Controls.Add(this.txtInputString);
             this.Controls.Add(this.btnCancel);

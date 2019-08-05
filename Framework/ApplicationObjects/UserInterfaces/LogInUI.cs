@@ -278,17 +278,28 @@ namespace NSites.ApplicationObjects.UserInterfaces
 
         private void getSoftwareLicense()
         {
-            //display software license.
-            SoftwareLicenseUI loSofwareLicense = new SoftwareLicenseUI(GlobalVariables.CompanyName, GlobalVariables.ApplicationName);
-            loSofwareLicense.ShowDialog();
-            if (loSofwareLicense.lSuccessFullyVerified)
+            try
             {
-                LicenseCertificateWrite(loSofwareLicense.lLicenseNo);
-                loadLogIn();
+                string _baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                _baseDirectory = _baseDirectory.Replace('\\', '/');
+                string _licenseWizardExecutable = "C:/Program Files/NSites/NSites License Wizard.exe";
+                string _args = _baseDirectory + " \"" + lblApplicationName.Text + "\" 1234567";
+                var licenseWizard = System.Diagnostics.Process.Start(_licenseWizardExecutable, _args);
+                licenseWizard.WaitForExit();
+
+                if (licenseWizard.ExitCode == 1)
+                {
+                    loadLogIn();
+                }
+                else if (licenseWizard.ExitCode == 0)
+                {
+                    Application.Exit();
+                }
             }
-            else
+            catch
             {
-                Application.Exit();
+                MessageBoxUI ms = new MessageBoxUI("Please install NSites License Wizard before continue.", GlobalVariables.Icons.Information, GlobalVariables.Buttons.OK);
+                ms.showDialog();
             }
         }
 
@@ -509,7 +520,9 @@ namespace NSites.ApplicationObjects.UserInterfaces
                 {
                     MDIUI MDI = new MDIUI();
                     loadGlobalVariables();
+                    this.Hide();
                     MDI.ShowDialog();
+                    this.Show();
                     GlobalVariables.xLocation = MDI.Location.X;
                     GlobalVariables.yLocation = MDI.Location.Y;
 

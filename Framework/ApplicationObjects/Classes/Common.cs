@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data;
-using System.Collections;
-using System.Reflection;
 using MySql.Data.MySqlClient;
 
 using NSites.Global;
 using NSites.ApplicationObjects.DataAccessObjects;
+using System.Timers;
+using System.Runtime.InteropServices;
+using NSites.ApplicationObjects.UserInterfaces.Systems;
+using Gma.System.MouseKeyHook;
 
 namespace NSites.ApplicationObjects.Classes
 {
@@ -16,6 +15,8 @@ namespace NSites.ApplicationObjects.Classes
     {
         #region "VARIABLES"
         CommonDAO loCommonDAO;
+        Timer lTimer;
+        IKeyboardMouseEvents lGlobalHook;
         #endregion "END OF VARIABLES"
 
         #region "CONSTRUCTORS"
@@ -40,6 +41,44 @@ namespace NSites.ApplicationObjects.Classes
             {
                 throw ex;
             }
+        }
+
+        public void startIdleCountdown()
+        {
+            /*try
+            {
+                resetIdleCountdown(null, new EventArgs());
+
+                lGlobalHook = Hook.AppEvents();
+                lGlobalHook.MouseDownExt += resetIdleCountdown;
+                lGlobalHook.KeyPress += resetIdleCountdown;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }*/
+        }
+
+        public void resetIdleCountdown(object sender, EventArgs e)
+        {
+            try
+            {
+                lTimer.Stop();
+                lTimer.Start();
+            }
+            catch
+            {
+                lTimer = new Timer(300000);
+                //ltimer = new timer(30000);
+                lTimer.Elapsed += lockScreen;
+                lTimer.Enabled = true;
+            }
+        }
+
+        private void lockScreen(object sender, ElapsedEventArgs e)
+        {
+            lTimer.Stop();
+            new UnlockScreenUI().ShowDialog();
         }
         #endregion "END OF METHODS"
 

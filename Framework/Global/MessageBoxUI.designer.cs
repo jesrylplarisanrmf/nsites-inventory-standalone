@@ -80,7 +80,7 @@
             this.panel1.Controls.Add(this.btnOk);
             this.panel1.Location = new System.Drawing.Point(11, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(328, 122);
+            this.panel1.Size = new System.Drawing.Size(340, 130);
             this.panel1.TabIndex = 4;
             // 
             // pctError
@@ -101,9 +101,9 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(241, 75);
+            this.btnClose.Location = new System.Drawing.Point(248, 83);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 35);
+            this.btnClose.Size = new System.Drawing.Size(80, 35);
             this.btnClose.TabIndex = 21;
             this.btnClose.Text = "Close";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -117,9 +117,9 @@
             this.btnOK1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK1.Image = ((System.Drawing.Image)(resources.GetObject("btnOK1.Image")));
-            this.btnOK1.Location = new System.Drawing.Point(160, 75);
+            this.btnOK1.Location = new System.Drawing.Point(167, 83);
             this.btnOK1.Name = "btnOK1";
-            this.btnOK1.Size = new System.Drawing.Size(75, 35);
+            this.btnOK1.Size = new System.Drawing.Size(80, 35);
             this.btnOK1.TabIndex = 17;
             this.btnOK1.Text = "OK";
             this.btnOK1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -145,7 +145,7 @@
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.Location = new System.Drawing.Point(241, 75);
+            this.btnCancel.Location = new System.Drawing.Point(253, 83);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 35);
             this.btnCancel.TabIndex = 10;
@@ -173,7 +173,7 @@
             this.btnNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNo.Image = ((System.Drawing.Image)(resources.GetObject("btnNo.Image")));
-            this.btnNo.Location = new System.Drawing.Point(241, 75);
+            this.btnNo.Location = new System.Drawing.Point(253, 83);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(75, 35);
             this.btnNo.TabIndex = 9;
@@ -201,7 +201,7 @@
             this.btnNo1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNo1.Image = ((System.Drawing.Image)(resources.GetObject("btnNo1.Image")));
-            this.btnNo1.Location = new System.Drawing.Point(160, 75);
+            this.btnNo1.Location = new System.Drawing.Point(167, 83);
             this.btnNo1.Name = "btnNo1";
             this.btnNo1.Size = new System.Drawing.Size(75, 35);
             this.btnNo1.TabIndex = 13;
@@ -252,7 +252,7 @@
             // 
             this.lblMessage.Location = new System.Drawing.Point(75, 12);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(241, 56);
+            this.lblMessage.Size = new System.Drawing.Size(253, 56);
             this.lblMessage.TabIndex = 20;
             this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -267,7 +267,7 @@
             this.rtxtMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rtxtMessage.Name = "rtxtMessage";
             this.rtxtMessage.ReadOnly = true;
-            this.rtxtMessage.Size = new System.Drawing.Size(241, 57);
+            this.rtxtMessage.Size = new System.Drawing.Size(253, 65);
             this.rtxtMessage.TabIndex = 19;
             this.rtxtMessage.Text = "";
             this.rtxtMessage.Visible = false;
@@ -277,9 +277,9 @@
             this.btnYes2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnYes2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYes2.Image = ((System.Drawing.Image)(resources.GetObject("btnYes2.Image")));
-            this.btnYes2.Location = new System.Drawing.Point(79, 75);
+            this.btnYes2.Location = new System.Drawing.Point(86, 83);
             this.btnYes2.Name = "btnYes2";
-            this.btnYes2.Size = new System.Drawing.Size(75, 35);
+            this.btnYes2.Size = new System.Drawing.Size(80, 35);
             this.btnYes2.TabIndex = 16;
             this.btnYes2.Text = "Yes";
             this.btnYes2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -293,7 +293,7 @@
             this.btnYes1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnYes1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYes1.Image = ((System.Drawing.Image)(resources.GetObject("btnYes1.Image")));
-            this.btnYes1.Location = new System.Drawing.Point(160, 75);
+            this.btnYes1.Location = new System.Drawing.Point(167, 83);
             this.btnYes1.Name = "btnYes1";
             this.btnYes1.Size = new System.Drawing.Size(75, 35);
             this.btnYes1.TabIndex = 12;
@@ -309,7 +309,7 @@
             this.btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.Image = ((System.Drawing.Image)(resources.GetObject("btnOk.Image")));
-            this.btnOk.Location = new System.Drawing.Point(241, 75);
+            this.btnOk.Location = new System.Drawing.Point(253, 83);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 35);
             this.btnOk.TabIndex = 2;
@@ -322,10 +322,10 @@
             // 
             // MessageBoxUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(140)))));
-            this.ClientSize = new System.Drawing.Size(351, 148);
+            this.ClientSize = new System.Drawing.Size(363, 154);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

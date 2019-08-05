@@ -40,7 +40,7 @@
             // btnOK
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOK.Location = new System.Drawing.Point(87, 240);
+            this.btnOK.Location = new System.Drawing.Point(123, 313);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 31);
             this.btnOK.TabIndex = 64;
@@ -51,7 +51,7 @@
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(168, 240);
+            this.btnCancel.Location = new System.Drawing.Point(204, 313);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 31);
             this.btnCancel.TabIndex = 63;
@@ -64,9 +64,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(13, 191);
+            this.label2.Location = new System.Drawing.Point(14, 243);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.Size = new System.Drawing.Size(38, 19);
             this.label2.TabIndex = 62;
             this.label2.Text = "Time";
             // 
@@ -77,33 +77,33 @@
             this.label1.ForeColor = System.Drawing.Color.Blue;
             this.label1.Location = new System.Drawing.Point(13, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
+            this.label1.Size = new System.Drawing.Size(38, 19);
             this.label1.TabIndex = 61;
             this.label1.Text = "Date";
             // 
             // dtpTime
             // 
             this.dtpTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpTime.Location = new System.Drawing.Point(16, 205);
+            this.dtpTime.Location = new System.Drawing.Point(17, 263);
             this.dtpTime.Name = "dtpTime";
             this.dtpTime.ShowUpDown = true;
-            this.dtpTime.Size = new System.Drawing.Size(227, 25);
+            this.dtpTime.Size = new System.Drawing.Size(227, 29);
             this.dtpTime.TabIndex = 60;
             this.dtpTime.Value = new System.DateTime(2012, 2, 29, 0, 0, 0, 0);
             // 
             // mocDateTime
             // 
             this.mocDateTime.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mocDateTime.Location = new System.Drawing.Point(15, 23);
+            this.mocDateTime.Location = new System.Drawing.Point(15, 30);
             this.mocDateTime.Name = "mocDateTime";
             this.mocDateTime.TabIndex = 59;
             // 
             // DateTimePickerUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(140)))));
-            this.ClientSize = new System.Drawing.Size(257, 281);
+            this.ClientSize = new System.Drawing.Size(293, 354);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label2);

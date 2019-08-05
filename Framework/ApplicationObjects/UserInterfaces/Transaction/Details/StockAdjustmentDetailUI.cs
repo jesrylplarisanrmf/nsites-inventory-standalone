@@ -112,9 +112,9 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
                 {
                     try
                     {
-                        _TotalQtyIN += decimal.Parse(dgvDetail.Rows[i].Cells[6].Value.ToString());
-                        _TotalQtyOUT += decimal.Parse(dgvDetail.Rows[i].Cells[7].Value.ToString());
-                        _TotalAmount += decimal.Parse(dgvDetail.Rows[i].Cells[10].Value.ToString());
+                        _TotalQtyIN += decimal.Parse(dgvDetail.Rows[i].Cells[9].Value.ToString());
+                        _TotalQtyOUT += decimal.Parse(dgvDetail.Rows[i].Cells[10].Value.ToString());
+                        _TotalAmount += decimal.Parse(dgvDetail.Rows[i].Cells[13].Value.ToString());
                     }
                     catch { }
                 }
@@ -162,15 +162,18 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
                         dgvDetail.Rows[i].Cells[1].Value = _drDetails["Stock Id"].ToString();
                         dgvDetail.Rows[i].Cells[2].Value = _drDetails["Stock Description"].ToString();
                         dgvDetail.Rows[i].Cells[3].Value = _drDetails["Unit"].ToString();
-                        dgvDetail.Rows[i].Cells[4].Value = _drDetails["LocationId"].ToString();
-                        dgvDetail.Rows[i].Cells[5].Value = _drDetails["Location"].ToString();
-                        dgvDetail.Rows[i].Cells[6].Value = string.Format("{0:n}", decimal.Parse(_drDetails["Qty-IN"].ToString()));
-                        dgvDetail.Rows[i].Cells[7].Value = string.Format("{0:n}", decimal.Parse(_drDetails["Qty-OUT"].ToString()));
-                        dgvDetail.Rows[i].Cells[8].Value = string.Format("{0:n}", decimal.Parse(_drDetails["Balance"].ToString()));
-                        dgvDetail.Rows[i].Cells[9].Value = string.Format("{0:n}", decimal.Parse(_drDetails["Unit Price"].ToString()));
-                        dgvDetail.Rows[i].Cells[10].Value = string.Format("{0:n}", decimal.Parse(_drDetails["Total Price"].ToString()));
-                        dgvDetail.Rows[i].Cells[11].Value = _drDetails["Remarks"].ToString();
-                        dgvDetail.Rows[i].Cells[12].Value = "Saved";
+                        dgvDetail.Rows[i].Cells[4].Value = _drDetails["Brand"].ToString();
+                        dgvDetail.Rows[i].Cells[5].Value = _drDetails["Supplier"].ToString();
+                        dgvDetail.Rows[i].Cells[6].Value = _drDetails["Picture"].ToString();
+                        dgvDetail.Rows[i].Cells[7].Value = _drDetails["LocationId"].ToString();
+                        dgvDetail.Rows[i].Cells[8].Value = _drDetails["Location"].ToString();
+                        dgvDetail.Rows[i].Cells[9].Value = string.Format("{0:n}", decimal.Parse(_drDetails["Qty-IN"].ToString()));
+                        dgvDetail.Rows[i].Cells[10].Value = string.Format("{0:n}", decimal.Parse(_drDetails["Qty-OUT"].ToString()));
+                        dgvDetail.Rows[i].Cells[11].Value = string.Format("{0:n}", decimal.Parse(_drDetails["Balance"].ToString()));
+                        dgvDetail.Rows[i].Cells[12].Value = string.Format("{0:n}", decimal.Parse(_drDetails["Unit Price"].ToString()));
+                        dgvDetail.Rows[i].Cells[13].Value = string.Format("{0:n}", decimal.Parse(_drDetails["Total Price"].ToString()));
+                        dgvDetail.Rows[i].Cells[14].Value = _drDetails["Remarks"].ToString();
+                        dgvDetail.Rows[i].Cells[15].Value = "Saved";
                     }
                     computeTotalAmount();
                 }
@@ -214,24 +217,27 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
                 dgvDetail.CurrentRow.Cells[2].Value.ToString(),
                 dgvDetail.CurrentRow.Cells[3].Value.ToString(),
                 dgvDetail.CurrentRow.Cells[4].Value.ToString(),
-                decimal.Parse(dgvDetail.CurrentRow.Cells[6].Value.ToString()),
-                decimal.Parse(dgvDetail.CurrentRow.Cells[7].Value.ToString()),
-                decimal.Parse(dgvDetail.CurrentRow.Cells[8].Value.ToString()),
+                dgvDetail.CurrentRow.Cells[5].Value.ToString(),
+                dgvDetail.CurrentRow.Cells[6].Value.ToString(),
+                dgvDetail.CurrentRow.Cells[7].Value.ToString(),
                 decimal.Parse(dgvDetail.CurrentRow.Cells[9].Value.ToString()),
                 decimal.Parse(dgvDetail.CurrentRow.Cells[10].Value.ToString()),
-                dgvDetail.CurrentRow.Cells[11].Value.ToString(), _Qty);
+                decimal.Parse(dgvDetail.CurrentRow.Cells[11].Value.ToString()),
+                decimal.Parse(dgvDetail.CurrentRow.Cells[12].Value.ToString()),
+                decimal.Parse(dgvDetail.CurrentRow.Cells[13].Value.ToString()),
+                dgvDetail.CurrentRow.Cells[14].Value.ToString(), _Qty);
             loStockAdjustmentItemDetail.ParentList = this;
             loStockAdjustmentItemDetail.ShowDialog();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (dgvDetail.CurrentRow.Cells[12].Value.ToString() == "Saved" || dgvDetail.CurrentRow.Cells[12].Value.ToString() == "Edit")
+            if (dgvDetail.CurrentRow.Cells[15].Value.ToString() == "Saved" || dgvDetail.CurrentRow.Cells[15].Value.ToString() == "Edit")
             {
-                dgvDetail.CurrentRow.Cells[12].Value = "Delete";
+                dgvDetail.CurrentRow.Cells[15].Value = "Delete";
                 dgvDetail.CurrentRow.Visible = false;
             }
-            else if (dgvDetail.CurrentRow.Cells[12].Value.ToString() == "Add")
+            else if (dgvDetail.CurrentRow.Cells[15].Value.ToString() == "Add")
             {
                 if (this.dgvDetail.SelectedRows.Count > 0)
                 {
@@ -254,12 +260,12 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (decimal.Parse(txtTotalQtyIN.Text) == 0 && decimal.Parse(txtTotalQtyOUT.Text) == 0)
+            /*if (decimal.Parse(txtTotalQtyIN.Text) == 0 && decimal.Parse(txtTotalQtyOUT.Text) == 0)
             {
                 MessageBoxUI _mb1 = new MessageBoxUI("Totals of Qty must not be Zero(0)!", GlobalVariables.Icons.Error, GlobalVariables.Buttons.OK);
                 _mb1.showDialog();
                 return;
-            }
+            }*/
             string _CustomerId = "";
             string _SupplierId = "";
             try
@@ -289,6 +295,7 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
                 loInventoryHeader.Type = cboType.Text;
                 loInventoryHeader.Reference = GlobalFunctions.replaceChar(txtReference.Text);
                 loInventoryHeader.CustomerId = _CustomerId;
+                loInventoryHeader.SalesInchargeId = "";
                 loInventoryHeader.SupplierId = _SupplierId;
                 loInventoryHeader.TotalIN = decimal.Parse(txtTotalQtyIN.Text);
                 loInventoryHeader.TotalOUT = decimal.Parse(txtTotalQtyOUT.Text);
@@ -304,7 +311,7 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
                     {
                         for (int i = 0; i < dgvDetail.Rows.Count; i++)
                         {
-                            if (dgvDetail.Rows[i].Cells[12].Value.ToString() == "Add")
+                            if (dgvDetail.Rows[i].Cells[15].Value.ToString() == "Add")
                             {
                                 try
                                 {
@@ -320,18 +327,23 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
                                     loInventoryDetail.StockId = dgvDetail.Rows[i].Cells[1].Value.ToString();
                                     loInventoryDetail.StockDescription = dgvDetail.Rows[i].Cells[2].Value.ToString();
                                     loInventoryDetail.Unit = dgvDetail.Rows[i].Cells[3].Value.ToString();
-                                    loInventoryDetail.LocationId = dgvDetail.Rows[i].Cells[4].Value.ToString();
-                                    loInventoryDetail.IN = decimal.Parse(dgvDetail.Rows[i].Cells[6].Value.ToString());
-                                    loInventoryDetail.OUT = decimal.Parse(dgvDetail.Rows[i].Cells[7].Value.ToString());
-                                    loInventoryDetail.Balance = decimal.Parse(dgvDetail.Rows[i].Cells[8].Value.ToString());
-                                    loInventoryDetail.UnitPrice = decimal.Parse(dgvDetail.Rows[i].Cells[9].Value.ToString());
-                                    loInventoryDetail.TotalPrice = decimal.Parse(dgvDetail.Rows[i].Cells[10].Value.ToString());
-                                    loInventoryDetail.Remarks = dgvDetail.Rows[i].Cells[11].Value.ToString();
+                                    loInventoryDetail.Brand = dgvDetail.Rows[i].Cells[4].Value.ToString();
+                                    loInventoryDetail.Supplier = dgvDetail.Rows[i].Cells[5].Value.ToString();
+                                    loInventoryDetail.Picture = dgvDetail.Rows[i].Cells[6].Value.ToString();
+                                    loInventoryDetail.LocationId = dgvDetail.Rows[i].Cells[7].Value.ToString();
+                                    loInventoryDetail.IN = decimal.Parse(dgvDetail.Rows[i].Cells[9].Value.ToString());
+                                    loInventoryDetail.OUT = decimal.Parse(dgvDetail.Rows[i].Cells[10].Value.ToString());
+                                    loInventoryDetail.Balance = decimal.Parse(dgvDetail.Rows[i].Cells[11].Value.ToString());
+                                    loInventoryDetail.UnitPrice = decimal.Parse(dgvDetail.Rows[i].Cells[12].Value.ToString());
+                                    loInventoryDetail.TotalPrice = decimal.Parse(dgvDetail.Rows[i].Cells[13].Value.ToString());
+                                    loInventoryDetail.Remarks = dgvDetail.Rows[i].Cells[14].Value.ToString();
                                     loInventoryDetail.save(GlobalVariables.Operation.Add, ref _Trans);
                                 }
-                                catch { }
+                                catch(Exception ex){
+                                    string test = ex.Message;
+                                }
                             }
-                            else if (dgvDetail.Rows[i].Cells[12].Value.ToString() == "Edit")
+                            else if (dgvDetail.Rows[i].Cells[15].Value.ToString() == "Edit")
                             {
                                 try
                                 {
@@ -345,17 +357,20 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
                                 loInventoryDetail.StockId = dgvDetail.Rows[i].Cells[1].Value.ToString();
                                 loInventoryDetail.StockDescription = dgvDetail.Rows[i].Cells[2].Value.ToString();
                                 loInventoryDetail.Unit = dgvDetail.Rows[i].Cells[3].Value.ToString();
-                                loInventoryDetail.LocationId = dgvDetail.Rows[i].Cells[4].Value.ToString();
-                                loInventoryDetail.IN = decimal.Parse(dgvDetail.Rows[i].Cells[6].Value.ToString());
-                                loInventoryDetail.OUT = decimal.Parse(dgvDetail.Rows[i].Cells[7].Value.ToString());
-                                loInventoryDetail.Balance = decimal.Parse(dgvDetail.Rows[i].Cells[8].Value.ToString());
-                                loInventoryDetail.UnitPrice = decimal.Parse(dgvDetail.Rows[i].Cells[9].Value.ToString());
-                                loInventoryDetail.TotalPrice = decimal.Parse(dgvDetail.Rows[i].Cells[10].Value.ToString());
-                                loInventoryDetail.Remarks = dgvDetail.Rows[i].Cells[11].Value.ToString();
+                                loInventoryDetail.Brand = dgvDetail.Rows[i].Cells[4].Value.ToString();
+                                loInventoryDetail.Supplier = dgvDetail.Rows[i].Cells[5].Value.ToString();
+                                loInventoryDetail.Picture = dgvDetail.Rows[i].Cells[6].Value.ToString();
+                                loInventoryDetail.LocationId = dgvDetail.Rows[i].Cells[7].Value.ToString();
+                                loInventoryDetail.IN = decimal.Parse(dgvDetail.Rows[i].Cells[9].Value.ToString());
+                                loInventoryDetail.OUT = decimal.Parse(dgvDetail.Rows[i].Cells[10].Value.ToString());
+                                loInventoryDetail.Balance = decimal.Parse(dgvDetail.Rows[i].Cells[11].Value.ToString());
+                                loInventoryDetail.UnitPrice = decimal.Parse(dgvDetail.Rows[i].Cells[12].Value.ToString());
+                                loInventoryDetail.TotalPrice = decimal.Parse(dgvDetail.Rows[i].Cells[13].Value.ToString());
+                                loInventoryDetail.Remarks = dgvDetail.Rows[i].Cells[14].Value.ToString();
                                 loInventoryDetail.save(GlobalVariables.Operation.Edit, ref _Trans);
 
                             }
-                            else if (dgvDetail.Rows[i].Cells[12].Value.ToString() == "Delete")
+                            else if (dgvDetail.Rows[i].Cells[15].Value.ToString() == "Delete")
                             {
                                 loInventoryDetail.remove(dgvDetail.Rows[i].Cells[0].Value.ToString(), ref _Trans);
                             }

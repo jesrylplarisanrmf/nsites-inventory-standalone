@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockAdjustmentItemDetailUI));
             this.pnlBody = new System.Windows.Forms.Panel();
+            this.btnLookUpStock = new System.Windows.Forms.Button();
+            this.txtSupplier = new System.Windows.Forms.TextBox();
+            this.txtBrand = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pbPicture = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.lblRunningBalance = new System.Windows.Forms.Label();
             this.txtTotalPrice = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,6 +58,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlBody.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBody
@@ -60,6 +68,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlBody.BackColor = System.Drawing.SystemColors.Control;
             this.pnlBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBody.Controls.Add(this.btnLookUpStock);
+            this.pnlBody.Controls.Add(this.txtSupplier);
+            this.pnlBody.Controls.Add(this.txtBrand);
+            this.pnlBody.Controls.Add(this.label11);
+            this.pnlBody.Controls.Add(this.pbPicture);
+            this.pnlBody.Controls.Add(this.label10);
+            this.pnlBody.Controls.Add(this.label7);
             this.pnlBody.Controls.Add(this.lblRunningBalance);
             this.pnlBody.Controls.Add(this.txtTotalPrice);
             this.pnlBody.Controls.Add(this.label8);
@@ -82,13 +97,81 @@
             this.pnlBody.Controls.Add(this.label1);
             this.pnlBody.Location = new System.Drawing.Point(12, 12);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(505, 378);
+            this.pnlBody.Size = new System.Drawing.Size(737, 481);
             this.pnlBody.TabIndex = 10;
+            // 
+            // btnLookUpStock
+            // 
+            this.btnLookUpStock.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnLookUpStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLookUpStock.Image = ((System.Drawing.Image)(resources.GetObject("btnLookUpStock.Image")));
+            this.btnLookUpStock.Location = new System.Drawing.Point(487, 28);
+            this.btnLookUpStock.Name = "btnLookUpStock";
+            this.btnLookUpStock.Size = new System.Drawing.Size(30, 25);
+            this.btnLookUpStock.TabIndex = 276;
+            this.btnLookUpStock.UseVisualStyleBackColor = false;
+            this.btnLookUpStock.Click += new System.EventHandler(this.btnLookUpStock_Click);
+            // 
+            // txtSupplier
+            // 
+            this.txtSupplier.Location = new System.Drawing.Point(160, 122);
+            this.txtSupplier.Name = "txtSupplier";
+            this.txtSupplier.ReadOnly = true;
+            this.txtSupplier.Size = new System.Drawing.Size(115, 29);
+            this.txtSupplier.TabIndex = 269;
+            this.txtSupplier.TabStop = false;
+            this.txtSupplier.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtBrand
+            // 
+            this.txtBrand.Location = new System.Drawing.Point(160, 88);
+            this.txtBrand.Name = "txtBrand";
+            this.txtBrand.ReadOnly = true;
+            this.txtBrand.Size = new System.Drawing.Size(115, 29);
+            this.txtBrand.TabIndex = 268;
+            this.txtBrand.TabStop = false;
+            this.txtBrand.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(529, 59);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(63, 23);
+            this.label11.TabIndex = 267;
+            this.label11.Text = "Picture";
+            // 
+            // pbPicture
+            // 
+            this.pbPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbPicture.Location = new System.Drawing.Point(533, 90);
+            this.pbPicture.Name = "pbPicture";
+            this.pbPicture.Size = new System.Drawing.Size(175, 163);
+            this.pbPicture.TabIndex = 266;
+            this.pbPicture.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(20, 130);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(72, 23);
+            this.label10.TabIndex = 265;
+            this.label10.Text = "Supplier";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(20, 95);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 23);
+            this.label7.TabIndex = 263;
+            this.label7.Text = "Brand";
             // 
             // lblRunningBalance
             // 
             this.lblRunningBalance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRunningBalance.Location = new System.Drawing.Point(342, 121);
+            this.lblRunningBalance.Location = new System.Drawing.Point(342, 193);
             this.lblRunningBalance.Name = "lblRunningBalance";
             this.lblRunningBalance.Size = new System.Drawing.Size(130, 23);
             this.lblRunningBalance.TabIndex = 261;
@@ -97,9 +180,9 @@
             // 
             // txtTotalPrice
             // 
-            this.txtTotalPrice.Location = new System.Drawing.Point(135, 214);
+            this.txtTotalPrice.Location = new System.Drawing.Point(160, 284);
             this.txtTotalPrice.Name = "txtTotalPrice";
-            this.txtTotalPrice.Size = new System.Drawing.Size(130, 25);
+            this.txtTotalPrice.Size = new System.Drawing.Size(115, 29);
             this.txtTotalPrice.TabIndex = 258;
             this.txtTotalPrice.TabStop = false;
             this.txtTotalPrice.Text = "0.00";
@@ -108,17 +191,17 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(20, 217);
+            this.label8.Location = new System.Drawing.Point(20, 289);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 17);
+            this.label8.Size = new System.Drawing.Size(88, 23);
             this.label8.TabIndex = 260;
             this.label8.Text = "Total Price";
             // 
             // txtUnitPrice
             // 
-            this.txtUnitPrice.Location = new System.Drawing.Point(135, 183);
+            this.txtUnitPrice.Location = new System.Drawing.Point(160, 253);
             this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(130, 25);
+            this.txtUnitPrice.Size = new System.Drawing.Size(115, 29);
             this.txtUnitPrice.TabIndex = 257;
             this.txtUnitPrice.Text = "0.00";
             this.txtUnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -126,9 +209,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 186);
+            this.label6.Location = new System.Drawing.Point(20, 258);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 17);
+            this.label6.Size = new System.Drawing.Size(84, 23);
             this.label6.TabIndex = 259;
             this.label6.Text = "Unit Price";
             // 
@@ -136,28 +219,28 @@
             // 
             this.cboLocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLocation.FormattingEnabled = true;
-            this.cboLocation.Location = new System.Drawing.Point(135, 90);
+            this.cboLocation.Location = new System.Drawing.Point(160, 160);
             this.cboLocation.Name = "cboLocation";
-            this.cboLocation.Size = new System.Drawing.Size(337, 25);
+            this.cboLocation.Size = new System.Drawing.Size(322, 29);
             this.cboLocation.TabIndex = 2;
             this.cboLocation.SelectedIndexChanged += new System.EventHandler(this.cboLocation_SelectedIndexChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(20, 93);
+            this.label13.Location = new System.Drawing.Point(20, 165);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(57, 17);
+            this.label13.Size = new System.Drawing.Size(75, 23);
             this.label13.TabIndex = 256;
             this.label13.Text = "Location";
             // 
             // txtBalance
             // 
             this.txtBalance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBalance.Location = new System.Drawing.Point(342, 152);
+            this.txtBalance.Location = new System.Drawing.Point(342, 224);
             this.txtBalance.Name = "txtBalance";
             this.txtBalance.ReadOnly = true;
-            this.txtBalance.Size = new System.Drawing.Size(130, 25);
+            this.txtBalance.Size = new System.Drawing.Size(130, 29);
             this.txtBalance.TabIndex = 17;
             this.txtBalance.TabStop = false;
             this.txtBalance.Text = "0.00";
@@ -167,18 +250,18 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(286, 155);
+            this.label9.Location = new System.Drawing.Point(296, 225);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 17);
+            this.label9.Size = new System.Drawing.Size(67, 23);
             this.label9.TabIndex = 18;
             this.label9.Text = "Balance";
             // 
             // txtQtyOUT
             // 
             this.txtQtyOUT.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQtyOUT.Location = new System.Drawing.Point(135, 152);
+            this.txtQtyOUT.Location = new System.Drawing.Point(160, 222);
             this.txtQtyOUT.Name = "txtQtyOUT";
-            this.txtQtyOUT.Size = new System.Drawing.Size(130, 25);
+            this.txtQtyOUT.Size = new System.Drawing.Size(115, 29);
             this.txtQtyOUT.TabIndex = 4;
             this.txtQtyOUT.Text = "0.00";
             this.txtQtyOUT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -189,9 +272,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(20, 155);
+            this.label5.Location = new System.Drawing.Point(20, 227);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 17);
+            this.label5.Size = new System.Drawing.Size(89, 23);
             this.label5.TabIndex = 9;
             this.label5.Text = "Qty - OUT";
             // 
@@ -202,7 +285,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(191, 318);
+            this.btnSave.Location = new System.Drawing.Point(291, 410);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 40);
             this.btnSave.TabIndex = 8;
@@ -214,10 +297,10 @@
             // 
             // txtUnit
             // 
-            this.txtUnit.Location = new System.Drawing.Point(135, 59);
+            this.txtUnit.Location = new System.Drawing.Point(160, 57);
             this.txtUnit.Name = "txtUnit";
             this.txtUnit.ReadOnly = true;
-            this.txtUnit.Size = new System.Drawing.Size(130, 25);
+            this.txtUnit.Size = new System.Drawing.Size(115, 29);
             this.txtUnit.TabIndex = 6;
             this.txtUnit.TabStop = false;
             this.txtUnit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -227,7 +310,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(20, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 17);
+            this.label2.Size = new System.Drawing.Size(42, 23);
             this.label2.TabIndex = 7;
             this.label2.Text = "Unit";
             // 
@@ -235,18 +318,18 @@
             // 
             this.cboStockDescription.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboStockDescription.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboStockDescription.Location = new System.Drawing.Point(135, 28);
+            this.cboStockDescription.Location = new System.Drawing.Point(160, 26);
             this.cboStockDescription.Name = "cboStockDescription";
-            this.cboStockDescription.Size = new System.Drawing.Size(337, 25);
+            this.cboStockDescription.Size = new System.Drawing.Size(322, 29);
             this.cboStockDescription.TabIndex = 0;
             this.cboStockDescription.SelectedIndexChanged += new System.EventHandler(this.cboStockDescription_SelectedIndexChanged);
             // 
             // txtQtyIN
             // 
             this.txtQtyIN.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQtyIN.Location = new System.Drawing.Point(135, 121);
+            this.txtQtyIN.Location = new System.Drawing.Point(160, 191);
             this.txtQtyIN.Name = "txtQtyIN";
-            this.txtQtyIN.Size = new System.Drawing.Size(130, 25);
+            this.txtQtyIN.Size = new System.Drawing.Size(115, 29);
             this.txtQtyIN.TabIndex = 3;
             this.txtQtyIN.Text = "0.00";
             this.txtQtyIN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -257,44 +340,44 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 124);
+            this.label4.Location = new System.Drawing.Point(20, 196);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 17);
+            this.label4.Size = new System.Drawing.Size(73, 23);
             this.label4.TabIndex = 4;
             this.label4.Text = "Qty - IN";
             // 
             // txtRemarks
             // 
-            this.txtRemarks.Location = new System.Drawing.Point(135, 245);
+            this.txtRemarks.Location = new System.Drawing.Point(160, 315);
             this.txtRemarks.Multiline = true;
             this.txtRemarks.Name = "txtRemarks";
-            this.txtRemarks.Size = new System.Drawing.Size(337, 50);
+            this.txtRemarks.Size = new System.Drawing.Size(322, 50);
             this.txtRemarks.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 248);
+            this.label3.Location = new System.Drawing.Point(20, 320);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 17);
+            this.label3.Size = new System.Drawing.Size(74, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "Remarks";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 31);
+            this.label1.Location = new System.Drawing.Point(19, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 17);
+            this.label1.Size = new System.Drawing.Size(141, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Stock Description";
             // 
             // StockAdjustmentItemDetailUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(140)))));
-            this.ClientSize = new System.Drawing.Size(529, 402);
+            this.ClientSize = new System.Drawing.Size(761, 505);
             this.Controls.Add(this.pnlBody);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -308,6 +391,7 @@
             this.Load += new System.EventHandler(this.StockAdjustmentItemDetailUI_Load);
             this.pnlBody.ResumeLayout(false);
             this.pnlBody.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -335,5 +419,12 @@
         private System.Windows.Forms.TextBox txtUnitPrice;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblRunningBalance;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pbPicture;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtSupplier;
+        private System.Windows.Forms.TextBox txtBrand;
+        private System.Windows.Forms.Button btnLookUpStock;
     }
 }

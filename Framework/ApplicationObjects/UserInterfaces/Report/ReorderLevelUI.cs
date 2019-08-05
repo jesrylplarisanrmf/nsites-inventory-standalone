@@ -43,11 +43,6 @@ namespace NSites.ApplicationObjects.UserInterfaces.Report
         }
         #endregion "END OF PROPERTIES"
 
-        private void ReorderLevelUI_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             ParentList.GetType().GetMethod("closeTabPage").Invoke(ParentList, null);
@@ -77,7 +72,9 @@ namespace NSites.ApplicationObjects.UserInterfaces.Report
                 loReportViewer.crystalReportViewer.ReportSource = loReorderLevelRpt;
                 loReportViewer.ShowDialog();
             }
-            catch { }
+            catch(Exception ex){
+                throw ex;
+            }
         }
 
         private void dgvReport_MouseClick(object sender, MouseEventArgs e)

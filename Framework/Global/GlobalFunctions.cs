@@ -754,7 +754,7 @@ namespace NSites.Global
         public static DateTime ConvertToDate(string pDate)
         {
             string[] _date = pDate.ToString().Split('-');
-            return DateTime.Parse(_date[2].ToString() + "-" + _date[0].ToString() + "-" + _date[1].ToString());
+            return DateTime.Parse(_date[0].ToString() + "-" + _date[1].ToString() + "-" + _date[2].ToString());
         }
 
         public static string NumberToCurrencyText(decimal number, MidpointRounding midpointRounding)

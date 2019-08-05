@@ -75,16 +75,16 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.crystalReportViewer);
             this.splitContainer1.Size = new System.Drawing.Size(952, 422);
-            this.splitContainer1.SplitterDistance = 312;
+            this.splitContainer1.SplitterDistance = 299;
             this.splitContainer1.TabIndex = 42;
             // 
             // txtSearchStock
             // 
             this.txtSearchStock.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchStock.Location = new System.Drawing.Point(127, 0);
+            this.txtSearchStock.Location = new System.Drawing.Point(163, 0);
             this.txtSearchStock.Name = "txtSearchStock";
-            this.txtSearchStock.Size = new System.Drawing.Size(184, 25);
+            this.txtSearchStock.Size = new System.Drawing.Size(135, 29);
             this.txtSearchStock.TabIndex = 41;
             this.txtSearchStock.TextChanged += new System.EventHandler(this.txtSearchStock_TextChanged);
             // 
@@ -93,7 +93,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 4);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 17);
+            this.label5.Size = new System.Drawing.Size(154, 23);
             this.label5.TabIndex = 40;
             this.label5.Text = "Search Customer  :";
             // 
@@ -123,7 +123,7 @@
             this.dgvCustomerList.ReadOnly = true;
             this.dgvCustomerList.RowHeadersVisible = false;
             this.dgvCustomerList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCustomerList.Size = new System.Drawing.Size(312, 390);
+            this.dgvCustomerList.Size = new System.Drawing.Size(299, 390);
             this.dgvCustomerList.TabIndex = 39;
             this.dgvCustomerList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomerList_CellClick);
             this.dgvCustomerList.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvCustomerList_CellFormatting);
@@ -137,7 +137,7 @@
             this.crystalReportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer.Name = "crystalReportViewer";
-            this.crystalReportViewer.Size = new System.Drawing.Size(636, 422);
+            this.crystalReportViewer.Size = new System.Drawing.Size(649, 422);
             this.crystalReportViewer.TabIndex = 134;
             this.crystalReportViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
@@ -165,18 +165,18 @@
             this.dtpToDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpToDate.CustomFormat = "MM-dd-yyyy";
             this.dtpToDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpToDate.Location = new System.Drawing.Point(685, 12);
+            this.dtpToDate.Location = new System.Drawing.Point(662, 12);
             this.dtpToDate.Name = "dtpToDate";
-            this.dtpToDate.Size = new System.Drawing.Size(113, 25);
+            this.dtpToDate.Size = new System.Drawing.Size(113, 29);
             this.dtpToDate.TabIndex = 203;
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(659, 16);
+            this.label3.Location = new System.Drawing.Point(636, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 17);
+            this.label3.Size = new System.Drawing.Size(26, 23);
             this.label3.TabIndex = 202;
             this.label3.Text = "to";
             // 
@@ -185,18 +185,18 @@
             this.dtpFromDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpFromDate.CustomFormat = "MM-dd-yyyy";
             this.dtpFromDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFromDate.Location = new System.Drawing.Point(540, 13);
+            this.dtpFromDate.Location = new System.Drawing.Point(517, 13);
             this.dtpFromDate.Name = "dtpFromDate";
-            this.dtpFromDate.Size = new System.Drawing.Size(113, 25);
+            this.dtpFromDate.Size = new System.Drawing.Size(113, 29);
             this.dtpFromDate.TabIndex = 201;
             // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(491, 16);
+            this.label4.Location = new System.Drawing.Point(468, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
+            this.label4.Size = new System.Drawing.Size(60, 23);
             this.label4.TabIndex = 200;
             this.label4.Text = "Date  :";
             // 
@@ -215,9 +215,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(117)))));
-            this.label1.Location = new System.Drawing.Point(47, 6);
+            this.label1.Location = new System.Drawing.Point(47, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 37);
+            this.label1.Size = new System.Drawing.Size(370, 46);
             this.label1.TabIndex = 196;
             this.label1.Text = "Customer Transactions";
             // 
@@ -229,9 +229,9 @@
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefresh.Location = new System.Drawing.Point(804, 5);
+            this.btnRefresh.Location = new System.Drawing.Point(784, 5);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(101, 40);
+            this.btnRefresh.Size = new System.Drawing.Size(121, 40);
             this.btnRefresh.TabIndex = 175;
             this.btnRefresh.Text = "&Refresh";
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -256,22 +256,23 @@
             // 
             // cmsFunctionsItem
             // 
+            this.cmsFunctionsItem.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsFunctionsItem.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.cmsFunctionsItem.Name = "cmsFunctions";
-            this.cmsFunctionsItem.Size = new System.Drawing.Size(187, 26);
+            this.cmsFunctionsItem.Size = new System.Drawing.Size(225, 30);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem1.Text = "View Hidden Records";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // CustomerTransactionsUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(976, 498);
             this.Controls.Add(this.splitContainer1);

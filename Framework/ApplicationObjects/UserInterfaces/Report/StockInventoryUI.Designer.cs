@@ -62,9 +62,9 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(402, 15);
+            this.label1.Location = new System.Drawing.Point(375, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 17);
+            this.label1.Size = new System.Drawing.Size(75, 23);
             this.label1.TabIndex = 193;
             this.label1.Text = "Location";
             // 
@@ -73,9 +73,9 @@
             this.cboLocation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cboLocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLocation.FormattingEnabled = true;
-            this.cboLocation.Location = new System.Drawing.Point(465, 12);
+            this.cboLocation.Location = new System.Drawing.Point(452, 12);
             this.cboLocation.Name = "cboLocation";
-            this.cboLocation.Size = new System.Drawing.Size(222, 25);
+            this.cboLocation.Size = new System.Drawing.Size(222, 29);
             this.cboLocation.TabIndex = 192;
             // 
             // pictureBox1
@@ -96,9 +96,9 @@
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefresh.Location = new System.Drawing.Point(693, 5);
+            this.btnRefresh.Location = new System.Drawing.Point(680, 5);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(101, 40);
+            this.btnRefresh.Size = new System.Drawing.Size(113, 40);
             this.btnRefresh.TabIndex = 186;
             this.btnRefresh.Text = "Preview";
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -126,9 +126,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(117)))));
-            this.label3.Location = new System.Drawing.Point(47, 6);
+            this.label3.Location = new System.Drawing.Point(47, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(210, 37);
+            this.label3.Size = new System.Drawing.Size(261, 46);
             this.label3.TabIndex = 188;
             this.label3.Text = "Stock Inventory";
             // 
@@ -148,7 +148,7 @@
             // 
             // StockInventoryUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 498);
             this.Controls.Add(this.crvStockInventory);
@@ -175,6 +175,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboLocation;
-        public CrystalDecisions.Windows.Forms.CrystalReportViewer crvStockInventory;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crvStockInventory;
     }
 }

@@ -34,6 +34,7 @@
             this.mnsAssetManagement = new System.Windows.Forms.MenuStrip();
             this.MasterFileMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmLocation = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmUnit = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmInventoryGroup = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,6 +43,7 @@
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmInventoryType = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmCustomer = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmSalesIncharge = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmSupplier = new System.Windows.Forms.ToolStripMenuItem();
             this.TransactionMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmStockReceiving = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,6 +53,7 @@
             this.tsmStockInventory = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmStockCard = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmCustomerTransactions = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmReinventoryReport = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmReorderLevelReport = new System.Windows.Forms.ToolStripMenuItem();
             this.SystemMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmSystemConfiguration = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,6 +66,9 @@
             this.tsmBackupRestoreDatabase = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmTechnicalUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.tbpHome = new System.Windows.Forms.TabPage();
             this.pctScreenSaver = new System.Windows.Forms.PictureBox();
             this.tbcSalesAndInventorySystem = new System.Windows.Forms.TabControl();
@@ -92,9 +98,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(140)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.mnsAssetManagement);
-            this.panel1.Location = new System.Drawing.Point(90, 54);
+            this.panel1.Location = new System.Drawing.Point(102, 72);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(680, 30);
+            this.panel1.Size = new System.Drawing.Size(668, 30);
             this.panel1.TabIndex = 15;
             // 
             // mnsAssetManagement
@@ -103,15 +109,19 @@
             this.mnsAssetManagement.BackColor = System.Drawing.Color.Transparent;
             this.mnsAssetManagement.Dock = System.Windows.Forms.DockStyle.None;
             this.mnsAssetManagement.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnsAssetManagement.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnsAssetManagement.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MasterFileMenu,
             this.TransactionMenu,
             this.ReportMenu,
-            this.SystemMenu});
+            this.SystemMenu,
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3});
             this.mnsAssetManagement.Location = new System.Drawing.Point(-6, -5);
             this.mnsAssetManagement.Name = "mnsAssetManagement";
             this.mnsAssetManagement.Padding = new System.Windows.Forms.Padding(5, 0, 0, 2);
-            this.mnsAssetManagement.Size = new System.Drawing.Size(518, 39);
+            this.mnsAssetManagement.Size = new System.Drawing.Size(584, 39);
             this.mnsAssetManagement.TabIndex = 0;
             this.mnsAssetManagement.Text = "MenuStrip";
             // 
@@ -122,6 +132,7 @@
             this.MasterFileMenu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.MasterFileMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmLocation,
+            this.toolStripMenuItem4,
             this.tsmUnit,
             this.toolStripSeparator10,
             this.tsmInventoryGroup,
@@ -130,14 +141,16 @@
             this.toolStripSeparator4,
             this.tsmInventoryType,
             this.tsmCustomer,
+            this.tsmSalesIncharge,
             this.tsmSupplier});
             this.MasterFileMenu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MasterFileMenu.ForeColor = System.Drawing.Color.Black;
             this.MasterFileMenu.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.MasterFileMenu.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.MasterFileMenu.Name = "MasterFileMenu";
             this.MasterFileMenu.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
             this.MasterFileMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
-            this.MasterFileMenu.Size = new System.Drawing.Size(120, 40);
+            this.MasterFileMenu.Size = new System.Drawing.Size(150, 40);
             this.MasterFileMenu.Text = "&Master Files";
             // 
             // tsmLocation
@@ -145,30 +158,39 @@
             this.tsmLocation.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmLocation.Image = ((System.Drawing.Image)(resources.GetObject("tsmLocation.Image")));
             this.tsmLocation.Name = "tsmLocation";
-            this.tsmLocation.Size = new System.Drawing.Size(179, 22);
+            this.tsmLocation.Size = new System.Drawing.Size(216, 28);
             this.tsmLocation.Text = "Location";
             this.tsmLocation.Click += new System.EventHandler(this.tsmLocation_Click);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(216, 28);
+            this.toolStripMenuItem4.Text = "Brand";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // tsmUnit
             // 
             this.tsmUnit.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmUnit.Image = ((System.Drawing.Image)(resources.GetObject("tsmUnit.Image")));
             this.tsmUnit.Name = "tsmUnit";
-            this.tsmUnit.Size = new System.Drawing.Size(179, 22);
+            this.tsmUnit.Size = new System.Drawing.Size(216, 28);
             this.tsmUnit.Text = "Unit";
             this.tsmUnit.Click += new System.EventHandler(this.tsmUnit_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(176, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(213, 6);
             // 
             // tsmInventoryGroup
             // 
             this.tsmInventoryGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmInventoryGroup.Image = ((System.Drawing.Image)(resources.GetObject("tsmInventoryGroup.Image")));
             this.tsmInventoryGroup.Name = "tsmInventoryGroup";
-            this.tsmInventoryGroup.Size = new System.Drawing.Size(179, 22);
+            this.tsmInventoryGroup.Size = new System.Drawing.Size(216, 28);
             this.tsmInventoryGroup.Text = "Inventory Group";
             this.tsmInventoryGroup.Click += new System.EventHandler(this.tsmInventoryGroup_Click);
             // 
@@ -177,7 +199,7 @@
             this.tsmCategory.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmCategory.Image = ((System.Drawing.Image)(resources.GetObject("tsmCategory.Image")));
             this.tsmCategory.Name = "tsmCategory";
-            this.tsmCategory.Size = new System.Drawing.Size(179, 22);
+            this.tsmCategory.Size = new System.Drawing.Size(216, 28);
             this.tsmCategory.Text = "Category";
             this.tsmCategory.Click += new System.EventHandler(this.tsmItemCategory_Click);
             // 
@@ -186,21 +208,21 @@
             this.tsmStock.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmStock.Image = ((System.Drawing.Image)(resources.GetObject("tsmStock.Image")));
             this.tsmStock.Name = "tsmStock";
-            this.tsmStock.Size = new System.Drawing.Size(179, 22);
+            this.tsmStock.Size = new System.Drawing.Size(216, 28);
             this.tsmStock.Text = "Stock";
             this.tsmStock.Click += new System.EventHandler(this.tsmItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(176, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(213, 6);
             // 
             // tsmInventoryType
             // 
             this.tsmInventoryType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmInventoryType.Image = ((System.Drawing.Image)(resources.GetObject("tsmInventoryType.Image")));
             this.tsmInventoryType.Name = "tsmInventoryType";
-            this.tsmInventoryType.Size = new System.Drawing.Size(179, 22);
+            this.tsmInventoryType.Size = new System.Drawing.Size(216, 28);
             this.tsmInventoryType.Text = "Inventory Type";
             this.tsmInventoryType.Click += new System.EventHandler(this.tsmInventoryType_Click);
             // 
@@ -209,16 +231,25 @@
             this.tsmCustomer.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmCustomer.Image = ((System.Drawing.Image)(resources.GetObject("tsmCustomer.Image")));
             this.tsmCustomer.Name = "tsmCustomer";
-            this.tsmCustomer.Size = new System.Drawing.Size(179, 22);
+            this.tsmCustomer.Size = new System.Drawing.Size(216, 28);
             this.tsmCustomer.Text = "Customer";
             this.tsmCustomer.Click += new System.EventHandler(this.tsmCustomer_Click);
+            // 
+            // tsmSalesIncharge
+            // 
+            this.tsmSalesIncharge.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmSalesIncharge.Image = ((System.Drawing.Image)(resources.GetObject("tsmSalesIncharge.Image")));
+            this.tsmSalesIncharge.Name = "tsmSalesIncharge";
+            this.tsmSalesIncharge.Size = new System.Drawing.Size(216, 28);
+            this.tsmSalesIncharge.Text = "Sales Incharge";
+            this.tsmSalesIncharge.Click += new System.EventHandler(this.tsmSalesIncharge_Click);
             // 
             // tsmSupplier
             // 
             this.tsmSupplier.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmSupplier.Image = ((System.Drawing.Image)(resources.GetObject("tsmSupplier.Image")));
             this.tsmSupplier.Name = "tsmSupplier";
-            this.tsmSupplier.Size = new System.Drawing.Size(179, 22);
+            this.tsmSupplier.Size = new System.Drawing.Size(216, 28);
             this.tsmSupplier.Text = "Supplier";
             this.tsmSupplier.Click += new System.EventHandler(this.tsmSupplier_Click);
             // 
@@ -232,10 +263,11 @@
             this.tsmStockAdjustment});
             this.TransactionMenu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TransactionMenu.ForeColor = System.Drawing.Color.Black;
+            this.TransactionMenu.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.TransactionMenu.Name = "TransactionMenu";
             this.TransactionMenu.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
             this.TransactionMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.TransactionMenu.Size = new System.Drawing.Size(120, 40);
+            this.TransactionMenu.Size = new System.Drawing.Size(150, 40);
             this.TransactionMenu.Text = "&Transactions";
             // 
             // tsmStockReceiving
@@ -243,7 +275,7 @@
             this.tsmStockReceiving.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmStockReceiving.Image = ((System.Drawing.Image)(resources.GetObject("tsmStockReceiving.Image")));
             this.tsmStockReceiving.Name = "tsmStockReceiving";
-            this.tsmStockReceiving.Size = new System.Drawing.Size(186, 22);
+            this.tsmStockReceiving.Size = new System.Drawing.Size(223, 28);
             this.tsmStockReceiving.Text = "Stock Receiving";
             this.tsmStockReceiving.Click += new System.EventHandler(this.tsmStockReceiving_Click);
             // 
@@ -252,7 +284,7 @@
             this.tsmStockWithdrawal.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmStockWithdrawal.Image = ((System.Drawing.Image)(resources.GetObject("tsmStockWithdrawal.Image")));
             this.tsmStockWithdrawal.Name = "tsmStockWithdrawal";
-            this.tsmStockWithdrawal.Size = new System.Drawing.Size(186, 22);
+            this.tsmStockWithdrawal.Size = new System.Drawing.Size(223, 28);
             this.tsmStockWithdrawal.Text = "Stock Withdrawal";
             this.tsmStockWithdrawal.Click += new System.EventHandler(this.tsmStockWithdrawal_Click);
             // 
@@ -261,7 +293,7 @@
             this.tsmStockAdjustment.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmStockAdjustment.Image = ((System.Drawing.Image)(resources.GetObject("tsmStockAdjustment.Image")));
             this.tsmStockAdjustment.Name = "tsmStockAdjustment";
-            this.tsmStockAdjustment.Size = new System.Drawing.Size(186, 22);
+            this.tsmStockAdjustment.Size = new System.Drawing.Size(223, 28);
             this.tsmStockAdjustment.Text = "Stock Adjustment";
             this.tsmStockAdjustment.Click += new System.EventHandler(this.tsmStockAdjustment_Click);
             // 
@@ -271,12 +303,14 @@
             this.tsmStockInventory,
             this.tsmStockCard,
             this.tsmCustomerTransactions,
+            this.tsmReinventoryReport,
             this.tsmReorderLevelReport});
             this.ReportMenu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportMenu.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.ReportMenu.Name = "ReportMenu";
-            this.ReportMenu.Padding = new System.Windows.Forms.Padding(40, 0, 10, 0);
+            this.ReportMenu.Padding = new System.Windows.Forms.Padding(40, 0, 4, 0);
             this.ReportMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.ReportMenu.Size = new System.Drawing.Size(118, 37);
+            this.ReportMenu.Size = new System.Drawing.Size(130, 34);
             this.ReportMenu.Text = "&Reports";
             // 
             // tsmStockInventory
@@ -284,7 +318,7 @@
             this.tsmStockInventory.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmStockInventory.Image = ((System.Drawing.Image)(resources.GetObject("tsmStockInventory.Image")));
             this.tsmStockInventory.Name = "tsmStockInventory";
-            this.tsmStockInventory.Size = new System.Drawing.Size(215, 22);
+            this.tsmStockInventory.Size = new System.Drawing.Size(261, 28);
             this.tsmStockInventory.Text = "Stock Inventory";
             this.tsmStockInventory.Click += new System.EventHandler(this.tsmStockInventory_Click);
             // 
@@ -293,7 +327,7 @@
             this.tsmStockCard.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmStockCard.Image = ((System.Drawing.Image)(resources.GetObject("tsmStockCard.Image")));
             this.tsmStockCard.Name = "tsmStockCard";
-            this.tsmStockCard.Size = new System.Drawing.Size(215, 22);
+            this.tsmStockCard.Size = new System.Drawing.Size(261, 28);
             this.tsmStockCard.Text = "Stock Card";
             this.tsmStockCard.Click += new System.EventHandler(this.tsmStockCard_Click);
             // 
@@ -302,16 +336,26 @@
             this.tsmCustomerTransactions.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmCustomerTransactions.Image = ((System.Drawing.Image)(resources.GetObject("tsmCustomerTransactions.Image")));
             this.tsmCustomerTransactions.Name = "tsmCustomerTransactions";
-            this.tsmCustomerTransactions.Size = new System.Drawing.Size(215, 22);
+            this.tsmCustomerTransactions.Size = new System.Drawing.Size(261, 28);
             this.tsmCustomerTransactions.Text = "Customer Transactions";
+            this.tsmCustomerTransactions.Visible = false;
             this.tsmCustomerTransactions.Click += new System.EventHandler(this.tsmCustomerTransactions_Click);
+            // 
+            // tsmReinventoryReport
+            // 
+            this.tsmReinventoryReport.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmReinventoryReport.Image = ((System.Drawing.Image)(resources.GetObject("tsmReinventoryReport.Image")));
+            this.tsmReinventoryReport.Name = "tsmReinventoryReport";
+            this.tsmReinventoryReport.Size = new System.Drawing.Size(261, 28);
+            this.tsmReinventoryReport.Text = "Reinventory Report";
+            this.tsmReinventoryReport.Click += new System.EventHandler(this.tsmReinventoryReport_Click);
             // 
             // tsmReorderLevelReport
             // 
             this.tsmReorderLevelReport.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmReorderLevelReport.Image = ((System.Drawing.Image)(resources.GetObject("tsmReorderLevelReport.Image")));
             this.tsmReorderLevelReport.Name = "tsmReorderLevelReport";
-            this.tsmReorderLevelReport.Size = new System.Drawing.Size(215, 22);
+            this.tsmReorderLevelReport.Size = new System.Drawing.Size(261, 28);
             this.tsmReorderLevelReport.Text = "Reorder Level Report";
             this.tsmReorderLevelReport.Click += new System.EventHandler(this.tsmReorderLevelReport_Click);
             // 
@@ -332,9 +376,10 @@
             this.tsmExit});
             this.SystemMenu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SystemMenu.ForeColor = System.Drawing.Color.Black;
+            this.SystemMenu.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.SystemMenu.Name = "SystemMenu";
             this.SystemMenu.Padding = new System.Windows.Forms.Padding(20, 0, 4, 0);
-            this.SystemMenu.Size = new System.Drawing.Size(120, 40);
+            this.SystemMenu.Size = new System.Drawing.Size(130, 34);
             this.SystemMenu.Text = "&Systems";
             // 
             // tsmSystemConfiguration
@@ -342,7 +387,7 @@
             this.tsmSystemConfiguration.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmSystemConfiguration.Image = ((System.Drawing.Image)(resources.GetObject("tsmSystemConfiguration.Image")));
             this.tsmSystemConfiguration.Name = "tsmSystemConfiguration";
-            this.tsmSystemConfiguration.Size = new System.Drawing.Size(232, 22);
+            this.tsmSystemConfiguration.Size = new System.Drawing.Size(285, 28);
             this.tsmSystemConfiguration.Text = "System Configuration";
             this.tsmSystemConfiguration.Click += new System.EventHandler(this.tsmSystemConfiguration_Click);
             // 
@@ -351,7 +396,7 @@
             this.tsmUser.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmUser.Image = ((System.Drawing.Image)(resources.GetObject("tsmUser.Image")));
             this.tsmUser.Name = "tsmUser";
-            this.tsmUser.Size = new System.Drawing.Size(232, 22);
+            this.tsmUser.Size = new System.Drawing.Size(285, 28);
             this.tsmUser.Text = "User";
             this.tsmUser.Click += new System.EventHandler(this.tsmUser_Click);
             // 
@@ -360,7 +405,7 @@
             this.tsmUserGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmUserGroup.Image = ((System.Drawing.Image)(resources.GetObject("tsmUserGroup.Image")));
             this.tsmUserGroup.Name = "tsmUserGroup";
-            this.tsmUserGroup.Size = new System.Drawing.Size(232, 22);
+            this.tsmUserGroup.Size = new System.Drawing.Size(285, 28);
             this.tsmUserGroup.Text = "User Group";
             this.tsmUserGroup.Click += new System.EventHandler(this.tsmUserGroup_Click);
             // 
@@ -369,7 +414,7 @@
             this.tsmChangeUserPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmChangeUserPassword.Image = ((System.Drawing.Image)(resources.GetObject("tsmChangeUserPassword.Image")));
             this.tsmChangeUserPassword.Name = "tsmChangeUserPassword";
-            this.tsmChangeUserPassword.Size = new System.Drawing.Size(232, 22);
+            this.tsmChangeUserPassword.Size = new System.Drawing.Size(285, 28);
             this.tsmChangeUserPassword.Text = "Change User Password";
             this.tsmChangeUserPassword.Click += new System.EventHandler(this.tsmChangeUserPassword_Click);
             // 
@@ -378,7 +423,7 @@
             this.tsmScreenSaver.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmScreenSaver.Image = ((System.Drawing.Image)(resources.GetObject("tsmScreenSaver.Image")));
             this.tsmScreenSaver.Name = "tsmScreenSaver";
-            this.tsmScreenSaver.Size = new System.Drawing.Size(232, 22);
+            this.tsmScreenSaver.Size = new System.Drawing.Size(285, 28);
             this.tsmScreenSaver.Text = "Screen Saver";
             this.tsmScreenSaver.Click += new System.EventHandler(this.tsmScreenSaver_Click);
             // 
@@ -387,7 +432,7 @@
             this.tsmLockScreen.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmLockScreen.Image = ((System.Drawing.Image)(resources.GetObject("tsmLockScreen.Image")));
             this.tsmLockScreen.Name = "tsmLockScreen";
-            this.tsmLockScreen.Size = new System.Drawing.Size(232, 22);
+            this.tsmLockScreen.Size = new System.Drawing.Size(285, 28);
             this.tsmLockScreen.Text = "Lock Screen";
             this.tsmLockScreen.Click += new System.EventHandler(this.tsmLockScreen_Click);
             // 
@@ -396,7 +441,7 @@
             this.tsmAuditTrail.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmAuditTrail.Image = ((System.Drawing.Image)(resources.GetObject("tsmAuditTrail.Image")));
             this.tsmAuditTrail.Name = "tsmAuditTrail";
-            this.tsmAuditTrail.Size = new System.Drawing.Size(232, 22);
+            this.tsmAuditTrail.Size = new System.Drawing.Size(285, 28);
             this.tsmAuditTrail.Text = "Audit Trail";
             this.tsmAuditTrail.Click += new System.EventHandler(this.tsmAuditTrail_Click);
             // 
@@ -405,7 +450,7 @@
             this.tsmBackupRestoreDatabase.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmBackupRestoreDatabase.Image = ((System.Drawing.Image)(resources.GetObject("tsmBackupRestoreDatabase.Image")));
             this.tsmBackupRestoreDatabase.Name = "tsmBackupRestoreDatabase";
-            this.tsmBackupRestoreDatabase.Size = new System.Drawing.Size(232, 22);
+            this.tsmBackupRestoreDatabase.Size = new System.Drawing.Size(285, 28);
             this.tsmBackupRestoreDatabase.Text = "Backup/Restore Database";
             this.tsmBackupRestoreDatabase.Click += new System.EventHandler(this.tsmBackupRestoreDatabase_Click);
             // 
@@ -414,7 +459,7 @@
             this.tsmTechnicalUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmTechnicalUpdate.Image = ((System.Drawing.Image)(resources.GetObject("tsmTechnicalUpdate.Image")));
             this.tsmTechnicalUpdate.Name = "tsmTechnicalUpdate";
-            this.tsmTechnicalUpdate.Size = new System.Drawing.Size(232, 22);
+            this.tsmTechnicalUpdate.Size = new System.Drawing.Size(285, 28);
             this.tsmTechnicalUpdate.Text = "Technical Update";
             this.tsmTechnicalUpdate.Click += new System.EventHandler(this.tsmTechnicalUpdate_Click);
             // 
@@ -423,18 +468,33 @@
             this.tsmExit.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmExit.Image = ((System.Drawing.Image)(resources.GetObject("tsmExit.Image")));
             this.tsmExit.Name = "tsmExit";
-            this.tsmExit.Size = new System.Drawing.Size(232, 22);
+            this.tsmExit.Size = new System.Drawing.Size(285, 28);
             this.tsmExit.Text = "Exit";
             this.tsmExit.Click += new System.EventHandler(this.tsmExit_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 37);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(12, 37);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(12, 37);
             // 
             // tbpHome
             // 
             this.tbpHome.Controls.Add(this.pctScreenSaver);
             this.tbpHome.ImageIndex = 0;
-            this.tbpHome.Location = new System.Drawing.Point(4, 26);
+            this.tbpHome.Location = new System.Drawing.Point(4, 30);
             this.tbpHome.Name = "tbpHome";
             this.tbpHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpHome.Size = new System.Drawing.Size(759, 390);
+            this.tbpHome.Size = new System.Drawing.Size(759, 362);
             this.tbpHome.TabIndex = 0;
             this.tbpHome.Text = "Home";
             this.tbpHome.UseVisualStyleBackColor = true;
@@ -444,7 +504,7 @@
             this.pctScreenSaver.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pctScreenSaver.Location = new System.Drawing.Point(3, 3);
             this.pctScreenSaver.Name = "pctScreenSaver";
-            this.pctScreenSaver.Size = new System.Drawing.Size(753, 384);
+            this.pctScreenSaver.Size = new System.Drawing.Size(753, 356);
             this.pctScreenSaver.TabIndex = 0;
             this.pctScreenSaver.TabStop = false;
             // 
@@ -458,7 +518,7 @@
             this.tbcSalesAndInventorySystem.Multiline = true;
             this.tbcSalesAndInventorySystem.Name = "tbcSalesAndInventorySystem";
             this.tbcSalesAndInventorySystem.SelectedIndex = 0;
-            this.tbcSalesAndInventorySystem.Size = new System.Drawing.Size(767, 420);
+            this.tbcSalesAndInventorySystem.Size = new System.Drawing.Size(767, 396);
             this.tbcSalesAndInventorySystem.TabIndex = 4;
             // 
             // imgList
@@ -509,6 +569,7 @@
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(216, 24);
             this.lblUsername.TabIndex = 6;
+            this.lblUsername.Text = "?Username";
             this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblOwnerName
@@ -516,10 +577,11 @@
             this.lblOwnerName.BackColor = System.Drawing.Color.Transparent;
             this.lblOwnerName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOwnerName.ForeColor = System.Drawing.Color.Maroon;
-            this.lblOwnerName.Location = new System.Drawing.Point(88, 27);
+            this.lblOwnerName.Location = new System.Drawing.Point(102, 49);
             this.lblOwnerName.Name = "lblOwnerName";
             this.lblOwnerName.Size = new System.Drawing.Size(289, 23);
             this.lblOwnerName.TabIndex = 4;
+            this.lblOwnerName.Text = "?Company";
             this.lblOwnerName.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // lblApplicationName
@@ -527,10 +589,11 @@
             this.lblApplicationName.BackColor = System.Drawing.Color.Transparent;
             this.lblApplicationName.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApplicationName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(117)))));
-            this.lblApplicationName.Location = new System.Drawing.Point(88, 3);
+            this.lblApplicationName.Location = new System.Drawing.Point(102, 3);
             this.lblApplicationName.Name = "lblApplicationName";
-            this.lblApplicationName.Size = new System.Drawing.Size(479, 30);
+            this.lblApplicationName.Size = new System.Drawing.Size(479, 48);
             this.lblApplicationName.TabIndex = 3;
+            this.lblApplicationName.Text = "?System";
             this.lblApplicationName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel3
@@ -543,7 +606,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(770, 55);
+            this.panel3.Size = new System.Drawing.Size(770, 109);
             this.panel3.TabIndex = 17;
             // 
             // tssDateTime
@@ -551,10 +614,11 @@
             this.tssDateTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.tssDateTime.BackColor = System.Drawing.Color.White;
             this.tssDateTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tssDateTime.Location = new System.Drawing.Point(391, 28);
+            this.tssDateTime.Location = new System.Drawing.Point(391, 30);
             this.tssDateTime.Name = "tssDateTime";
             this.tssDateTime.Size = new System.Drawing.Size(379, 23);
             this.tssDateTime.TabIndex = 13;
+            this.tssDateTime.Text = "?Date And Time";
             this.tssDateTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel2
@@ -565,15 +629,15 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.tbcSalesAndInventorySystem);
-            this.panel2.Location = new System.Drawing.Point(1, 84);
+            this.panel2.Location = new System.Drawing.Point(1, 108);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(769, 422);
+            this.panel2.Size = new System.Drawing.Size(769, 398);
             this.panel2.TabIndex = 16;
             // 
             // pctCompanyLogo
             // 
             this.pctCompanyLogo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pctCompanyLogo.Location = new System.Drawing.Point(0, 0);
+            this.pctCompanyLogo.Location = new System.Drawing.Point(6, 5);
             this.pctCompanyLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pctCompanyLogo.Name = "pctCompanyLogo";
             this.pctCompanyLogo.Size = new System.Drawing.Size(90, 85);
@@ -582,7 +646,7 @@
             // 
             // MDIUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 505);
             this.Controls.Add(this.pctCompanyLogo);
@@ -657,6 +721,12 @@
         private System.Windows.Forms.ToolStripMenuItem tsmSupplier;
         private System.Windows.Forms.ToolStripMenuItem tsmInventoryType;
         private System.Windows.Forms.ToolStripMenuItem tsmCustomerTransactions;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem tsmReinventoryReport;
+        private System.Windows.Forms.ToolStripMenuItem tsmSalesIncharge;
     }
 }
 

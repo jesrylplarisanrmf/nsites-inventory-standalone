@@ -18,6 +18,9 @@ namespace NSites.ApplicationObjects.DataAccessObjects
         string lStockId;
         string lStockDescription;
         string lUnit;
+        string lBrand;
+        string lSupplier;
+        string lPicture;
         string lLocationId;
         decimal lIN;
         decimal lOUT;
@@ -60,6 +63,9 @@ namespace NSites.ApplicationObjects.DataAccessObjects
             lStockId = pObject.GetType().GetProperty("StockId").GetValue(pObject, null).ToString();
             lStockDescription = pObject.GetType().GetProperty("StockDescription").GetValue(pObject, null).ToString();
             lUnit = pObject.GetType().GetProperty("Unit").GetValue(pObject, null).ToString();
+            lBrand = pObject.GetType().GetProperty("Brand").GetValue(pObject, null).ToString();
+            lSupplier = pObject.GetType().GetProperty("Supplier").GetValue(pObject, null).ToString();
+            lPicture = pObject.GetType().GetProperty("Picture").GetValue(pObject, null).ToString();
             lLocationId = pObject.GetType().GetProperty("LocationId").GetValue(pObject, null).ToString();
             lIN = decimal.Parse(pObject.GetType().GetProperty("IN").GetValue(pObject, null).ToString());
             lOUT = decimal.Parse(pObject.GetType().GetProperty("OUT").GetValue(pObject, null).ToString());
@@ -143,6 +149,9 @@ namespace NSites.ApplicationObjects.DataAccessObjects
                                                                            lStockId + "','" +
                                                                            lStockDescription + "','" +
                                                                            lUnit + "','" +
+                                                                           lBrand + "','" +
+                                                                           lSupplier + "','" +
+                                                                           lPicture + "','" +
                                                                            lLocationId + "','" +
                                                                            lIN + "','" +
                                                                            lOUT + "','" +
@@ -188,6 +197,9 @@ namespace NSites.ApplicationObjects.DataAccessObjects
                                                                            lStockId + "','" +
                                                                            lStockDescription + "','" +
                                                                            lUnit + "','" +
+                                                                           lBrand + "','" +
+                                                                           lSupplier + "','" +
+                                                                           lPicture + "','" +
                                                                            lLocationId + "','" +
                                                                            lIN + "','" +
                                                                            lOUT + "','" +

@@ -71,17 +71,17 @@
             "Customer",
             "Supplier",
             "Customer & Supplier"});
-            this.cboSource.Location = new System.Drawing.Point(110, 114);
+            this.cboSource.Location = new System.Drawing.Point(118, 114);
             this.cboSource.Name = "cboSource";
-            this.cboSource.Size = new System.Drawing.Size(194, 25);
+            this.cboSource.Size = new System.Drawing.Size(194, 29);
             this.cboSource.TabIndex = 17;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 114);
+            this.label3.Location = new System.Drawing.Point(20, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 17);
+            this.label3.Size = new System.Drawing.Size(62, 23);
             this.label3.TabIndex = 16;
             this.label3.Text = "Source";
             // 
@@ -93,17 +93,17 @@
             "In",
             "Out",
             "In & Out"});
-            this.cboQty.Location = new System.Drawing.Point(110, 83);
+            this.cboQty.Location = new System.Drawing.Point(118, 83);
             this.cboQty.Name = "cboQty";
-            this.cboQty.Size = new System.Drawing.Size(109, 25);
+            this.cboQty.Size = new System.Drawing.Size(109, 29);
             this.cboQty.TabIndex = 15;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 83);
+            this.label1.Location = new System.Drawing.Point(20, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 17);
+            this.label1.Size = new System.Drawing.Size(37, 23);
             this.label1.TabIndex = 14;
             this.label1.Text = "Qty";
             // 
@@ -126,7 +126,7 @@
             // 
             // txtRemarks
             // 
-            this.txtRemarks.Location = new System.Drawing.Point(110, 145);
+            this.txtRemarks.Location = new System.Drawing.Point(118, 145);
             this.txtRemarks.Multiline = true;
             this.txtRemarks.Name = "txtRemarks";
             this.txtRemarks.Size = new System.Drawing.Size(268, 51);
@@ -135,15 +135,15 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(25, 148);
+            this.label6.Location = new System.Drawing.Point(20, 148);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 17);
+            this.label6.Size = new System.Drawing.Size(74, 23);
             this.label6.TabIndex = 13;
             this.label6.Text = "Remarks";
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(110, 26);
+            this.txtDescription.Location = new System.Drawing.Point(118, 26);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(268, 50);
@@ -152,15 +152,15 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 29);
+            this.label2.Location = new System.Drawing.Point(20, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 17);
+            this.label2.Size = new System.Drawing.Size(96, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Description";
             // 
             // InventoryTypeDetailUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(433, 310);

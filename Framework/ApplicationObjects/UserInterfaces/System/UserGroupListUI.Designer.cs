@@ -108,8 +108,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Panel2.Controls.Add(this.btnReload);
             this.splitContainer1.Panel2.Controls.Add(this.btnSaveMenu);
-            this.splitContainer1.Size = new System.Drawing.Size(934, 403);
-            this.splitContainer1.SplitterDistance = 231;
+            this.splitContainer1.Size = new System.Drawing.Size(1051, 403);
+            this.splitContainer1.SplitterDistance = 259;
             this.splitContainer1.TabIndex = 36;
             // 
             // dgvUserGroups
@@ -137,7 +137,7 @@
             this.dgvUserGroups.ReadOnly = true;
             this.dgvUserGroups.RowHeadersVisible = false;
             this.dgvUserGroups.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUserGroups.Size = new System.Drawing.Size(231, 403);
+            this.dgvUserGroups.Size = new System.Drawing.Size(259, 403);
             this.dgvUserGroups.TabIndex = 27;
             this.dgvUserGroups.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUserGroups_CellClick);
             this.dgvUserGroups.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUserGroups_CellDoubleClick);
@@ -153,10 +153,10 @@
             this.btnSaveRights.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveRights.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveRights.Image")));
             this.btnSaveRights.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSaveRights.Location = new System.Drawing.Point(574, 357);
+            this.btnSaveRights.Location = new System.Drawing.Point(629, 357);
             this.btnSaveRights.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveRights.Name = "btnSaveRights";
-            this.btnSaveRights.Size = new System.Drawing.Size(119, 40);
+            this.btnSaveRights.Size = new System.Drawing.Size(153, 40);
             this.btnSaveRights.TabIndex = 38;
             this.btnSaveRights.Text = "Save Rights";
             this.btnSaveRights.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -184,8 +184,8 @@
             this.splitContainer2.Panel2.Controls.Add(this.label2);
             this.splitContainer2.Panel2.Controls.Add(this.chkRights);
             this.splitContainer2.Panel2.Controls.Add(this.dgvRights);
-            this.splitContainer2.Size = new System.Drawing.Size(566, 403);
-            this.splitContainer2.SplitterDistance = 292;
+            this.splitContainer2.Size = new System.Drawing.Size(619, 403);
+            this.splitContainer2.SplitterDistance = 316;
             this.splitContainer2.TabIndex = 36;
             // 
             // dgvMenuItems
@@ -214,7 +214,7 @@
             this.dgvMenuItems.ReadOnly = true;
             this.dgvMenuItems.RowHeadersVisible = false;
             this.dgvMenuItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMenuItems.Size = new System.Drawing.Size(291, 373);
+            this.dgvMenuItems.Size = new System.Drawing.Size(315, 373);
             this.dgvMenuItems.TabIndex = 31;
             this.dgvMenuItems.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMenuItems_CellClick);
             this.dgvMenuItems.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dgvMenuItems_KeyUp);
@@ -232,7 +232,7 @@
             this.MenuText.HeaderText = "Menu";
             this.MenuText.Name = "MenuText";
             this.MenuText.ReadOnly = true;
-            this.MenuText.Width = 66;
+            this.MenuText.Width = 83;
             // 
             // ItemName
             // 
@@ -247,7 +247,7 @@
             this.ItemText.HeaderText = "Item";
             this.ItemText.Name = "ItemText";
             this.ItemText.ReadOnly = true;
-            this.ItemText.Width = 58;
+            this.ItemText.Width = 74;
             // 
             // Status
             // 
@@ -256,15 +256,15 @@
             this.Status.Name = "Status";
             this.Status.ReadOnly = true;
             this.Status.TrueValue = "Enable";
-            this.Status.Width = 53;
+            this.Status.Width = 67;
             // 
             // chkCheckAll
             // 
             this.chkCheckAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkCheckAll.AutoSize = true;
-            this.chkCheckAll.Location = new System.Drawing.Point(210, 4);
+            this.chkCheckAll.Location = new System.Drawing.Point(210, -3);
             this.chkCheckAll.Name = "chkCheckAll";
-            this.chkCheckAll.Size = new System.Drawing.Size(79, 21);
+            this.chkCheckAll.Size = new System.Drawing.Size(102, 27);
             this.chkCheckAll.TabIndex = 35;
             this.chkCheckAll.Text = "Check All";
             this.chkCheckAll.UseVisualStyleBackColor = true;
@@ -274,10 +274,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1, 1);
+            this.label1.Location = new System.Drawing.Point(0, -2);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 21);
+            this.label1.Size = new System.Drawing.Size(162, 28);
             this.label1.TabIndex = 32;
             this.label1.Text = "Menu and Items";
             // 
@@ -285,10 +285,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(2, 3);
+            this.label2.Location = new System.Drawing.Point(2, -3);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 21);
+            this.label2.Size = new System.Drawing.Size(69, 28);
             this.label2.TabIndex = 37;
             this.label2.Text = "Rights";
             // 
@@ -296,9 +296,9 @@
             // 
             this.chkRights.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkRights.AutoSize = true;
-            this.chkRights.Location = new System.Drawing.Point(188, 3);
+            this.chkRights.Location = new System.Drawing.Point(194, -2);
             this.chkRights.Name = "chkRights";
-            this.chkRights.Size = new System.Drawing.Size(79, 21);
+            this.chkRights.Size = new System.Drawing.Size(102, 27);
             this.chkRights.TabIndex = 36;
             this.chkRights.Text = "Check All";
             this.chkRights.UseVisualStyleBackColor = true;
@@ -327,7 +327,7 @@
             this.dgvRights.ReadOnly = true;
             this.dgvRights.RowHeadersVisible = false;
             this.dgvRights.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRights.Size = new System.Drawing.Size(269, 373);
+            this.dgvRights.Size = new System.Drawing.Size(294, 373);
             this.dgvRights.TabIndex = 32;
             this.dgvRights.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRights_CellClick);
             // 
@@ -337,14 +337,14 @@
             this.RightsItemName.Name = "RightsItemName";
             this.RightsItemName.ReadOnly = true;
             this.RightsItemName.Visible = false;
-            this.RightsItemName.Width = 97;
+            this.RightsItemName.Width = 125;
             // 
             // Rights
             // 
             this.Rights.HeaderText = "Rights";
             this.Rights.Name = "Rights";
             this.Rights.ReadOnly = true;
-            this.Rights.Width = 69;
+            this.Rights.Width = 86;
             // 
             // RightStatus
             // 
@@ -353,7 +353,7 @@
             this.RightStatus.Name = "RightStatus";
             this.RightStatus.ReadOnly = true;
             this.RightStatus.TrueValue = "Enable";
-            this.RightStatus.Width = 53;
+            this.RightStatus.Width = 67;
             // 
             // btnReload
             // 
@@ -363,7 +363,7 @@
             this.btnReload.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReload.Image = ((System.Drawing.Image)(resources.GetObject("btnReload.Image")));
             this.btnReload.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReload.Location = new System.Drawing.Point(574, 51);
+            this.btnReload.Location = new System.Drawing.Point(663, 51);
             this.btnReload.Margin = new System.Windows.Forms.Padding(4);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(119, 40);
@@ -381,7 +381,7 @@
             this.btnSaveMenu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveMenu.Image")));
             this.btnSaveMenu.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnSaveMenu.Location = new System.Drawing.Point(574, 4);
+            this.btnSaveMenu.Location = new System.Drawing.Point(663, 4);
             this.btnSaveMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveMenu.Name = "btnSaveMenu";
             this.btnSaveMenu.Size = new System.Drawing.Size(119, 40);
@@ -393,6 +393,7 @@
             // 
             // cmsFunctions
             // 
+            this.cmsFunctions.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsFunctions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewHiddenRecordsToolStripMenuItem,
             this.toolStripSeparator2,
@@ -407,26 +408,26 @@
             this.tsmiReload,
             this.tsmiSaveRights});
             this.cmsFunctions.Name = "cmsFunctions";
-            this.cmsFunctions.Size = new System.Drawing.Size(187, 220);
+            this.cmsFunctions.Size = new System.Drawing.Size(225, 256);
             // 
             // viewHiddenRecordsToolStripMenuItem
             // 
             this.viewHiddenRecordsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("viewHiddenRecordsToolStripMenuItem.Image")));
             this.viewHiddenRecordsToolStripMenuItem.Name = "viewHiddenRecordsToolStripMenuItem";
-            this.viewHiddenRecordsToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.viewHiddenRecordsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.viewHiddenRecordsToolStripMenuItem.Text = "View Hidden Records";
             this.viewHiddenRecordsToolStripMenuItem.Click += new System.EventHandler(this.viewHiddenRecordsToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(183, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
             // 
             // tsmiCreate
             // 
             this.tsmiCreate.Image = ((System.Drawing.Image)(resources.GetObject("tsmiCreate.Image")));
             this.tsmiCreate.Name = "tsmiCreate";
-            this.tsmiCreate.Size = new System.Drawing.Size(186, 22);
+            this.tsmiCreate.Size = new System.Drawing.Size(224, 26);
             this.tsmiCreate.Text = "Create";
             this.tsmiCreate.Click += new System.EventHandler(this.tsmiCreate_Click);
             // 
@@ -434,7 +435,7 @@
             // 
             this.tsmiUpdate.Image = ((System.Drawing.Image)(resources.GetObject("tsmiUpdate.Image")));
             this.tsmiUpdate.Name = "tsmiUpdate";
-            this.tsmiUpdate.Size = new System.Drawing.Size(186, 22);
+            this.tsmiUpdate.Size = new System.Drawing.Size(224, 26);
             this.tsmiUpdate.Text = "Update";
             this.tsmiUpdate.Click += new System.EventHandler(this.tsmiUpdate_Click);
             // 
@@ -442,20 +443,20 @@
             // 
             this.tsmiRemove.Image = ((System.Drawing.Image)(resources.GetObject("tsmiRemove.Image")));
             this.tsmiRemove.Name = "tsmiRemove";
-            this.tsmiRemove.Size = new System.Drawing.Size(186, 22);
+            this.tsmiRemove.Size = new System.Drawing.Size(224, 26);
             this.tsmiRemove.Text = "Remove";
             this.tsmiRemove.Click += new System.EventHandler(this.tsmiRemove_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(183, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
             // 
             // tsmiSearch
             // 
             this.tsmiSearch.Image = ((System.Drawing.Image)(resources.GetObject("tsmiSearch.Image")));
             this.tsmiSearch.Name = "tsmiSearch";
-            this.tsmiSearch.Size = new System.Drawing.Size(186, 22);
+            this.tsmiSearch.Size = new System.Drawing.Size(224, 26);
             this.tsmiSearch.Text = "Search";
             this.tsmiSearch.Click += new System.EventHandler(this.tsmiSearch_Click);
             // 
@@ -463,20 +464,20 @@
             // 
             this.tsmiPreview.Image = ((System.Drawing.Image)(resources.GetObject("tsmiPreview.Image")));
             this.tsmiPreview.Name = "tsmiPreview";
-            this.tsmiPreview.Size = new System.Drawing.Size(186, 22);
+            this.tsmiPreview.Size = new System.Drawing.Size(224, 26);
             this.tsmiPreview.Text = "Preview";
             this.tsmiPreview.Click += new System.EventHandler(this.tsmiPreview_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(183, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // tsmiSaveMenu
             // 
             this.tsmiSaveMenu.Image = ((System.Drawing.Image)(resources.GetObject("tsmiSaveMenu.Image")));
             this.tsmiSaveMenu.Name = "tsmiSaveMenu";
-            this.tsmiSaveMenu.Size = new System.Drawing.Size(186, 22);
+            this.tsmiSaveMenu.Size = new System.Drawing.Size(224, 26);
             this.tsmiSaveMenu.Text = "Save Menu";
             this.tsmiSaveMenu.Click += new System.EventHandler(this.tsmiSaveMenu_Click);
             // 
@@ -484,7 +485,7 @@
             // 
             this.tsmiReload.Image = ((System.Drawing.Image)(resources.GetObject("tsmiReload.Image")));
             this.tsmiReload.Name = "tsmiReload";
-            this.tsmiReload.Size = new System.Drawing.Size(186, 22);
+            this.tsmiReload.Size = new System.Drawing.Size(224, 26);
             this.tsmiReload.Text = "Reload";
             this.tsmiReload.Click += new System.EventHandler(this.tsmiReload_Click);
             // 
@@ -492,7 +493,7 @@
             // 
             this.tsmiSaveRights.Image = ((System.Drawing.Image)(resources.GetObject("tsmiSaveRights.Image")));
             this.tsmiSaveRights.Name = "tsmiSaveRights";
-            this.tsmiSaveRights.Size = new System.Drawing.Size(186, 22);
+            this.tsmiSaveRights.Size = new System.Drawing.Size(224, 26);
             this.tsmiSaveRights.Text = "Save Rights";
             this.tsmiSaveRights.Click += new System.EventHandler(this.tsmiSaveRights_Click);
             // 
@@ -512,16 +513,16 @@
             this.panel2.Controls.Add(this.btnCreate);
             this.panel2.Location = new System.Drawing.Point(12, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(935, 51);
+            this.panel2.Size = new System.Drawing.Size(1052, 51);
             this.panel2.TabIndex = 44;
             // 
             // txtSearch
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSearch.Location = new System.Drawing.Point(775, 13);
+            this.txtSearch.Location = new System.Drawing.Point(892, 13);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(160, 25);
+            this.txtSearch.Size = new System.Drawing.Size(160, 29);
             this.txtSearch.TabIndex = 41;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -529,9 +530,9 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(725, 17);
+            this.label3.Location = new System.Drawing.Point(829, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 17);
+            this.label3.Size = new System.Drawing.Size(61, 23);
             this.label3.TabIndex = 40;
             this.label3.Text = "Search";
             // 
@@ -542,9 +543,9 @@
             this.btnPreview.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreview.Image = ((System.Drawing.Image)(resources.GetObject("btnPreview.Image")));
             this.btnPreview.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPreview.Location = new System.Drawing.Point(567, 5);
+            this.btnPreview.Location = new System.Drawing.Point(631, 5);
             this.btnPreview.Name = "btnPreview";
-            this.btnPreview.Size = new System.Drawing.Size(104, 40);
+            this.btnPreview.Size = new System.Drawing.Size(113, 40);
             this.btnPreview.TabIndex = 39;
             this.btnPreview.Text = "Preview";
             this.btnPreview.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -558,9 +559,9 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSearch.Location = new System.Drawing.Point(463, 5);
+            this.btnSearch.Location = new System.Drawing.Point(514, 5);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(101, 40);
+            this.btnSearch.Size = new System.Drawing.Size(113, 40);
             this.btnSearch.TabIndex = 15;
             this.btnSearch.Text = "Search";
             this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -589,9 +590,9 @@
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefresh.Location = new System.Drawing.Point(47, 5);
+            this.btnRefresh.Location = new System.Drawing.Point(48, 5);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(101, 40);
+            this.btnRefresh.Size = new System.Drawing.Size(113, 40);
             this.btnRefresh.TabIndex = 20;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -605,9 +606,9 @@
             this.btnRemove.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.Image = ((System.Drawing.Image)(resources.GetObject("btnRemove.Image")));
             this.btnRemove.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRemove.Location = new System.Drawing.Point(359, 5);
+            this.btnRemove.Location = new System.Drawing.Point(397, 5);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(101, 40);
+            this.btnRemove.Size = new System.Drawing.Size(113, 40);
             this.btnRemove.TabIndex = 19;
             this.btnRemove.Text = "Remove";
             this.btnRemove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -621,9 +622,9 @@
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUpdate.Location = new System.Drawing.Point(255, 5);
+            this.btnUpdate.Location = new System.Drawing.Point(281, 5);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(101, 40);
+            this.btnUpdate.Size = new System.Drawing.Size(113, 40);
             this.btnUpdate.TabIndex = 18;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -637,9 +638,9 @@
             this.btnCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.Image = ((System.Drawing.Image)(resources.GetObject("btnCreate.Image")));
             this.btnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCreate.Location = new System.Drawing.Point(151, 5);
+            this.btnCreate.Location = new System.Drawing.Point(164, 5);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(101, 40);
+            this.btnCreate.Size = new System.Drawing.Size(113, 40);
             this.btnCreate.TabIndex = 16;
             this.btnCreate.Text = "Create";
             this.btnCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -648,7 +649,7 @@
             // 
             // UserGroupListUI
             // 
-            this.ClientSize = new System.Drawing.Size(958, 477);
+            this.ClientSize = new System.Drawing.Size(1075, 477);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

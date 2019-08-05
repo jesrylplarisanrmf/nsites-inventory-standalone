@@ -17,6 +17,9 @@ namespace NSites.ApplicationObjects.DataAccessObjects
         string lDescription;
         string lCategoryId;
         string lUnitId;
+        string lBrandId;
+        string lSupplierId;
+        string lPicture;
         decimal lUnitCost;
         decimal lUnitPrice;
         decimal lReorderLevel;
@@ -30,6 +33,9 @@ namespace NSites.ApplicationObjects.DataAccessObjects
             lDescription = "";
             lCategoryId = "";
             lUnitId = "";
+            lBrandId = "";
+            lSupplierId = "";
+            lPicture = "";
             lUnitCost = 0;
             lUnitPrice = 0;
             lReorderLevel = 0;
@@ -49,6 +55,9 @@ namespace NSites.ApplicationObjects.DataAccessObjects
             lDescription = pObject.GetType().GetProperty("Description").GetValue(pObject, null).ToString();
             lCategoryId = pObject.GetType().GetProperty("CategoryId").GetValue(pObject, null).ToString();
             lUnitId = pObject.GetType().GetProperty("UnitId").GetValue(pObject, null).ToString();
+            lBrandId = pObject.GetType().GetProperty("BrandId").GetValue(pObject, null).ToString();
+            lSupplierId = pObject.GetType().GetProperty("SupplierId").GetValue(pObject, null).ToString();
+            lPicture = pObject.GetType().GetProperty("Picture").GetValue(pObject, null).ToString();
             lUnitCost = decimal.Parse(pObject.GetType().GetProperty("UnitCost").GetValue(pObject, null).ToString());
             lUnitPrice = decimal.Parse(pObject.GetType().GetProperty("UnitPrice").GetValue(pObject, null).ToString());
             lReorderLevel = decimal.Parse(pObject.GetType().GetProperty("ReorderLevel").GetValue(pObject, null).ToString());
@@ -119,6 +128,22 @@ namespace NSites.ApplicationObjects.DataAccessObjects
             }
         }
 
+        public DataTable getStockReinventory()
+        {
+            DataTable _dt = new DataTable();
+            try
+            {
+                MySqlDataAdapter _da = new MySqlDataAdapter("call spGetStockReinventory()", GlobalVariables.Connection);
+                _da.Fill(_dt);
+
+                return _dt;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public DataTable getStockCard(DateTime pFromDate, DateTime pToDate,string pStockId)
         {
             DataTable _dt = new DataTable();
@@ -176,6 +201,9 @@ namespace NSites.ApplicationObjects.DataAccessObjects
                 MySqlCommand _cmd = new MySqlCommand("call spInsertStock('" + lDescription + "','" +
                                                                                lCategoryId + "','" +
                                                                                lUnitId + "','" +
+                                                                               lBrandId + "','" +
+                                                                               lSupplierId + "','" +
+                                                                               lPicture + "','" +
                                                                                lUnitCost + "','" +
                                                                                lUnitPrice + "','" +
                                                                                lReorderLevel + "','" +
@@ -185,7 +213,8 @@ namespace NSites.ApplicationObjects.DataAccessObjects
                 try
                 {
                     _cmd.Transaction = pTrans;
-                    _Id = _cmd.ExecuteScalar().ToString();
+                    //_cmd.CommandText = "SET GLOBAL max_allowed_packet=32*1024*1024;";
+                    _Id = _cmd.ExecuteNonQuery().ToString();
 
                     return _Id;
                 }
@@ -210,6 +239,9 @@ namespace NSites.ApplicationObjects.DataAccessObjects
                                                                             lDescription + "','" +
                                                                             lCategoryId + "','" +
                                                                             lUnitId + "','" +
+                                                                            lBrandId + "','" +
+                                                                            lSupplierId + "','" +
+                                                                            lPicture + "','" +
                                                                             lUnitCost + "','" +
                                                                             lUnitPrice + "','" +
                                                                             lReorderLevel + "','" +
@@ -222,6 +254,40 @@ namespace NSites.ApplicationObjects.DataAccessObjects
                     _Id = _cmd.ExecuteScalar().ToString();
 
                     return _Id;
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool finalizeStockReinventory(string pDetailId, string pType, ref MySqlTransaction pTrans)
+        {
+            bool _success = false;
+            try
+            {
+                MySqlCommand _cmd = new MySqlCommand("call spFinalizeStockReinventory('" + pDetailId + "','" +
+                                                                            pType + "','" +
+                                                                            GlobalVariables.Username + "','" +
+                                                                            GlobalVariables.Hostname + "')", GlobalVariables.Connection);
+                try
+                {
+                    _cmd.Transaction = pTrans;
+                    int _RowsAffected = _cmd.ExecuteNonQuery();
+                    if (_RowsAffected > 0)
+                    {
+                        _success = true;
+                    }
+                    else
+                    {
+                        _success = false;
+                    }
+                    return _success;
                 }
                 catch (Exception ex)
                 {

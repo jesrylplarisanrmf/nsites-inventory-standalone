@@ -84,9 +84,9 @@
             // 
             // txtBackupPort
             // 
-            this.txtBackupPort.Location = new System.Drawing.Point(97, 174);
+            this.txtBackupPort.Location = new System.Drawing.Point(121, 174);
             this.txtBackupPort.Name = "txtBackupPort";
-            this.txtBackupPort.Size = new System.Drawing.Size(192, 25);
+            this.txtBackupPort.Size = new System.Drawing.Size(192, 29);
             this.txtBackupPort.TabIndex = 41;
             // 
             // label6
@@ -94,16 +94,16 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(11, 177);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 17);
+            this.label6.Size = new System.Drawing.Size(41, 23);
             this.label6.TabIndex = 42;
             this.label6.Text = "Port";
             // 
             // txtBackupPassword
             // 
-            this.txtBackupPassword.Location = new System.Drawing.Point(97, 143);
+            this.txtBackupPassword.Location = new System.Drawing.Point(121, 143);
             this.txtBackupPassword.Name = "txtBackupPassword";
             this.txtBackupPassword.PasswordChar = '*';
-            this.txtBackupPassword.Size = new System.Drawing.Size(192, 25);
+            this.txtBackupPassword.Size = new System.Drawing.Size(192, 29);
             this.txtBackupPassword.TabIndex = 39;
             // 
             // label5
@@ -111,15 +111,15 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(11, 146);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 17);
+            this.label5.Size = new System.Drawing.Size(80, 23);
             this.label5.TabIndex = 40;
             this.label5.Text = "Password";
             // 
             // txtBackupUserId
             // 
-            this.txtBackupUserId.Location = new System.Drawing.Point(97, 112);
+            this.txtBackupUserId.Location = new System.Drawing.Point(121, 112);
             this.txtBackupUserId.Name = "txtBackupUserId";
-            this.txtBackupUserId.Size = new System.Drawing.Size(192, 25);
+            this.txtBackupUserId.Size = new System.Drawing.Size(192, 29);
             this.txtBackupUserId.TabIndex = 37;
             // 
             // label4
@@ -127,15 +127,15 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(11, 115);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 17);
+            this.label4.Size = new System.Drawing.Size(64, 23);
             this.label4.TabIndex = 38;
             this.label4.Text = "User Id";
             // 
             // txtBackupDatabase
             // 
-            this.txtBackupDatabase.Location = new System.Drawing.Point(97, 81);
+            this.txtBackupDatabase.Location = new System.Drawing.Point(121, 81);
             this.txtBackupDatabase.Name = "txtBackupDatabase";
-            this.txtBackupDatabase.Size = new System.Drawing.Size(192, 25);
+            this.txtBackupDatabase.Size = new System.Drawing.Size(192, 29);
             this.txtBackupDatabase.TabIndex = 35;
             // 
             // label3
@@ -143,15 +143,15 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(11, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 17);
+            this.label3.Size = new System.Drawing.Size(81, 23);
             this.label3.TabIndex = 36;
             this.label3.Text = "Database";
             // 
             // txtBackupServer
             // 
-            this.txtBackupServer.Location = new System.Drawing.Point(97, 50);
+            this.txtBackupServer.Location = new System.Drawing.Point(121, 50);
             this.txtBackupServer.Name = "txtBackupServer";
-            this.txtBackupServer.Size = new System.Drawing.Size(192, 25);
+            this.txtBackupServer.Size = new System.Drawing.Size(192, 29);
             this.txtBackupServer.TabIndex = 33;
             // 
             // label1
@@ -159,7 +159,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(11, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 17);
+            this.label1.Size = new System.Drawing.Size(57, 23);
             this.label1.TabIndex = 34;
             this.label1.Text = "Server";
             // 
@@ -170,9 +170,9 @@
             this.btnBackupDatabase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBackupDatabase.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackupDatabase.Image = ((System.Drawing.Image)(resources.GetObject("btnBackupDatabase.Image")));
-            this.btnBackupDatabase.Location = new System.Drawing.Point(145, 221);
+            this.btnBackupDatabase.Location = new System.Drawing.Point(131, 221);
             this.btnBackupDatabase.Name = "btnBackupDatabase";
-            this.btnBackupDatabase.Size = new System.Drawing.Size(101, 40);
+            this.btnBackupDatabase.Size = new System.Drawing.Size(113, 40);
             this.btnBackupDatabase.TabIndex = 31;
             this.btnBackupDatabase.Text = "Backup";
             this.btnBackupDatabase.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -212,10 +212,10 @@
             this.tbpBackup.Controls.Add(this.txtBackupPort);
             this.tbpBackup.Controls.Add(this.label5);
             this.tbpBackup.Controls.Add(this.txtBackupPassword);
-            this.tbpBackup.Location = new System.Drawing.Point(4, 26);
+            this.tbpBackup.Location = new System.Drawing.Point(4, 30);
             this.tbpBackup.Name = "tbpBackup";
             this.tbpBackup.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpBackup.Size = new System.Drawing.Size(474, 281);
+            this.tbpBackup.Size = new System.Drawing.Size(474, 277);
             this.tbpBackup.TabIndex = 0;
             this.tbpBackup.Text = "Backup";
             this.tbpBackup.UseVisualStyleBackColor = true;
@@ -228,10 +228,10 @@
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.button1.Location = new System.Drawing.Point(252, 221);
+            this.button1.Location = new System.Drawing.Point(249, 221);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 40);
+            this.button1.Size = new System.Drawing.Size(113, 40);
             this.button1.TabIndex = 64;
             this.button1.Text = "Cancel";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -241,7 +241,7 @@
             // pctBackup4
             // 
             this.pctBackup4.Image = ((System.Drawing.Image)(resources.GetObject("pctBackup4.Image")));
-            this.pctBackup4.Location = new System.Drawing.Point(290, 112);
+            this.pctBackup4.Location = new System.Drawing.Point(314, 112);
             this.pctBackup4.Name = "pctBackup4";
             this.pctBackup4.Size = new System.Drawing.Size(28, 25);
             this.pctBackup4.TabIndex = 48;
@@ -251,7 +251,7 @@
             // pctBackup3
             // 
             this.pctBackup3.Image = ((System.Drawing.Image)(resources.GetObject("pctBackup3.Image")));
-            this.pctBackup3.Location = new System.Drawing.Point(290, 81);
+            this.pctBackup3.Location = new System.Drawing.Point(314, 81);
             this.pctBackup3.Name = "pctBackup3";
             this.pctBackup3.Size = new System.Drawing.Size(28, 25);
             this.pctBackup3.TabIndex = 47;
@@ -261,7 +261,7 @@
             // pctBackup2
             // 
             this.pctBackup2.Image = ((System.Drawing.Image)(resources.GetObject("pctBackup2.Image")));
-            this.pctBackup2.Location = new System.Drawing.Point(290, 50);
+            this.pctBackup2.Location = new System.Drawing.Point(314, 50);
             this.pctBackup2.Name = "pctBackup2";
             this.pctBackup2.Size = new System.Drawing.Size(28, 25);
             this.pctBackup2.TabIndex = 46;
@@ -271,7 +271,7 @@
             // pctBackup1
             // 
             this.pctBackup1.Image = ((System.Drawing.Image)(resources.GetObject("pctBackup1.Image")));
-            this.pctBackup1.Location = new System.Drawing.Point(290, 19);
+            this.pctBackup1.Location = new System.Drawing.Point(314, 19);
             this.pctBackup1.Name = "pctBackup1";
             this.pctBackup1.Size = new System.Drawing.Size(28, 25);
             this.pctBackup1.TabIndex = 45;
@@ -280,9 +280,9 @@
             // 
             // txtSaveToURL
             // 
-            this.txtSaveToURL.Location = new System.Drawing.Point(97, 19);
+            this.txtSaveToURL.Location = new System.Drawing.Point(121, 19);
             this.txtSaveToURL.Name = "txtSaveToURL";
-            this.txtSaveToURL.Size = new System.Drawing.Size(192, 25);
+            this.txtSaveToURL.Size = new System.Drawing.Size(192, 29);
             this.txtSaveToURL.TabIndex = 43;
             // 
             // label7
@@ -290,7 +290,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(11, 22);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 17);
+            this.label7.Size = new System.Drawing.Size(102, 23);
             this.label7.TabIndex = 44;
             this.label7.Text = "Save To URL";
             // 
@@ -315,10 +315,10 @@
             this.tabPage2.Controls.Add(this.btnOpenRestoreFile);
             this.tabPage2.Controls.Add(this.txtSqlFileAddress);
             this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Location = new System.Drawing.Point(4, 26);
+            this.tabPage2.Location = new System.Drawing.Point(4, 30);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(474, 281);
+            this.tabPage2.Size = new System.Drawing.Size(474, 277);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Restore";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -331,10 +331,10 @@
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnCancel.Location = new System.Drawing.Point(252, 221);
+            this.btnCancel.Location = new System.Drawing.Point(256, 221);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(101, 40);
+            this.btnCancel.Size = new System.Drawing.Size(113, 40);
             this.btnCancel.TabIndex = 63;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -344,7 +344,7 @@
             // pctRestore4
             // 
             this.pctRestore4.Image = ((System.Drawing.Image)(resources.GetObject("pctRestore4.Image")));
-            this.pctRestore4.Location = new System.Drawing.Point(290, 112);
+            this.pctRestore4.Location = new System.Drawing.Point(295, 113);
             this.pctRestore4.Name = "pctRestore4";
             this.pctRestore4.Size = new System.Drawing.Size(28, 25);
             this.pctRestore4.TabIndex = 62;
@@ -354,7 +354,7 @@
             // pctRestore3
             // 
             this.pctRestore3.Image = ((System.Drawing.Image)(resources.GetObject("pctRestore3.Image")));
-            this.pctRestore3.Location = new System.Drawing.Point(290, 81);
+            this.pctRestore3.Location = new System.Drawing.Point(295, 82);
             this.pctRestore3.Name = "pctRestore3";
             this.pctRestore3.Size = new System.Drawing.Size(28, 25);
             this.pctRestore3.TabIndex = 61;
@@ -364,7 +364,7 @@
             // pctRestore2
             // 
             this.pctRestore2.Image = ((System.Drawing.Image)(resources.GetObject("pctRestore2.Image")));
-            this.pctRestore2.Location = new System.Drawing.Point(290, 50);
+            this.pctRestore2.Location = new System.Drawing.Point(295, 51);
             this.pctRestore2.Name = "pctRestore2";
             this.pctRestore2.Size = new System.Drawing.Size(28, 25);
             this.pctRestore2.TabIndex = 60;
@@ -378,9 +378,9 @@
             this.btnRestoreDatabase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestoreDatabase.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRestoreDatabase.Image = ((System.Drawing.Image)(resources.GetObject("btnRestoreDatabase.Image")));
-            this.btnRestoreDatabase.Location = new System.Drawing.Point(145, 221);
+            this.btnRestoreDatabase.Location = new System.Drawing.Point(139, 221);
             this.btnRestoreDatabase.Name = "btnRestoreDatabase";
-            this.btnRestoreDatabase.Size = new System.Drawing.Size(101, 40);
+            this.btnRestoreDatabase.Size = new System.Drawing.Size(113, 40);
             this.btnRestoreDatabase.TabIndex = 47;
             this.btnRestoreDatabase.Text = "Restore";
             this.btnRestoreDatabase.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -391,7 +391,7 @@
             // pctRestore1
             // 
             this.pctRestore1.Image = ((System.Drawing.Image)(resources.GetObject("pctRestore1.Image")));
-            this.pctRestore1.Location = new System.Drawing.Point(290, 19);
+            this.pctRestore1.Location = new System.Drawing.Point(295, 20);
             this.pctRestore1.Name = "pctRestore1";
             this.pctRestore1.Size = new System.Drawing.Size(28, 25);
             this.pctRestore1.TabIndex = 59;
@@ -400,9 +400,9 @@
             // 
             // txtRestoreServer
             // 
-            this.txtRestoreServer.Location = new System.Drawing.Point(97, 50);
+            this.txtRestoreServer.Location = new System.Drawing.Point(101, 50);
             this.txtRestoreServer.Name = "txtRestoreServer";
-            this.txtRestoreServer.Size = new System.Drawing.Size(192, 25);
+            this.txtRestoreServer.Size = new System.Drawing.Size(192, 29);
             this.txtRestoreServer.TabIndex = 49;
             // 
             // label9
@@ -410,7 +410,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(11, 53);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 17);
+            this.label9.Size = new System.Drawing.Size(57, 23);
             this.label9.TabIndex = 50;
             this.label9.Text = "Server";
             // 
@@ -419,15 +419,15 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(11, 84);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 17);
+            this.label12.Size = new System.Drawing.Size(81, 23);
             this.label12.TabIndex = 52;
             this.label12.Text = "Database";
             // 
             // txtRestoreDatabase
             // 
-            this.txtRestoreDatabase.Location = new System.Drawing.Point(97, 81);
+            this.txtRestoreDatabase.Location = new System.Drawing.Point(101, 81);
             this.txtRestoreDatabase.Name = "txtRestoreDatabase";
-            this.txtRestoreDatabase.Size = new System.Drawing.Size(192, 25);
+            this.txtRestoreDatabase.Size = new System.Drawing.Size(192, 29);
             this.txtRestoreDatabase.TabIndex = 51;
             // 
             // label13
@@ -435,15 +435,15 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(11, 115);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(50, 17);
+            this.label13.Size = new System.Drawing.Size(64, 23);
             this.label13.TabIndex = 54;
             this.label13.Text = "User Id";
             // 
             // txtRestoreUserId
             // 
-            this.txtRestoreUserId.Location = new System.Drawing.Point(97, 112);
+            this.txtRestoreUserId.Location = new System.Drawing.Point(101, 112);
             this.txtRestoreUserId.Name = "txtRestoreUserId";
-            this.txtRestoreUserId.Size = new System.Drawing.Size(192, 25);
+            this.txtRestoreUserId.Size = new System.Drawing.Size(192, 29);
             this.txtRestoreUserId.TabIndex = 53;
             // 
             // label14
@@ -451,15 +451,15 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(11, 177);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(32, 17);
+            this.label14.Size = new System.Drawing.Size(41, 23);
             this.label14.TabIndex = 58;
             this.label14.Text = "Port";
             // 
             // txtRestorePort
             // 
-            this.txtRestorePort.Location = new System.Drawing.Point(97, 174);
+            this.txtRestorePort.Location = new System.Drawing.Point(101, 174);
             this.txtRestorePort.Name = "txtRestorePort";
-            this.txtRestorePort.Size = new System.Drawing.Size(192, 25);
+            this.txtRestorePort.Size = new System.Drawing.Size(192, 29);
             this.txtRestorePort.TabIndex = 57;
             // 
             // label15
@@ -467,24 +467,24 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(11, 146);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(64, 17);
+            this.label15.Size = new System.Drawing.Size(80, 23);
             this.label15.TabIndex = 56;
             this.label15.Text = "Password";
             // 
             // txtRestorePassword
             // 
-            this.txtRestorePassword.Location = new System.Drawing.Point(97, 143);
+            this.txtRestorePassword.Location = new System.Drawing.Point(101, 143);
             this.txtRestorePassword.Name = "txtRestorePassword";
             this.txtRestorePassword.PasswordChar = '*';
-            this.txtRestorePassword.Size = new System.Drawing.Size(192, 25);
+            this.txtRestorePassword.Size = new System.Drawing.Size(192, 29);
             this.txtRestorePassword.TabIndex = 55;
             // 
             // btnOpenRestoreFile
             // 
             this.btnOpenRestoreFile.Image = ((System.Drawing.Image)(resources.GetObject("btnOpenRestoreFile.Image")));
-            this.btnOpenRestoreFile.Location = new System.Drawing.Point(259, 18);
+            this.btnOpenRestoreFile.Location = new System.Drawing.Point(264, 18);
             this.btnOpenRestoreFile.Name = "btnOpenRestoreFile";
-            this.btnOpenRestoreFile.Size = new System.Drawing.Size(30, 25);
+            this.btnOpenRestoreFile.Size = new System.Drawing.Size(30, 30);
             this.btnOpenRestoreFile.TabIndex = 48;
             this.btnOpenRestoreFile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOpenRestoreFile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -493,9 +493,9 @@
             // 
             // txtSqlFileAddress
             // 
-            this.txtSqlFileAddress.Location = new System.Drawing.Point(97, 19);
+            this.txtSqlFileAddress.Location = new System.Drawing.Point(101, 19);
             this.txtSqlFileAddress.Name = "txtSqlFileAddress";
-            this.txtSqlFileAddress.Size = new System.Drawing.Size(161, 25);
+            this.txtSqlFileAddress.Size = new System.Drawing.Size(161, 29);
             this.txtSqlFileAddress.TabIndex = 45;
             // 
             // label8
@@ -503,13 +503,13 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(11, 22);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 17);
+            this.label8.Size = new System.Drawing.Size(63, 23);
             this.label8.TabIndex = 46;
             this.label8.Text = "Sql File";
             // 
             // BackupRestoreDataUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(508, 336);

@@ -16,12 +16,16 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
     {
         Stock loStock;
         Location loLocation;
-        string[] lRecordData = new string[12];
+        LookUpValueUI loLookupValue;
+        string[] lRecordData = new string[15];
 
         string lDetailId;
         string lStockId;
         string lStockDescription;
         string lUnit;
+        string lBrand;
+        string lSupplier;
+        string lPicture;
         string lLocationId;
         decimal lQtyIN;
         decimal lBalance;
@@ -35,20 +39,28 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
             InitializeComponent();
             loStock = new Stock();
             loLocation = new Location();
+            loLookupValue = new LookUpValueUI();
+            lBrand = "";
+            lSupplier = "";
+            lPicture = "";
             lDetailId = "";
             lOperator = "Add";
         }
 
-        public StockReceivingItemDetailUI(string pDetailId, string pStockId, string pStockDescription, string pUnit, 
-            string pLocationId, decimal pQtyIN,decimal pBalance, decimal pUnitPrice, decimal pTotalPrice, string pRemarks)
+        public StockReceivingItemDetailUI(string pDetailId, string pStockId, string pStockDescription, string pUnit, string pBrand, string pSupplier, 
+            string pPicture, string pLocationId, decimal pQtyIN,decimal pBalance, decimal pUnitPrice, decimal pTotalPrice, string pRemarks)
         {
             InitializeComponent();
             loStock = new Stock();
             loLocation = new Location();
+            loLookupValue = new LookUpValueUI();
             lDetailId = pDetailId;
             lStockId = pStockId;
             lStockDescription = pStockDescription;
             lUnit = pUnit;
+            lBrand = pBrand;
+            lSupplier = pSupplier;
+            lPicture = pPicture;
             lLocationId = pLocationId;
             lQtyIN = pQtyIN;
             lBalance = pBalance;
@@ -71,6 +83,9 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
             cboStockDescription.SelectedIndex = -1;
             cboStockDescription.Text = "";
             txtUnit.Clear();
+            txtBrand.Clear();
+            txtSupplier.Clear();
+            pbPicture.BackgroundImage = null;
             cboLocation.SelectedIndex = 0;
             txtQtyIN.Text = "1.00";
             lblRunningBalance.Text = "0.00";
@@ -130,6 +145,21 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
             {
                 cboStockDescription.SelectedValue = lStockId;
                 txtUnit.Text = lUnit;
+                txtBrand.Text = lBrand;
+                txtSupplier.Text = lSupplier;
+
+                try
+                {
+                    byte[] hextobyte = GlobalFunctions.HexToBytes(lPicture);
+                    pbPicture.BackgroundImage = GlobalFunctions.ConvertByteArrayToImage(hextobyte);
+                    pbPicture.BackgroundImageLayout = ImageLayout.Stretch;
+                }
+                catch
+                {
+                    lPicture = "";
+                    pbPicture.BackgroundImage = null;
+                }
+
                 cboLocation.SelectedValue = lLocationId;
                 txtQtyIN.Text = string.Format("{0:n}", lQtyIN);
                 txtBalance.Text = string.Format("{0:n}", lBalance);
@@ -151,6 +181,22 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
                 foreach (DataRow _dr in loStock.getStock(cboStockDescription.SelectedValue.ToString()).Rows)
                 {
                     txtUnit.Text = _dr["Unit"].ToString();
+                    txtBrand.Text = _dr["Brand"].ToString();
+                    txtSupplier.Text = _dr["Supplier"].ToString();
+
+                    try
+                    {
+                        lPicture = _dr["Picture"].ToString();
+                        byte[] hextobyte = GlobalFunctions.HexToBytes(lPicture);
+                        pbPicture.BackgroundImage = GlobalFunctions.ConvertByteArrayToImage(hextobyte);
+                        pbPicture.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    catch
+                    {
+                        lPicture = "";
+                        pbPicture.BackgroundImage = null;
+                    }
+
                     txtUnitPrice.Text = string.Format("{0:n}", decimal.Parse(_dr["Unit Price"].ToString()));
                     computeTotalPrice();
                     getQtyOnHand();
@@ -197,12 +243,12 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (decimal.Parse(txtQtyIN.Text) == 0)
+            /*if (decimal.Parse(txtQtyIN.Text) == 0)
             {
                 MessageBoxUI _mbStatus = new MessageBoxUI("Qty-IN must not be Zero(0)!", GlobalVariables.Icons.Error, GlobalVariables.Buttons.OK);
                 _mbStatus.ShowDialog();
                 return;
-            }
+            }*/
 
             lRecordData[0] = lDetailId;
             try
@@ -218,18 +264,21 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
             }
             lRecordData[2] = cboStockDescription.Text;
             lRecordData[3] = txtUnit.Text;
-            lRecordData[4] = cboLocation.SelectedValue.ToString();
-            lRecordData[5] = cboLocation.Text;
-            lRecordData[6] = string.Format("{0:n}", decimal.Parse(txtQtyIN.Text));
-            lRecordData[7] = string.Format("{0:n}", decimal.Parse(txtBalance.Text));
-            lRecordData[8] = string.Format("{0:n}", decimal.Parse(txtUnitPrice.Text));
-            lRecordData[9] = string.Format("{0:n}", decimal.Parse(txtTotalPrice.Text));
-            lRecordData[10] = GlobalFunctions.replaceChar(txtRemarks.Text);
+            lRecordData[4] = txtBrand.Text;
+            lRecordData[5] = txtSupplier.Text;
+            lRecordData[6] = lPicture;
+            lRecordData[7] = cboLocation.SelectedValue.ToString();
+            lRecordData[8] = cboLocation.Text;
+            lRecordData[9] = string.Format("{0:n}", decimal.Parse(txtQtyIN.Text));
+            lRecordData[10] = string.Format("{0:n}", decimal.Parse(txtBalance.Text));
+            lRecordData[11] = string.Format("{0:n}", decimal.Parse(txtUnitPrice.Text));
+            lRecordData[12] = string.Format("{0:n}", decimal.Parse(txtTotalPrice.Text));
+            lRecordData[13] = GlobalFunctions.replaceChar(txtRemarks.Text);
 
             object[] _params = { lRecordData };
             if (lOperator == "Add")
             {
-                lRecordData[11] = "Add";
+                lRecordData[14] = "Add";
                 ParentList.GetType().GetMethod("addData").Invoke(ParentList, _params);
                 MessageBoxUI _mbStatus = new MessageBoxUI("Successfully added!", GlobalVariables.Icons.Save, GlobalVariables.Buttons.OK);
                 _mbStatus.ShowDialog();
@@ -237,7 +286,7 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
             }
             else if (lOperator == "Edit")
             {
-                lRecordData[11] = "Edit";
+                lRecordData[14] = "Edit";
                 ParentList.GetType().GetMethod("updateData").Invoke(ParentList, _params);
                 Close();
             }
@@ -247,6 +296,18 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction.Details
         {
             getQtyOnHand();
             computeTotalQtyOnHand();
+        }
+
+        private void btnLookUpStock_Click(object sender, EventArgs e)
+        {
+            loLookupValue.lObject = loStock;
+            loLookupValue.lType = typeof(Stock);
+            loLookupValue.lTableName = "Stock";
+            loLookupValue.ShowDialog();
+            if (loLookupValue.lFromSelection)
+            {
+                cboStockDescription.SelectedValue = loLookupValue.lCode;
+            }
         }
     }
 }

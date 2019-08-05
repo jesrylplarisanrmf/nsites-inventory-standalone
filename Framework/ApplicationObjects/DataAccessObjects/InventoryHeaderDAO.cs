@@ -18,6 +18,7 @@ namespace NSites.ApplicationObjects.DataAccessObjects
         string lType;
         string lReference;
         string lCustomerId;
+        string lSalesInchargeId;
         string lSupplierId;
         decimal lTotalIN;
         decimal lTotalOUT;
@@ -53,6 +54,7 @@ namespace NSites.ApplicationObjects.DataAccessObjects
             lType = pObject.GetType().GetProperty("Type").GetValue(pObject, null).ToString();
             lReference = pObject.GetType().GetProperty("Reference").GetValue(pObject, null).ToString();
             lCustomerId = pObject.GetType().GetProperty("CustomerId").GetValue(pObject, null).ToString();
+            lSalesInchargeId = pObject.GetType().GetProperty("SalesInchargeId").GetValue(pObject, null).ToString();
             lSupplierId = pObject.GetType().GetProperty("SupplierId").GetValue(pObject, null).ToString();
             lTotalIN = decimal.Parse(pObject.GetType().GetProperty("TotalIN").GetValue(pObject, null).ToString());
             lTotalOUT = decimal.Parse(pObject.GetType().GetProperty("TotalOUT").GetValue(pObject, null).ToString());
@@ -216,6 +218,7 @@ namespace NSites.ApplicationObjects.DataAccessObjects
                                                                                lType + "','" +
                                                                                lReference + "','" +
                                                                                lCustomerId + "','" +
+                                                                               lSalesInchargeId + "','" +
                                                                                lSupplierId + "','" +
                                                                                lTotalIN + "','" +
                                                                                lTotalOUT + "','" + 
@@ -252,6 +255,7 @@ namespace NSites.ApplicationObjects.DataAccessObjects
                                                                             lType + "','" +
                                                                             lReference + "','" +
                                                                             lCustomerId + "','" +
+                                                                            lSalesInchargeId + "','" +
                                                                             lSupplierId + "','" +
                                                                             lTotalIN + "','" +
                                                                             lTotalOUT + "','" +
@@ -316,6 +320,40 @@ namespace NSites.ApplicationObjects.DataAccessObjects
             try
             {
                 MySqlCommand _cmd = new MySqlCommand("call spFinalizeInventoryHeader('" + pHeaderId + "','" +
+                                                                            GlobalVariables.Username + "','" +
+                                                                            GlobalVariables.Hostname + "')", GlobalVariables.Connection);
+                try
+                {
+                    _cmd.Transaction = pTrans;
+                    int _RowsAffected = _cmd.ExecuteNonQuery();
+                    if (_RowsAffected > 0)
+                    {
+                        _success = true;
+                    }
+                    else
+                    {
+                        _success = false;
+                    }
+                    return _success;
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool cancelInventoryHeader(string pHeaderId, string pCancelledReason, ref MySqlTransaction pTrans)
+        {
+            bool _success = false;
+            try
+            {
+                MySqlCommand _cmd = new MySqlCommand("call spCancelInventoryHeader('" + pHeaderId + "','" +
+                                                                            pCancelledReason + "', '" +
                                                                             GlobalVariables.Username + "','" +
                                                                             GlobalVariables.Hostname + "')", GlobalVariables.Connection);
                 try

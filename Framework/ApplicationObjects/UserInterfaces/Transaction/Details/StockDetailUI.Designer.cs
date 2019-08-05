@@ -82,19 +82,19 @@
             // 
             // txtUnit
             // 
-            this.txtUnit.Location = new System.Drawing.Point(85, 59);
+            this.txtUnit.Location = new System.Drawing.Point(90, 59);
             this.txtUnit.Name = "txtUnit";
             this.txtUnit.ReadOnly = true;
-            this.txtUnit.Size = new System.Drawing.Size(122, 25);
+            this.txtUnit.Size = new System.Drawing.Size(122, 29);
             this.txtUnit.TabIndex = 6;
             this.txtUnit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 62);
+            this.label2.Location = new System.Drawing.Point(15, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 17);
+            this.label2.Size = new System.Drawing.Size(42, 23);
             this.label2.TabIndex = 7;
             this.label2.Text = "Unit";
             // 
@@ -102,17 +102,17 @@
             // 
             this.cboStock.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboStock.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboStock.Location = new System.Drawing.Point(85, 28);
+            this.cboStock.Location = new System.Drawing.Point(90, 28);
             this.cboStock.Name = "cboStock";
-            this.cboStock.Size = new System.Drawing.Size(342, 25);
+            this.cboStock.Size = new System.Drawing.Size(342, 29);
             this.cboStock.TabIndex = 0;
             this.cboStock.SelectedIndexChanged += new System.EventHandler(this.cboItem_SelectedIndexChanged);
             // 
             // txtQty
             // 
-            this.txtQty.Location = new System.Drawing.Point(85, 90);
+            this.txtQty.Location = new System.Drawing.Point(90, 90);
             this.txtQty.Name = "txtQty";
-            this.txtQty.Size = new System.Drawing.Size(122, 25);
+            this.txtQty.Size = new System.Drawing.Size(122, 29);
             this.txtQty.TabIndex = 1;
             this.txtQty.Text = "0.00";
             this.txtQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -121,15 +121,15 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 93);
+            this.label4.Location = new System.Drawing.Point(15, 93);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 17);
+            this.label4.Size = new System.Drawing.Size(37, 23);
             this.label4.TabIndex = 4;
             this.label4.Text = "Qty";
             // 
             // txtRemarks
             // 
-            this.txtRemarks.Location = new System.Drawing.Point(85, 121);
+            this.txtRemarks.Location = new System.Drawing.Point(90, 121);
             this.txtRemarks.Multiline = true;
             this.txtRemarks.Name = "txtRemarks";
             this.txtRemarks.Size = new System.Drawing.Size(342, 50);
@@ -138,24 +138,24 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 124);
+            this.label3.Location = new System.Drawing.Point(15, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 17);
+            this.label3.Size = new System.Drawing.Size(74, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "Remarks";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 31);
+            this.label1.Location = new System.Drawing.Point(15, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 17);
+            this.label1.Size = new System.Drawing.Size(50, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Stock";
             // 
             // StockDetailUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(479, 269);

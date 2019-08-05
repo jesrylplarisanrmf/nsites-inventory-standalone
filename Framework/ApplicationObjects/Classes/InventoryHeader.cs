@@ -56,6 +56,11 @@ namespace NSites.ApplicationObjects.Classes
             get;
             set;
         }
+        public string SalesInchargeId
+        {
+            get;
+            set;
+        }
         public string SupplierId
         {
             get;
@@ -168,6 +173,11 @@ namespace NSites.ApplicationObjects.Classes
         public bool finalize(string pHeaderId, ref MySqlTransaction pTrans)
         {
             return lInventoryHeaderDAO.finalizeInventoryHeader(pHeaderId, ref pTrans);
+        }
+
+        public bool cancel(string pHeaderId, string pCancelledReason, ref MySqlTransaction pTrans)
+        {
+            return lInventoryHeaderDAO.cancelInventoryHeader(pHeaderId, pCancelledReason, ref pTrans);
         }
 
         public bool addToAccountPayable(string pDate,string pStockReceivingId, string pReference, string pSupplierId, decimal pTotalAmount, string pDueDate, ref MySqlTransaction pTrans)

@@ -74,7 +74,7 @@
             // 
             // txtRemarks
             // 
-            this.txtRemarks.Location = new System.Drawing.Point(110, 82);
+            this.txtRemarks.Location = new System.Drawing.Point(118, 82);
             this.txtRemarks.Multiline = true;
             this.txtRemarks.Name = "txtRemarks";
             this.txtRemarks.Size = new System.Drawing.Size(268, 51);
@@ -83,15 +83,15 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(25, 85);
+            this.label6.Location = new System.Drawing.Point(20, 85);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 17);
+            this.label6.Size = new System.Drawing.Size(74, 23);
             this.label6.TabIndex = 13;
             this.label6.Text = "Remarks";
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(110, 26);
+            this.txtDescription.Location = new System.Drawing.Point(118, 26);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(268, 50);
@@ -100,15 +100,15 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 29);
+            this.label2.Location = new System.Drawing.Point(20, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 17);
+            this.label2.Size = new System.Drawing.Size(96, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Description";
             // 
             // UnitDetailUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(433, 245);

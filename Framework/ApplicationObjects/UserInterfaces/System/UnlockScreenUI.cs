@@ -44,6 +44,7 @@ namespace NSites.ApplicationObjects.UserInterfaces.Systems
             User _User = new User();
             if (_User.autenticateUser(GlobalVariables.Username, txtPassword.Text))
             {
+                new Common().resetIdleCountdown(null, new EventArgs());
                 this.Close();
             }
             else

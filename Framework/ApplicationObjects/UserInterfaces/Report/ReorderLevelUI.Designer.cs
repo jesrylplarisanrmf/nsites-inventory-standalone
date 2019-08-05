@@ -77,9 +77,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(117)))));
-            this.label3.Location = new System.Drawing.Point(47, 6);
+            this.label3.Location = new System.Drawing.Point(47, 1);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 37);
+            this.label3.Size = new System.Drawing.Size(230, 46);
             this.label3.TabIndex = 192;
             this.label3.Text = "Reorder Level";
             // 
@@ -91,9 +91,9 @@
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefresh.Location = new System.Drawing.Point(589, 5);
+            this.btnRefresh.Location = new System.Drawing.Point(564, 5);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(101, 40);
+            this.btnRefresh.Size = new System.Drawing.Size(113, 40);
             this.btnRefresh.TabIndex = 175;
             this.btnRefresh.Text = "&Refresh";
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -108,9 +108,9 @@
             this.btnPreview.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreview.Image = ((System.Drawing.Image)(resources.GetObject("btnPreview.Image")));
             this.btnPreview.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPreview.Location = new System.Drawing.Point(693, 5);
+            this.btnPreview.Location = new System.Drawing.Point(681, 5);
             this.btnPreview.Name = "btnPreview";
-            this.btnPreview.Size = new System.Drawing.Size(101, 40);
+            this.btnPreview.Size = new System.Drawing.Size(113, 40);
             this.btnPreview.TabIndex = 49;
             this.btnPreview.Text = "&Preview";
             this.btnPreview.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -166,22 +166,23 @@
             // 
             // cmsFunctions
             // 
+            this.cmsFunctions.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsFunctions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewAllRecordsToolStripMenuItem});
             this.cmsFunctions.Name = "cmsFunctions";
-            this.cmsFunctions.Size = new System.Drawing.Size(187, 26);
+            this.cmsFunctions.Size = new System.Drawing.Size(225, 30);
             // 
             // viewAllRecordsToolStripMenuItem
             // 
             this.viewAllRecordsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("viewAllRecordsToolStripMenuItem.Image")));
             this.viewAllRecordsToolStripMenuItem.Name = "viewAllRecordsToolStripMenuItem";
-            this.viewAllRecordsToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.viewAllRecordsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.viewAllRecordsToolStripMenuItem.Text = "View Hidden Records";
             this.viewAllRecordsToolStripMenuItem.Click += new System.EventHandler(this.viewAllRecordsToolStripMenuItem_Click);
             // 
             // ReorderLevelUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 498);
             this.Controls.Add(this.panel1);
@@ -192,7 +193,6 @@
             this.Name = "ReorderLevelUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reorder Level";
-            this.Load += new System.EventHandler(this.ReorderLevelUI_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -221,6 +221,11 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
                                     loLocationDetail.ParentList = this;
                                     loLocationDetail.ShowDialog();
                                     break;
+                                case "Brand":
+                                    BrandDetailUI loBrandDetail = new BrandDetailUI(lRecord);
+                                    loBrandDetail.ParentList = this;
+                                    loBrandDetail.ShowDialog();
+                                    break;
                                 case "Unit":
                                     UnitDetailUI loUnitDetail = new UnitDetailUI(lRecord);
                                     loUnitDetail.ParentList = this;
@@ -245,6 +250,11 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
                                     CustomerDetailUI loCustomerDetail = new CustomerDetailUI(lRecord);
                                     loCustomerDetail.ParentList = this;
                                     loCustomerDetail.ShowDialog();
+                                    break;
+                                case "SalesIncharge":
+                                    SalesInchargeDetailUI loSalesInchargeDetail = new SalesInchargeDetailUI(lRecord);
+                                    loSalesInchargeDetail.ParentList = this;
+                                    loSalesInchargeDetail.ShowDialog();
                                     break;
                                 case "Supplier":
                                     SupplierDetailUI loSupplierDetail = new SupplierDetailUI(lRecord);
@@ -292,6 +302,11 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
                     loLocationDetail.ParentList = this;
                     loLocationDetail.ShowDialog();
                     break;
+                case "Brand":
+                    BrandDetailUI loBrandDetail = new BrandDetailUI();
+                    loBrandDetail.ParentList = this;
+                    loBrandDetail.ShowDialog();
+                    break;
                 case "Unit":
                     UnitDetailUI loUnitDetail = new UnitDetailUI();
                     loUnitDetail.ParentList = this;
@@ -316,6 +331,11 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
                     CustomerDetailUI loCustomerDetail = new CustomerDetailUI();
                     loCustomerDetail.ParentList = this;
                     loCustomerDetail.ShowDialog();
+                    break;
+                case "SalesIncharge":
+                    SalesInchargeDetailUI loSalesInchargeDetail = new SalesInchargeDetailUI();
+                    loSalesInchargeDetail.ParentList = this;
+                    loSalesInchargeDetail.ShowDialog();
                     break;
                 case "Supplier":
                     SupplierDetailUI loSupplierDetail = new SupplierDetailUI();
@@ -506,13 +526,23 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
                         e.CellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                     }
                 }
+                else if(this.dgvLists.Columns[e.ColumnIndex].Name == "Picture")
+                {
+                    this.dgvLists.Columns[e.ColumnIndex].Visible = false;
+                }
             }
             catch { }
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            refresh("",txtSearch.Text, true);
+            if (txtSearch.Text != "") { 
+                refresh("", txtSearch.Text, true);
+            }
+            else
+            {
+                refresh("ViewAll", "", true);
+            }
         }
 
         private void dgvLists_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -548,6 +578,35 @@ namespace NSites.ApplicationObjects.UserInterfaces.MasterFile
         private void tsmiPreview_Click(object sender, EventArgs e)
         {
             btnPreview_Click(null, new EventArgs());
+        }
+
+        private void openAdvanceSearch()
+        {
+            if (!GlobalFunctions.checkRights("tsmStock", "SearchStock"))
+            {
+                return;
+            }
+            try
+            {
+                SearchStockUI _SearchStock = new SearchStockUI();
+                _SearchStock.ShowDialog();
+                txtSearch.Text = _SearchStock.lSearch;
+                try { dgvLists.Rows[_SearchStock.lCurrRow].Selected = true; } catch { }
+            }
+            catch (Exception ex)
+            {
+                MessageBoxUI mb = new MessageBoxUI(ex, GlobalVariables.Icons.Error, GlobalVariables.Buttons.Close);
+                mb.ShowDialog();
+                return;
+            }
+        }
+
+        private void ListFormUI_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1 && lType.Name == "Stock")
+            {
+                openAdvanceSearch();
+            }
         }
     }
 }

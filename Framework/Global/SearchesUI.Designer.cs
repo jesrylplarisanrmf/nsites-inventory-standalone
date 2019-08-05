@@ -103,9 +103,9 @@
             // 
             this.chkPrivate.AutoSize = true;
             this.chkPrivate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkPrivate.Location = new System.Drawing.Point(88, 363);
+            this.chkPrivate.Location = new System.Drawing.Point(102, 363);
             this.chkPrivate.Name = "chkPrivate";
-            this.chkPrivate.Size = new System.Drawing.Size(62, 19);
+            this.chkPrivate.Size = new System.Drawing.Size(76, 24);
             this.chkPrivate.TabIndex = 39;
             this.chkPrivate.Text = "Private";
             this.chkPrivate.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.Location = new System.Drawing.Point(557, 332);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(63, 25);
+            this.btnClear.Size = new System.Drawing.Size(63, 29);
             this.btnClear.TabIndex = 38;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -130,7 +130,7 @@
             this.btnRename.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRename.Location = new System.Drawing.Point(492, 332);
             this.btnRename.Name = "btnRename";
-            this.btnRename.Size = new System.Drawing.Size(63, 25);
+            this.btnRename.Size = new System.Drawing.Size(63, 29);
             this.btnRename.TabIndex = 37;
             this.btnRename.Text = "Rename";
             this.btnRename.UseVisualStyleBackColor = false;
@@ -143,7 +143,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(427, 332);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(63, 25);
+            this.btnDelete.Size = new System.Drawing.Size(63, 29);
             this.btnDelete.TabIndex = 36;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -156,7 +156,7 @@
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(362, 332);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(63, 25);
+            this.btnSave.Size = new System.Drawing.Size(63, 29);
             this.btnSave.TabIndex = 35;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -169,7 +169,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(297, 332);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(63, 25);
+            this.btnAdd.Size = new System.Drawing.Size(63, 29);
             this.btnAdd.TabIndex = 34;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -179,18 +179,18 @@
             // 
             this.cboTemplateName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTemplateName.FormattingEnabled = true;
-            this.cboTemplateName.Location = new System.Drawing.Point(88, 332);
+            this.cboTemplateName.Location = new System.Drawing.Point(102, 332);
             this.cboTemplateName.Name = "cboTemplateName";
-            this.cboTemplateName.Size = new System.Drawing.Size(203, 25);
+            this.cboTemplateName.Size = new System.Drawing.Size(189, 29);
             this.cboTemplateName.TabIndex = 33;
             this.cboTemplateName.SelectedIndexChanged += new System.EventHandler(this.cboTemplateName_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 335);
+            this.label1.Location = new System.Drawing.Point(14, 335);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 17);
+            this.label1.Size = new System.Drawing.Size(86, 23);
             this.label1.TabIndex = 32;
             this.label1.Text = "Templates";
             // 
@@ -257,10 +257,10 @@
             this.tabPage2.Controls.Add(this.btnLookUp3);
             this.tabPage2.Controls.Add(this.btnLookUp2);
             this.tabPage2.Controls.Add(this.btnLookUp1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 26);
+            this.tabPage2.Location = new System.Drawing.Point(4, 30);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(603, 281);
+            this.tabPage2.Size = new System.Drawing.Size(603, 277);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Filters";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -270,7 +270,7 @@
             this.cboValue8.FormattingEnabled = true;
             this.cboValue8.Location = new System.Drawing.Point(328, 246);
             this.cboValue8.Name = "cboValue8";
-            this.cboValue8.Size = new System.Drawing.Size(153, 25);
+            this.cboValue8.Size = new System.Drawing.Size(153, 29);
             this.cboValue8.TabIndex = 77;
             // 
             // cboValue7
@@ -278,7 +278,7 @@
             this.cboValue7.FormattingEnabled = true;
             this.cboValue7.Location = new System.Drawing.Point(328, 215);
             this.cboValue7.Name = "cboValue7";
-            this.cboValue7.Size = new System.Drawing.Size(153, 25);
+            this.cboValue7.Size = new System.Drawing.Size(153, 29);
             this.cboValue7.TabIndex = 76;
             // 
             // cboValue6
@@ -286,7 +286,7 @@
             this.cboValue6.FormattingEnabled = true;
             this.cboValue6.Location = new System.Drawing.Point(328, 184);
             this.cboValue6.Name = "cboValue6";
-            this.cboValue6.Size = new System.Drawing.Size(153, 25);
+            this.cboValue6.Size = new System.Drawing.Size(153, 29);
             this.cboValue6.TabIndex = 75;
             // 
             // cboValue5
@@ -294,7 +294,7 @@
             this.cboValue5.FormattingEnabled = true;
             this.cboValue5.Location = new System.Drawing.Point(328, 153);
             this.cboValue5.Name = "cboValue5";
-            this.cboValue5.Size = new System.Drawing.Size(153, 25);
+            this.cboValue5.Size = new System.Drawing.Size(153, 29);
             this.cboValue5.TabIndex = 74;
             // 
             // cboValue4
@@ -302,7 +302,7 @@
             this.cboValue4.FormattingEnabled = true;
             this.cboValue4.Location = new System.Drawing.Point(328, 122);
             this.cboValue4.Name = "cboValue4";
-            this.cboValue4.Size = new System.Drawing.Size(153, 25);
+            this.cboValue4.Size = new System.Drawing.Size(153, 29);
             this.cboValue4.TabIndex = 73;
             // 
             // cboValue3
@@ -310,7 +310,7 @@
             this.cboValue3.FormattingEnabled = true;
             this.cboValue3.Location = new System.Drawing.Point(328, 91);
             this.cboValue3.Name = "cboValue3";
-            this.cboValue3.Size = new System.Drawing.Size(153, 25);
+            this.cboValue3.Size = new System.Drawing.Size(153, 29);
             this.cboValue3.TabIndex = 72;
             // 
             // cboValue2
@@ -318,7 +318,7 @@
             this.cboValue2.FormattingEnabled = true;
             this.cboValue2.Location = new System.Drawing.Point(328, 60);
             this.cboValue2.Name = "cboValue2";
-            this.cboValue2.Size = new System.Drawing.Size(153, 25);
+            this.cboValue2.Size = new System.Drawing.Size(153, 29);
             this.cboValue2.TabIndex = 71;
             // 
             // cboValue1
@@ -326,7 +326,7 @@
             this.cboValue1.FormattingEnabled = true;
             this.cboValue1.Location = new System.Drawing.Point(328, 29);
             this.cboValue1.Name = "cboValue1";
-            this.cboValue1.Size = new System.Drawing.Size(153, 25);
+            this.cboValue1.Size = new System.Drawing.Size(153, 29);
             this.cboValue1.TabIndex = 70;
             // 
             // panel2
@@ -349,7 +349,7 @@
             this.chkOR1.AutoSize = true;
             this.chkOR1.Location = new System.Drawing.Point(8, 7);
             this.chkOR1.Name = "chkOR1";
-            this.chkOR1.Size = new System.Drawing.Size(15, 14);
+            this.chkOR1.Size = new System.Drawing.Size(18, 17);
             this.chkOR1.TabIndex = 38;
             this.chkOR1.UseVisualStyleBackColor = true;
             this.chkOR1.CheckedChanged += new System.EventHandler(this.chkOR1_CheckedChanged);
@@ -359,7 +359,7 @@
             this.chkOR2.AutoSize = true;
             this.chkOR2.Location = new System.Drawing.Point(8, 38);
             this.chkOR2.Name = "chkOR2";
-            this.chkOR2.Size = new System.Drawing.Size(15, 14);
+            this.chkOR2.Size = new System.Drawing.Size(18, 17);
             this.chkOR2.TabIndex = 39;
             this.chkOR2.UseVisualStyleBackColor = true;
             this.chkOR2.CheckedChanged += new System.EventHandler(this.chkOR2_CheckedChanged);
@@ -369,7 +369,7 @@
             this.chkOR3.AutoSize = true;
             this.chkOR3.Location = new System.Drawing.Point(8, 69);
             this.chkOR3.Name = "chkOR3";
-            this.chkOR3.Size = new System.Drawing.Size(15, 14);
+            this.chkOR3.Size = new System.Drawing.Size(18, 17);
             this.chkOR3.TabIndex = 40;
             this.chkOR3.UseVisualStyleBackColor = true;
             this.chkOR3.CheckedChanged += new System.EventHandler(this.chkOR3_CheckedChanged);
@@ -379,7 +379,7 @@
             this.chkOR4.AutoSize = true;
             this.chkOR4.Location = new System.Drawing.Point(8, 100);
             this.chkOR4.Name = "chkOR4";
-            this.chkOR4.Size = new System.Drawing.Size(15, 14);
+            this.chkOR4.Size = new System.Drawing.Size(18, 17);
             this.chkOR4.TabIndex = 41;
             this.chkOR4.UseVisualStyleBackColor = true;
             this.chkOR4.CheckedChanged += new System.EventHandler(this.chkOR4_CheckedChanged);
@@ -389,7 +389,7 @@
             this.chkOR7.AutoSize = true;
             this.chkOR7.Location = new System.Drawing.Point(8, 193);
             this.chkOR7.Name = "chkOR7";
-            this.chkOR7.Size = new System.Drawing.Size(15, 14);
+            this.chkOR7.Size = new System.Drawing.Size(18, 17);
             this.chkOR7.TabIndex = 44;
             this.chkOR7.UseVisualStyleBackColor = true;
             this.chkOR7.CheckedChanged += new System.EventHandler(this.chkOR7_CheckedChanged);
@@ -399,7 +399,7 @@
             this.chkOR5.AutoSize = true;
             this.chkOR5.Location = new System.Drawing.Point(8, 131);
             this.chkOR5.Name = "chkOR5";
-            this.chkOR5.Size = new System.Drawing.Size(15, 14);
+            this.chkOR5.Size = new System.Drawing.Size(18, 17);
             this.chkOR5.TabIndex = 42;
             this.chkOR5.UseVisualStyleBackColor = true;
             this.chkOR5.CheckedChanged += new System.EventHandler(this.chkOR5_CheckedChanged);
@@ -409,7 +409,7 @@
             this.chkOR6.AutoSize = true;
             this.chkOR6.Location = new System.Drawing.Point(8, 162);
             this.chkOR6.Name = "chkOR6";
-            this.chkOR6.Size = new System.Drawing.Size(15, 14);
+            this.chkOR6.Size = new System.Drawing.Size(18, 17);
             this.chkOR6.TabIndex = 43;
             this.chkOR6.UseVisualStyleBackColor = true;
             this.chkOR6.CheckedChanged += new System.EventHandler(this.chkOR6_CheckedChanged);
@@ -434,7 +434,7 @@
             this.chkAND1.AutoSize = true;
             this.chkAND1.Location = new System.Drawing.Point(8, 7);
             this.chkAND1.Name = "chkAND1";
-            this.chkAND1.Size = new System.Drawing.Size(15, 14);
+            this.chkAND1.Size = new System.Drawing.Size(18, 17);
             this.chkAND1.TabIndex = 38;
             this.chkAND1.UseVisualStyleBackColor = true;
             this.chkAND1.CheckedChanged += new System.EventHandler(this.chkAND1_CheckedChanged);
@@ -444,7 +444,7 @@
             this.chkAND2.AutoSize = true;
             this.chkAND2.Location = new System.Drawing.Point(8, 38);
             this.chkAND2.Name = "chkAND2";
-            this.chkAND2.Size = new System.Drawing.Size(15, 14);
+            this.chkAND2.Size = new System.Drawing.Size(18, 17);
             this.chkAND2.TabIndex = 39;
             this.chkAND2.UseVisualStyleBackColor = true;
             this.chkAND2.CheckedChanged += new System.EventHandler(this.chkAND2_CheckedChanged);
@@ -454,7 +454,7 @@
             this.chkAND3.AutoSize = true;
             this.chkAND3.Location = new System.Drawing.Point(8, 69);
             this.chkAND3.Name = "chkAND3";
-            this.chkAND3.Size = new System.Drawing.Size(15, 14);
+            this.chkAND3.Size = new System.Drawing.Size(18, 17);
             this.chkAND3.TabIndex = 40;
             this.chkAND3.UseVisualStyleBackColor = true;
             this.chkAND3.CheckedChanged += new System.EventHandler(this.chkAND3_CheckedChanged);
@@ -464,7 +464,7 @@
             this.chkAND4.AutoSize = true;
             this.chkAND4.Location = new System.Drawing.Point(8, 100);
             this.chkAND4.Name = "chkAND4";
-            this.chkAND4.Size = new System.Drawing.Size(15, 14);
+            this.chkAND4.Size = new System.Drawing.Size(18, 17);
             this.chkAND4.TabIndex = 41;
             this.chkAND4.UseVisualStyleBackColor = true;
             this.chkAND4.CheckedChanged += new System.EventHandler(this.chkAND4_CheckedChanged);
@@ -474,7 +474,7 @@
             this.chkAND7.AutoSize = true;
             this.chkAND7.Location = new System.Drawing.Point(8, 193);
             this.chkAND7.Name = "chkAND7";
-            this.chkAND7.Size = new System.Drawing.Size(15, 14);
+            this.chkAND7.Size = new System.Drawing.Size(18, 17);
             this.chkAND7.TabIndex = 44;
             this.chkAND7.UseVisualStyleBackColor = true;
             this.chkAND7.CheckedChanged += new System.EventHandler(this.chkAND7_CheckedChanged);
@@ -484,7 +484,7 @@
             this.chkAND5.AutoSize = true;
             this.chkAND5.Location = new System.Drawing.Point(8, 131);
             this.chkAND5.Name = "chkAND5";
-            this.chkAND5.Size = new System.Drawing.Size(15, 14);
+            this.chkAND5.Size = new System.Drawing.Size(18, 17);
             this.chkAND5.TabIndex = 42;
             this.chkAND5.UseVisualStyleBackColor = true;
             this.chkAND5.CheckedChanged += new System.EventHandler(this.chkAND5_CheckedChanged);
@@ -494,7 +494,7 @@
             this.chkAND6.AutoSize = true;
             this.chkAND6.Location = new System.Drawing.Point(8, 162);
             this.chkAND6.Name = "chkAND6";
-            this.chkAND6.Size = new System.Drawing.Size(15, 14);
+            this.chkAND6.Size = new System.Drawing.Size(18, 17);
             this.chkAND6.TabIndex = 43;
             this.chkAND6.UseVisualStyleBackColor = true;
             this.chkAND6.CheckedChanged += new System.EventHandler(this.chkAND6_CheckedChanged);
@@ -505,7 +505,7 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(566, 6);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(26, 17);
+            this.label9.Size = new System.Drawing.Size(34, 23);
             this.label9.TabIndex = 51;
             this.label9.Text = "OR";
             // 
@@ -515,14 +515,14 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(524, 6);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 17);
+            this.label8.Size = new System.Drawing.Size(48, 23);
             this.label8.TabIndex = 50;
             this.label8.Text = "AND";
             // 
             // btnLookUp8
             // 
             this.btnLookUp8.Image = ((System.Drawing.Image)(resources.GetObject("btnLookUp8.Image")));
-            this.btnLookUp8.Location = new System.Drawing.Point(487, 243);
+            this.btnLookUp8.Location = new System.Drawing.Point(487, 246);
             this.btnLookUp8.Name = "btnLookUp8";
             this.btnLookUp8.Size = new System.Drawing.Size(34, 29);
             this.btnLookUp8.TabIndex = 37;
@@ -546,7 +546,7 @@
             "Contains"});
             this.cboOperator8.Location = new System.Drawing.Point(174, 246);
             this.cboOperator8.Name = "cboOperator8";
-            this.cboOperator8.Size = new System.Drawing.Size(148, 25);
+            this.cboOperator8.Size = new System.Drawing.Size(148, 29);
             this.cboOperator8.TabIndex = 36;
             // 
             // cboField8
@@ -556,7 +556,7 @@
             this.cboField8.FormattingEnabled = true;
             this.cboField8.Location = new System.Drawing.Point(9, 246);
             this.cboField8.Name = "cboField8";
-            this.cboField8.Size = new System.Drawing.Size(159, 25);
+            this.cboField8.Size = new System.Drawing.Size(159, 29);
             this.cboField8.TabIndex = 35;
             this.cboField8.SelectedIndexChanged += new System.EventHandler(this.cboField8_SelectedIndexChanged);
             // 
@@ -577,7 +577,7 @@
             "Contains"});
             this.cboOperator7.Location = new System.Drawing.Point(174, 215);
             this.cboOperator7.Name = "cboOperator7";
-            this.cboOperator7.Size = new System.Drawing.Size(148, 25);
+            this.cboOperator7.Size = new System.Drawing.Size(148, 29);
             this.cboOperator7.TabIndex = 32;
             // 
             // cboField7
@@ -587,7 +587,7 @@
             this.cboField7.FormattingEnabled = true;
             this.cboField7.Location = new System.Drawing.Point(9, 215);
             this.cboField7.Name = "cboField7";
-            this.cboField7.Size = new System.Drawing.Size(159, 25);
+            this.cboField7.Size = new System.Drawing.Size(159, 29);
             this.cboField7.TabIndex = 31;
             this.cboField7.SelectedIndexChanged += new System.EventHandler(this.cboField7_SelectedIndexChanged);
             // 
@@ -608,7 +608,7 @@
             "Contains"});
             this.cboOperator6.Location = new System.Drawing.Point(174, 184);
             this.cboOperator6.Name = "cboOperator6";
-            this.cboOperator6.Size = new System.Drawing.Size(148, 25);
+            this.cboOperator6.Size = new System.Drawing.Size(148, 29);
             this.cboOperator6.TabIndex = 28;
             // 
             // cboField6
@@ -618,7 +618,7 @@
             this.cboField6.FormattingEnabled = true;
             this.cboField6.Location = new System.Drawing.Point(9, 184);
             this.cboField6.Name = "cboField6";
-            this.cboField6.Size = new System.Drawing.Size(159, 25);
+            this.cboField6.Size = new System.Drawing.Size(159, 29);
             this.cboField6.TabIndex = 27;
             this.cboField6.SelectedIndexChanged += new System.EventHandler(this.cboField6_SelectedIndexChanged);
             // 
@@ -639,7 +639,7 @@
             "Contains"});
             this.cboOperator5.Location = new System.Drawing.Point(174, 153);
             this.cboOperator5.Name = "cboOperator5";
-            this.cboOperator5.Size = new System.Drawing.Size(148, 25);
+            this.cboOperator5.Size = new System.Drawing.Size(148, 29);
             this.cboOperator5.TabIndex = 24;
             // 
             // cboField5
@@ -649,7 +649,7 @@
             this.cboField5.FormattingEnabled = true;
             this.cboField5.Location = new System.Drawing.Point(9, 153);
             this.cboField5.Name = "cboField5";
-            this.cboField5.Size = new System.Drawing.Size(159, 25);
+            this.cboField5.Size = new System.Drawing.Size(159, 29);
             this.cboField5.TabIndex = 23;
             this.cboField5.SelectedIndexChanged += new System.EventHandler(this.cboField5_SelectedIndexChanged);
             // 
@@ -670,7 +670,7 @@
             "Contains"});
             this.cboOperator4.Location = new System.Drawing.Point(174, 122);
             this.cboOperator4.Name = "cboOperator4";
-            this.cboOperator4.Size = new System.Drawing.Size(148, 25);
+            this.cboOperator4.Size = new System.Drawing.Size(148, 29);
             this.cboOperator4.TabIndex = 20;
             // 
             // cboField4
@@ -680,7 +680,7 @@
             this.cboField4.FormattingEnabled = true;
             this.cboField4.Location = new System.Drawing.Point(9, 122);
             this.cboField4.Name = "cboField4";
-            this.cboField4.Size = new System.Drawing.Size(159, 25);
+            this.cboField4.Size = new System.Drawing.Size(159, 29);
             this.cboField4.TabIndex = 19;
             this.cboField4.SelectedIndexChanged += new System.EventHandler(this.cboField4_SelectedIndexChanged);
             // 
@@ -701,7 +701,7 @@
             "Contains"});
             this.cboOperator3.Location = new System.Drawing.Point(174, 91);
             this.cboOperator3.Name = "cboOperator3";
-            this.cboOperator3.Size = new System.Drawing.Size(148, 25);
+            this.cboOperator3.Size = new System.Drawing.Size(148, 29);
             this.cboOperator3.TabIndex = 16;
             // 
             // cboField3
@@ -711,7 +711,7 @@
             this.cboField3.FormattingEnabled = true;
             this.cboField3.Location = new System.Drawing.Point(9, 91);
             this.cboField3.Name = "cboField3";
-            this.cboField3.Size = new System.Drawing.Size(159, 25);
+            this.cboField3.Size = new System.Drawing.Size(159, 29);
             this.cboField3.TabIndex = 15;
             this.cboField3.SelectedIndexChanged += new System.EventHandler(this.cboField3_SelectedIndexChanged);
             // 
@@ -732,7 +732,7 @@
             "Contains"});
             this.cboOperator2.Location = new System.Drawing.Point(174, 60);
             this.cboOperator2.Name = "cboOperator2";
-            this.cboOperator2.Size = new System.Drawing.Size(148, 25);
+            this.cboOperator2.Size = new System.Drawing.Size(148, 29);
             this.cboOperator2.TabIndex = 12;
             // 
             // cboField2
@@ -742,7 +742,7 @@
             this.cboField2.FormattingEnabled = true;
             this.cboField2.Location = new System.Drawing.Point(9, 60);
             this.cboField2.Name = "cboField2";
-            this.cboField2.Size = new System.Drawing.Size(159, 25);
+            this.cboField2.Size = new System.Drawing.Size(159, 29);
             this.cboField2.TabIndex = 11;
             this.cboField2.SelectedIndexChanged += new System.EventHandler(this.cboField2_SelectedIndexChanged);
             // 
@@ -752,7 +752,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(380, 6);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 17);
+            this.label6.Size = new System.Drawing.Size(60, 23);
             this.label6.TabIndex = 6;
             this.label6.Text = "Values";
             // 
@@ -762,7 +762,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(211, 6);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 17);
+            this.label5.Size = new System.Drawing.Size(90, 23);
             this.label5.TabIndex = 5;
             this.label5.Text = "Operators";
             // 
@@ -783,7 +783,7 @@
             "Contains"});
             this.cboOperator1.Location = new System.Drawing.Point(174, 29);
             this.cboOperator1.Name = "cboOperator1";
-            this.cboOperator1.Size = new System.Drawing.Size(148, 25);
+            this.cboOperator1.Size = new System.Drawing.Size(148, 29);
             this.cboOperator1.TabIndex = 4;
             // 
             // cboField1
@@ -793,7 +793,7 @@
             this.cboField1.FormattingEnabled = true;
             this.cboField1.Location = new System.Drawing.Point(9, 29);
             this.cboField1.Name = "cboField1";
-            this.cboField1.Size = new System.Drawing.Size(159, 25);
+            this.cboField1.Size = new System.Drawing.Size(159, 29);
             this.cboField1.TabIndex = 3;
             this.cboField1.SelectedIndexChanged += new System.EventHandler(this.cboField1_SelectedIndexChanged);
             // 
@@ -803,14 +803,14 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(57, 6);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 17);
+            this.label4.Size = new System.Drawing.Size(56, 23);
             this.label4.TabIndex = 2;
             this.label4.Text = "Fields";
             // 
             // btnLookUp7
             // 
             this.btnLookUp7.Image = ((System.Drawing.Image)(resources.GetObject("btnLookUp7.Image")));
-            this.btnLookUp7.Location = new System.Drawing.Point(487, 212);
+            this.btnLookUp7.Location = new System.Drawing.Point(487, 215);
             this.btnLookUp7.Name = "btnLookUp7";
             this.btnLookUp7.Size = new System.Drawing.Size(34, 29);
             this.btnLookUp7.TabIndex = 33;
@@ -820,7 +820,7 @@
             // btnLookUp6
             // 
             this.btnLookUp6.Image = ((System.Drawing.Image)(resources.GetObject("btnLookUp6.Image")));
-            this.btnLookUp6.Location = new System.Drawing.Point(487, 181);
+            this.btnLookUp6.Location = new System.Drawing.Point(487, 184);
             this.btnLookUp6.Name = "btnLookUp6";
             this.btnLookUp6.Size = new System.Drawing.Size(34, 29);
             this.btnLookUp6.TabIndex = 29;
@@ -830,7 +830,7 @@
             // btnLookUp5
             // 
             this.btnLookUp5.Image = ((System.Drawing.Image)(resources.GetObject("btnLookUp5.Image")));
-            this.btnLookUp5.Location = new System.Drawing.Point(487, 150);
+            this.btnLookUp5.Location = new System.Drawing.Point(487, 153);
             this.btnLookUp5.Name = "btnLookUp5";
             this.btnLookUp5.Size = new System.Drawing.Size(34, 29);
             this.btnLookUp5.TabIndex = 25;
@@ -840,7 +840,7 @@
             // btnLookUp4
             // 
             this.btnLookUp4.Image = ((System.Drawing.Image)(resources.GetObject("btnLookUp4.Image")));
-            this.btnLookUp4.Location = new System.Drawing.Point(487, 119);
+            this.btnLookUp4.Location = new System.Drawing.Point(487, 122);
             this.btnLookUp4.Name = "btnLookUp4";
             this.btnLookUp4.Size = new System.Drawing.Size(34, 29);
             this.btnLookUp4.TabIndex = 21;
@@ -850,7 +850,7 @@
             // btnLookUp3
             // 
             this.btnLookUp3.Image = ((System.Drawing.Image)(resources.GetObject("btnLookUp3.Image")));
-            this.btnLookUp3.Location = new System.Drawing.Point(487, 88);
+            this.btnLookUp3.Location = new System.Drawing.Point(487, 91);
             this.btnLookUp3.Name = "btnLookUp3";
             this.btnLookUp3.Size = new System.Drawing.Size(34, 29);
             this.btnLookUp3.TabIndex = 17;
@@ -860,7 +860,7 @@
             // btnLookUp2
             // 
             this.btnLookUp2.Image = ((System.Drawing.Image)(resources.GetObject("btnLookUp2.Image")));
-            this.btnLookUp2.Location = new System.Drawing.Point(487, 57);
+            this.btnLookUp2.Location = new System.Drawing.Point(487, 60);
             this.btnLookUp2.Name = "btnLookUp2";
             this.btnLookUp2.Size = new System.Drawing.Size(34, 29);
             this.btnLookUp2.TabIndex = 13;
@@ -870,7 +870,7 @@
             // btnLookUp1
             // 
             this.btnLookUp1.Image = ((System.Drawing.Image)(resources.GetObject("btnLookUp1.Image")));
-            this.btnLookUp1.Location = new System.Drawing.Point(487, 26);
+            this.btnLookUp1.Location = new System.Drawing.Point(487, 29);
             this.btnLookUp1.Name = "btnLookUp1";
             this.btnLookUp1.Size = new System.Drawing.Size(34, 29);
             this.btnLookUp1.TabIndex = 9;
@@ -879,7 +879,7 @@
             // 
             // SearchesUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(635, 443);
             this.Controls.Add(this.chkPrivate);

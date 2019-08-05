@@ -575,5 +575,78 @@ namespace NSites.ApplicationObjects.UserInterfaces.Transaction
             }
             catch { }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            if (!GlobalFunctions.checkRights("tsmStockReceiving", "Cancel"))
+            {
+                return;
+            }
+            try
+            {
+                if (dgvList.Rows.Count > 0)
+                {
+                    foreach (DataRow _drF in loInventoryHeader.getAllData("", dgvList.CurrentRow.Cells[0].Value.ToString(), "", "Stock Receiving").Rows)
+                    {
+                        if (_drF["Final"].ToString() == "N")
+                        {
+                            MessageBoxUI mb = new MessageBoxUI("You can only CANCEL finalized Stock Receiving!", GlobalVariables.Icons.Information, GlobalVariables.Buttons.OK);
+                            mb.ShowDialog();
+                            return;
+                        }
+                        else if(_drF["Cancel"].ToString() == "Y")
+                        {
+                            MessageBoxUI mb = new MessageBoxUI("Stock Receiving is already CANCELLED!", GlobalVariables.Icons.Information, GlobalVariables.Buttons.OK);
+                            mb.ShowDialog();
+                            return;
+                        }
+                    }
+
+                    DialogResult _dr = new DialogResult();
+                    MessageBoxUI _mb = new MessageBoxUI("Are sure you want to continue cancelling this record?", GlobalVariables.Icons.QuestionMark, GlobalVariables.Buttons.YesNo);
+                    _mb.ShowDialog();
+                    _dr = _mb.Operation;
+                    if (_dr == DialogResult.Yes)
+                    {
+                        CancelReasonUI loCancelReason = new CancelReasonUI();
+                        loCancelReason.ShowDialog();
+                        if (loCancelReason.lFromSave)
+                        {
+                            if (loCancelReason.lReason == "")
+                            {
+                                MessageBoxUI _mbStatus = new MessageBoxUI("Cancel Reason must not be empty!", GlobalVariables.Icons.Warning, GlobalVariables.Buttons.OK);
+                                _mbStatus.ShowDialog();
+                                return;
+                            }
+                            MySqlTransaction Trans = GlobalVariables.Connection.BeginTransaction();
+                            try
+                            {
+                                if (loInventoryHeader.cancel(dgvList.CurrentRow.Cells[0].Value.ToString(), loCancelReason.lReason, ref Trans))
+                                {
+                                    foreach (DataRow _dr1 in loInventoryDetail.getAllData(dgvList.CurrentRow.Cells[0].Value.ToString()).Rows)
+                                    {
+                                        loInventoryDetail.updateQtyOnHand(_dr1[0].ToString(), ref Trans);
+                                    }
+
+                                    Trans.Commit();
+                                    MessageBoxUI _mb1 = new MessageBoxUI("Record has been successfully cancelled!", GlobalVariables.Icons.Information, GlobalVariables.Buttons.OK);
+                                    _mb1.ShowDialog();
+
+                                    refresh("ViewAll", "", "", "Stock Receiving");
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                Trans.Rollback();
+                                MessageBoxUI mb = new MessageBoxUI(ex, GlobalVariables.Icons.Error, GlobalVariables.Buttons.OK);
+                                mb.ShowDialog();
+                                return;
+                            }
+                        }
+                    }
+                }
+            }
+            catch{}
+        }
     }
 }

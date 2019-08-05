@@ -88,7 +88,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(117)))));
             this.label3.Location = new System.Drawing.Point(47, 6);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 37);
+            this.label3.Size = new System.Drawing.Size(178, 46);
             this.label3.TabIndex = 200;
             this.label3.Text = "Audit Trail";
             // 
@@ -100,9 +100,9 @@
             this.btnPreview.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreview.Image = ((System.Drawing.Image)(resources.GetObject("btnPreview.Image")));
             this.btnPreview.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPreview.Location = new System.Drawing.Point(729, 5);
+            this.btnPreview.Location = new System.Drawing.Point(717, 5);
             this.btnPreview.Name = "btnPreview";
-            this.btnPreview.Size = new System.Drawing.Size(101, 40);
+            this.btnPreview.Size = new System.Drawing.Size(113, 40);
             this.btnPreview.TabIndex = 52;
             this.btnPreview.Text = "Preview";
             this.btnPreview.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -117,9 +117,9 @@
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefresh.Location = new System.Drawing.Point(521, 5);
+            this.btnRefresh.Location = new System.Drawing.Point(485, 5);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(101, 40);
+            this.btnRefresh.Size = new System.Drawing.Size(113, 40);
             this.btnRefresh.TabIndex = 51;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -134,9 +134,9 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSearch.Location = new System.Drawing.Point(625, 5);
+            this.btnSearch.Location = new System.Drawing.Point(601, 5);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(101, 40);
+            this.btnSearch.Size = new System.Drawing.Size(113, 40);
             this.btnSearch.TabIndex = 44;
             this.btnSearch.Text = "Search";
             this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -170,22 +170,22 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvAuditTrail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvAuditTrail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvAuditTrail.Location = new System.Drawing.Point(11, 96);
+            this.dgvAuditTrail.Location = new System.Drawing.Point(11, 100);
             this.dgvAuditTrail.MultiSelect = false;
             this.dgvAuditTrail.Name = "dgvAuditTrail";
             this.dgvAuditTrail.ReadOnly = true;
             this.dgvAuditTrail.RowHeadersVisible = false;
             this.dgvAuditTrail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAuditTrail.Size = new System.Drawing.Size(883, 361);
+            this.dgvAuditTrail.Size = new System.Drawing.Size(883, 357);
             this.dgvAuditTrail.TabIndex = 29;
             this.dgvAuditTrail.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvAuditTrail_MouseClick);
             // 
             // dtpFrom
             // 
             this.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFrom.Location = new System.Drawing.Point(92, 65);
+            this.dtpFrom.Location = new System.Drawing.Point(112, 65);
             this.dtpFrom.Name = "dtpFrom";
-            this.dtpFrom.Size = new System.Drawing.Size(117, 25);
+            this.dtpFrom.Size = new System.Drawing.Size(117, 29);
             this.dtpFrom.TabIndex = 48;
             // 
             // label1
@@ -193,34 +193,34 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 17);
+            this.label1.Size = new System.Drawing.Size(97, 23);
             this.label1.TabIndex = 49;
             this.label1.Text = "Date Filter :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(215, 68);
+            this.label2.Location = new System.Drawing.Point(235, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 17);
+            this.label2.Size = new System.Drawing.Size(36, 23);
             this.label2.TabIndex = 50;
             this.label2.Text = " to ";
             // 
             // dtpTo
             // 
             this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpTo.Location = new System.Drawing.Point(249, 65);
+            this.dtpTo.Location = new System.Drawing.Point(273, 65);
             this.dtpTo.Name = "dtpTo";
-            this.dtpTo.Size = new System.Drawing.Size(117, 25);
+            this.dtpTo.Size = new System.Drawing.Size(117, 29);
             this.dtpTo.TabIndex = 51;
             // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(680, 67);
+            this.label4.Location = new System.Drawing.Point(670, 68);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 17);
+            this.label4.Size = new System.Drawing.Size(61, 23);
             this.label4.TabIndex = 52;
             this.label4.Text = "Search";
             // 
@@ -230,29 +230,30 @@
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.Location = new System.Drawing.Point(733, 65);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(161, 25);
+            this.txtSearch.Size = new System.Drawing.Size(161, 29);
             this.txtSearch.TabIndex = 53;
             // 
             // cmsFunctions
             // 
+            this.cmsFunctions.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsFunctions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewHiddenRecordsToolStripMenuItem1});
             this.cmsFunctions.Name = "cmsAuditTrailFunctions";
-            this.cmsFunctions.Size = new System.Drawing.Size(187, 26);
+            this.cmsFunctions.Size = new System.Drawing.Size(225, 30);
             // 
             // viewHiddenRecordsToolStripMenuItem1
             // 
             this.viewHiddenRecordsToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("viewHiddenRecordsToolStripMenuItem1.Image")));
             this.viewHiddenRecordsToolStripMenuItem1.Name = "viewHiddenRecordsToolStripMenuItem1";
-            this.viewHiddenRecordsToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
+            this.viewHiddenRecordsToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.viewHiddenRecordsToolStripMenuItem1.Text = "View Hidden Records";
             this.viewHiddenRecordsToolStripMenuItem1.Click += new System.EventHandler(this.viewHiddenRecordsToolStripMenuItem1_Click);
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(373, 63);
+            this.btnView.Location = new System.Drawing.Point(397, 63);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(75, 27);
+            this.btnView.Size = new System.Drawing.Size(75, 31);
             this.btnView.TabIndex = 55;
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = true;
@@ -260,9 +261,9 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(454, 63);
+            this.btnRemove.Location = new System.Drawing.Point(478, 63);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(75, 27);
+            this.btnRemove.Size = new System.Drawing.Size(84, 31);
             this.btnRemove.TabIndex = 56;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -270,7 +271,7 @@
             // 
             // AuditTrailUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(905, 469);
             this.Controls.Add(this.btnRemove);

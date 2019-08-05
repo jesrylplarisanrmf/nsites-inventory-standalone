@@ -46,6 +46,20 @@ namespace NSites.ApplicationObjects.Classes
             get;
             set;
         }
+        public string BrandId
+        {
+            get;
+            set;
+        }public string SupplierId
+        {
+            get;
+            set;
+        }
+        public string Picture
+        {
+            get;
+            set;
+        }
         public decimal UnitCost
         {
             get;
@@ -89,6 +103,11 @@ namespace NSites.ApplicationObjects.Classes
             return lStockDAO.getStockReorderLevel();
         }
 
+        public DataTable getStockReinventory()
+        {
+            return lStockDAO.getStockReinventory();
+        }
+
         public DataTable getStockCard(DateTime pFromDate, DateTime pToDate, string pStockId)
         {
             return lStockDAO.getStockCard(pFromDate, pToDate, pStockId);
@@ -117,6 +136,11 @@ namespace NSites.ApplicationObjects.Classes
                     break;
             }
             return _Id;
+        }
+
+        public bool finalizeStockReinventory(string pDetailId, string pType, ref MySqlTransaction pTrans)
+        {
+            return lStockDAO.finalizeStockReinventory(pDetailId, pType, ref pTrans);
         }
 
         public bool remove(string pId,ref MySqlTransaction pTrans)
